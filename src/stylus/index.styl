@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic')
+@import 'variables'
+@import 'header'
+@import 'sections'
+@import 'teaser'
+
+body, html
+  background: $bgColor
+  color: $textWhite
+  font-family: 'Didact Gothic', sans-serif
+  margin: 0
+
+  *
+    box-sizing: border-box
+    -webkit-font-smoothing: antialiased
+
+a
+  text-decoration: underline
+  color: $textWhite
+
+  &:hover
+    color: darken($textWhite, 30)
+
+.font--large
+  font-size: 3.2rem
+
+.large-claim
+  padding-bottom: 1rem
+
+.box--highlight
+  border: 5px solid $highlightColor
+  padding: 1.5rem
+
+.box--text-large
+  font-size: 2rem
+  text-align: center
+
+.box--text-center
+  text-align: center
