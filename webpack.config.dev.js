@@ -38,7 +38,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: true,
       template: Path.resolve(__dirname, 'src/index.html'),
-    })
+    }),
+    new CopyWebpackPlugin([
+      { from: 'src/images', to: 'images' }
+    ])
   ],
   module: {
     rules: [

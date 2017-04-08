@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Didact+Gothic')
 @import 'variables'
 @import 'header'
 @import 'sections'
@@ -8,13 +7,14 @@
 body, html
   background: $bgColor
   color: $textWhite
-  font-family: 'Didact Gothic', sans-serif
+  font-family: $fontFamily
   margin: 0
   font-size: 12px
+  font-weight: 200
 
   *
     box-sizing: border-box
-    -webkit-font-smoothing: antialiased
+    //-webkit-font-smoothing: antialiased
 
 a
   text-decoration: underline
@@ -29,11 +29,11 @@ a
 .large-claim
   padding-bottom: 1rem
 
-.box-row img
+.box-row img, .box img
   width: 100%
 
 .box--highlight
-  border: 5px solid $highlightColor
+  border: 2px solid $highlightColor
   padding: 1.5rem
 
 .box--text-large
@@ -49,9 +49,18 @@ a
   z-index: 1000
   position: relative
 
+.desktop-only
+  display: none
+
 @media screen and (min-width: 768px)
   body,html
     font-size: 14px
+  
+  .mobile-only
+    display: none
+
+  .desktop-only
+    display: block
 
 @media screen and (min-width: 1024px)
   body,html
