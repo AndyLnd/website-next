@@ -4,6 +4,8 @@ const Webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
+const Projects = require('./src/data/projects.json');
+
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
   devServer:
@@ -37,6 +39,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: true,
       template: Path.resolve(__dirname, 'src/index.ejs'),
+    }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      projects: Projects,
+      filename: 'portfolio.html',
+      template: Path.resolve(__dirname, 'src/portfolio.ejs'),
     }),
     new CopyWebpackPlugin([
       { from: 'src/static', to: 'static' }
