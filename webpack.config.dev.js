@@ -16,7 +16,6 @@ module.exports = {
   },
   entry: [
     'normalize.css',
-    'flexboxgrid',
     Path.resolve(__dirname, 'src/stylus/index.styl'),
     Path.resolve(__dirname, 'src/scripts/index.js')
   ],
@@ -37,10 +36,10 @@ module.exports = {
     new Webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       inject: true,
-      template: Path.resolve(__dirname, 'src/index.html'),
+      template: Path.resolve(__dirname, 'src/index.ejs'),
     }),
     new CopyWebpackPlugin([
-      { from: 'src/images', to: 'images' }
+      { from: 'src/static', to: 'static' }
     ])
   ],
   module: {
