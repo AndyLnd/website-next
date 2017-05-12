@@ -8,7 +8,7 @@ function init() {
 
   const map = new mapboxgl.Map({
     center: webkidCoords,
-    zoom: 13,
+    zoom: 15,
     minZoom: 10,
     maxZoom: 16,
     pitch: 30,
@@ -16,7 +16,7 @@ function init() {
     attributionControl: false,
     logoPosition: 'bottom-right',
     container: 'map',
-    style: 'mapbox://styles/webkid/cj2lojjo7000v2smt2z4ne9w8'
+    style: 'mapbox://styles/webkid/cj2m13fxv001r2qmlrokube04'
   });
 
   map.on('load', function () {
