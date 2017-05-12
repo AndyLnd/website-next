@@ -35,20 +35,36 @@
     height: auto
     display: block
 
+.section.section--projects
+  padding-top: 0
+
 .small-teaser-wrapper
   display: flex
   justify-content: space-between
 
 .small-teaser
   width: 49%
-  min-height: 120px
-  background-image: url('https://placehold.it/300x400')
+
+  &:last-child
+    display: none
+
+.small-teaser--image
+  min-height: 100px
   background-size: cover
   background-position: center
   flex-grow: 0
 
-  &:last-child
-    display: none
+.small-teaser--headline
+  font-size: 1.2rem
+  font-weight: 700
+  margin: 1rem 0 .8rem 0
+  color: #333
+
+.small-teaser--description
+  color: $grey
+  font-weight: 300
+  font-size: .9rem
+  line-height: 1.2
 
 .section--clients
   box-sizing: border-box
@@ -131,6 +147,10 @@
   padding: 0
   margin: 0
 
+@media screen and (min-width: 400px)
+  .small-teaser--image
+    min-height: 120px
+
 @media screen and (min-width: 768px)
   .section
     padding: 30px
@@ -148,6 +168,16 @@
   .clients >*
     height: 20px
 
+  .small-teaser
+    width: 32%
+
+    &:last-child
+      display: block
+  
+  .small-teaser--image
+    height: 130px
+
+
 @media screen and (min-width: 1024px)
   .section--intro
     padding-bottom: 300px
@@ -157,4 +187,9 @@
     margin-bottom: -300px
 
   .clients >*
-    height: 25px
+    height: 27px
+    padding: 8px
+    margin-bottom: 8px
+
+  .small-teaser--image
+    height: 160px
