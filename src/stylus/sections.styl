@@ -4,27 +4,26 @@
 .section--intro
   background: linear-gradient(to bottom, $primary0 0%, $primary25 100%)
   color: $white
-  padding-bottom: 200px
+  padding-bottom: 100px
 
 .headline
   text-align: center
-  padding: 5rem 0 3rem 0
+  padding: 2.5rem 0
   
   h1
     text-transform: uppercase
     font-weight: 900
-    font-size: 3.5rem
   
   h2
-    font-weight: 400
-    max-width: 700px
+    font-weight: 100
+    max-width: 650px
     margin: 0 auto
     line-height: 1.3
 
 .section--intro-overlap
   position: relative
-  top: -200px
-  margin-bottom: -200px
+  transform: translateY(-100px)
+  margin-bottom: -100px
 
 .video-teaser
   width: 100%
@@ -36,6 +35,21 @@
     height: auto
     display: block
 
+.small-teaser-wrapper
+  display: flex
+  justify-content: space-between
+
+.small-teaser
+  width: 49%
+  min-height: 120px
+  background-image: url('https://placehold.it/300x400')
+  background-size: cover
+  background-position: center
+  flex-grow: 0
+
+  &:last-child
+    display: none
+
 .section--clients
   box-sizing: border-box
 
@@ -45,7 +59,12 @@
   justify-content: space-between
 
   >*
-    padding: 10px 10px
+    height: 15px
+    width: auto
+    margin-bottom: 5px
+    padding: 5px
+    opacity: .7
+
 
 .section--contact
   padding-top: 2rem
@@ -73,7 +92,7 @@
 
 .blog-teaser__content
   max-width: 500px
-  margin-left: 30px
+  margin-left: 15px
 
 .blog-introtext
   display: none
@@ -87,6 +106,55 @@
   font-weight: 300
   font-size: .9rem
 
+.section.section--map
+  width: 100%
+  box-sizing: border-box
+  height: 500px
+  position: relative
+  padding: 0
+
+#map
+  height: 100%
+  width: 100%
+
+.section--footer
+  background: linear-gradient(to bottom, $primary75 0%, $primary100 100%)
+  color: $white
+  padding: 4rem 15px
+
+.footer-grid
+  display: flex
+  margin-top: 2rem
+
+.footer-list
+  list-style: none
+  padding: 0
+  margin: 0
+
 @media screen and (min-width: 768px)
+  .section
+    padding: 30px
+
   .blog-introtext
     display: block
+  
+  .section--intro
+    padding-bottom: 200px
+  
+  .section--intro-overlap
+    transform: translateY(-200px)
+    margin-bottom: -200px
+  
+  .clients >*
+    height: 20px
+
+@media screen and (min-width: 1024px)
+  .section--intro
+    padding-bottom: 300px
+  
+  .section--intro-overlap
+    transform: translateY(-300px)
+    margin-bottom: -300px
+
+  .clients >*
+    height: 25px

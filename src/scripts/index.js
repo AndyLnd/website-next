@@ -1,1 +1,3 @@
-console.log('hello world!');
+import map from './map';
+
+map.init();
