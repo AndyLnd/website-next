@@ -32,6 +32,12 @@
     <div class="video-teaser box-shadow--large">
       <img src="//placehold.it/1000x563" />
     </div>
+
+    <div class="small-teaser-wrapper">
+      <div class="small-teaser"></div>
+      <div class="small-teaser"></div>
+      <div class="small-teaser"></div>
+    </div>
   </section>
 
   <section class="section section--clients">
@@ -55,28 +61,41 @@
     <div class="content">
       <h3>How can we help you?</h3>
 
-      <form class="contact-form">
-        <div class="tags">
+      <form name="webkid-contact" class="contact-form" netlify>
+        <div class="tags input-wrapper">
           <label class="tag">
-            <input type="checkbox" value="1"><span>maps</span>
+            <input type="checkbox" name="maps" value="maps"><span>maps</span>
           </label>
 
           <label class="tag">
-            <input type="checkbox" value="1"><span>data visualization</span>
+            <input type="checkbox" name="data-vis" value="data-vis"><span>data visualization</span>
           </label>
 
           <label class="tag">
-            <input type="checkbox" value="1"><span>d3</span>
+            <input type="checkbox" name="d3" value="d3"><span>d3</span>
           </label>
 
           <label class="tag">
-            <input type="checkbox" value="1"><span>react</span>
+            <input type="checkbox" name="react" value="react"><span>react</span>
           </label>
 
           <label class="tag">
-            <input type="checkbox" value="1"><span>leaflet</span>
+            <input type="checkbox" name="leaflet" value="leaflet"><span>leaflet</span>
           </label>
         </div>
+
+        <div class="input-wrapper">
+          <input class="input" type="text" name="email" placeholder="your email" />
+        </div>
+
+        <div class="input-wrapper">
+          <textarea class="input" name="message" placeholder="your message"></textarea>
+        </div>
+
+        <div class="input-wrapper">
+          <button class="button button--submit" type="submit">submit</button>
+        </div>
+
       </form>
     </div>
   </section>
