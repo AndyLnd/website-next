@@ -74,7 +74,11 @@ module.exports = {
             name: 'assets/images/[name].[ext]'
           }
         }
-      }
+      },
+      {
+        test: /\.ejs$/,
+         use: [ 'ejs-compiled-loader' ]
+      },
     ]
   }
 }

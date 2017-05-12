@@ -15,6 +15,7 @@
     "babel-loader": "^6.4.1",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.0",
+    "ejs-compiled-loader": "^1.1.0",
     "file-loader": "^0.10.1",
     "html-webpack-plugin": "^2.28.0",
     "markdown-to-json": "^0.5.1",

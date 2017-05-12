@@ -1,18 +1,48 @@
 [
     {
-        "title": "Aha",
-        "description": "test foo bar",
-        "image": "/images/uploads/test.png",
+        "title": "NOISEMAP BERLIN",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Magnam, ea cumque eveniet numquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Magnam, ea cumque eveniet numquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Magnam, ea cumque eveniet numquam.",
+        "image": "/static/images/uploads/map.png",
         "isHighlight": true
     },
     {
         "title": "Hello",
-        "description": "World",
-        "image": "/images/uploads/test.png"
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+        "image": "/static/images/uploads/map.png"
+    },
+    {
+        "title": "Test 123",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+        "image": "/static/images/uploads/map.png"
+    },
+    {
+        "title": "Test 123",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+        "image": "/static/images/uploads/map.png"
+    },
+    {
+        "title": "Test 123",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+        "image": "/static/images/uploads/map.png"
+    },
+    {
+        "title": "Hello",
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+        "image": "/static/images/uploads/map.png"
+    },
+    {
+        "title": "Test 123",
+        "description": "GLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+        "image": "/static/images/uploads/map.png"
     },
     {
         "title": "Test 123",
         "description": "Github Hook works",
-        "image": "/images/uploads/header_fun_effects.png"
+        "image": "/static/images/uploads/map.png"
+    },
+    {
+        "title": "Test 123",
+        "description": "Github Hook works",
+        "image": "/static/images/uploads/map.png"
     }
 ]
