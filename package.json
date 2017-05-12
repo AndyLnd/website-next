@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run projects && NODE_ENV=development webpack-dev-server --config  webpack.config.dev.js --watch --colors --no-info",
-    "build": "npm run projects && NODE_ENV=production webpack --config  webpack.config.prod.js",
-    "projects": "node ./src/data/create-data.js"
+    "start": "NODE_ENV=development webpack-dev-server --config  webpack.config.dev.js --watch --colors --no-info",
+    "build": "NODE_ENV=production webpack --config  webpack.config.prod.js"
   },
   "author": "",
   "license": "ISC",
