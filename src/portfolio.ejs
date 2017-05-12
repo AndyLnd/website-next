@@ -10,19 +10,28 @@
 </head>
 <body>
   <section class="section section__projects--highlight">
+    <% include src/partials/header %>
+
+    <div class="content">
     <% htmlWebpackPlugin.options.projects.forEach(function(project) { %>
       <% if(project.isHighlight) { %>
         <% include src/partials/project_highlighted %>
       <% } %>
     <% }) %>
+    </div>
   </section>
 
   <section class="section section__projects">
+    <div class="content project-wrapper">
     <% htmlWebpackPlugin.options.projects.forEach(function(project) { %>
       <% if(!project.isHighlight) { %>
         <% include src/partials/project %>
       <% } %>
     <% }) %>
+  </div>
   </section>
+
+  <% include src/partials/footer %>
+
 </body>
 </html>

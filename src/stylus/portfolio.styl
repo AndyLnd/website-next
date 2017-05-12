@@ -1,22 +1,15 @@
 .section__projects--highlight
-  width: 100%
-  padding-bottom: 200px
-
-  .project--highlighted
-    max-width: 1000px
-    margin: 0 auto
-
-  display: flex
-  flex-direction: row
-  flex-wrap: wrap
-  justify-content: space-between
-
   background: linear-gradient(to bottom, $primary0 0%, $primary25 100%)
   color: $white
 
-.project__image--higlighted
-  max-width: 535px
-  flex: 1
+.project--higlighted
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.project__image--highlighted
+  width: 100%
+  max-width: 500px
 
 .project__info
   flex: 1
@@ -27,19 +20,19 @@
     text-transform: uppercase
 
 
-.section__projects
-  max-width: 280px
+.project-wrapper
   display: flex
-  flex: 0 1 auto
   flex-wrap: wrap
-  flex-direction: row
-  align-content: flex-start
+  justify-content: space-between
 
-  padding: 15px
+.portfolio-project
+  flex-grow: 0
+  width: 49%
 
-  .project__image
-    width: 100%
+@media screen and (min-width: 768px)
+  .portfolio-project
+    width: 32%
 
-  .project__info
-    h4
-      text-transform: uppercase
+@media screen and (min-width: 1024px)
+  .portfolio-project
+    width: 24%
