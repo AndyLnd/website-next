@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const Projects = require('./src/data/projects.json');
+const Blogposts = require('./src/data/blogposts.json');
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
@@ -39,6 +40,7 @@ module.exports = {
     new Webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       inject: true,
+      blogposts: Blogposts,
       template: Path.resolve(__dirname, 'src/index.ejs'),
     }),
     new HtmlWebpackPlugin({

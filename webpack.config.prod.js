@@ -41,8 +41,7 @@ module.exports = {
       template: Path.resolve(__dirname, 'src/portfolio.ejs'),
     }),
     new CopyWebpackPlugin([
-      { from: 'src/static', to: 'static' },
-      { from: 'src/cms', to: 'admin' }
+      { from: 'src/static', to: 'static' }
     ])
   ],
   module: {

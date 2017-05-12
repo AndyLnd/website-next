@@ -43,7 +43,6 @@
         <div class="small-teaser--image box-shadow--large" style="background-image:url('static/images/teaser-3.jpg')"></div>
         <div class="small-teaser--headline">Berlin Noisemap</div>
         <div class="small-teaser--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est sunt aspernatur delectus natus eaque odit optio? Ipsa, officiis excepturi tempore ratione illo voluptas</div>
-
       </div>
     </div>
   </section>
@@ -96,32 +95,16 @@
     <div class="content">
       <h3>Latest Blogposts</h3>
 
-      <a href="//blog.webkid.io" class="blog-teaser">
-        <div class="blog-teaser__image box-shadow--large"></div>
-        <div class="blog-teaser__content">
-          <div class="blog-date">21.21.2112</div>
-          <div class="blog-headline">How to create maps with Leaflet and React</div>
-          <div class="blog-introtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt earum ullam similique commodi, fuga reprehenderit voluptatum sapiente officia provident dolores. Repudiandae officia iure, dolore, pariatur in deleniti temporibus facilis accusantium.</div>
-        </div>
-      </a>
-
-      <div class="blog-teaser">
-        <div class="blog-teaser__image box-shadow--large"></div>
-        <div class="blog-teaser__content">
-          <div class="blog-date">21.21.2112</div>
-          <div class="blog-headline">Lorem Ipsum Lorem Ipsum</div>
-          <div class="blog-introtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt earum ullam similique commodi, fuga reprehenderit voluptatum sapiente officia provident dolores. Repudiandae officia iure, dolore, pariatur in deleniti temporibus facilis accusantium.</div>
-        </div>
-      </div>
-
-      <div class="blog-teaser">
-        <div class="blog-teaser__image box-shadow--large"></div>
-        <div class="blog-teaser__content">
-          <div class="blog-date">21.21.2112</div>
-          <div class="blog-headline">Lorem Ipsum Lorem Ipsum</div>
-          <div class="blog-introtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt earum ullam similique commodi, fuga reprehenderit voluptatum sapiente officia provident dolores. Repudiandae officia iure, dolore, pariatur in deleniti temporibus facilis accusantium.</div>
-        </div>
-      </div>
+      <% for(var i = 0; i < 3; i++) { %>
+        <a href="//blog.webkid.io" class="blog-teaser">
+          <div class="blog-teaser__image box-shadow--large"></div>
+          <div class="blog-teaser__content">
+            <div class="blog-date"><%=htmlWebpackPlugin.options.blogposts[i].date%></div>
+            <div class="blog-headline"><%=htmlWebpackPlugin.options.blogposts[i].title%></div>
+            <div class="blog-introtext"><%=htmlWebpackPlugin.options.blogposts[i].text%>...</div>
+          </div>
+        </a>
+      <% } %>
 
     </div>
 
