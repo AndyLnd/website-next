@@ -19,6 +19,8 @@ function init() {
     style: 'mapbox://styles/webkid/cj2m13fxv001r2qmlrokube04'
   });
 
+  map.addControl(new mapboxgl.NavigationControl(), 'bottom-right');
+
   map.on('load', function () {
 
     map.addLayer({
@@ -48,6 +50,13 @@ function init() {
         "icon-color": '#ff0000',
       }
     });
+  });
+
+  map.on('moveend', function () {
+    console.log('moveend');
+
+    map.scrollZoom.enable();
+    map.dragPan.enable();
   });
 
 }
