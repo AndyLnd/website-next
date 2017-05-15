@@ -1,5 +1,7 @@
-import map from './map';
+import Map from './map';
+import Slider from './slider';
 import 'normalize.css';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
-map.init();
+Map.init();
+new Slider();

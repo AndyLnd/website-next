@@ -1,0 +1,53 @@
+.swipe
+  overflow hidden
+  visibility hidden
+  position relative
+
+.swipe-wrap
+  overflow hidden
+  position relative
+  & > div
+    float left
+    width 100%
+    position relative
+    overflow hidden
+
+.slider-controls
+  position: absolute
+  bottom: 5px
+  display: none
+  list-style: none
+  padding: 0
+  margin: 0 auto
+  width: 100%
+  max-width: 200px
+  justify-content: center
+  left: 0
+  right: 0
+
+  li
+    width: 10px
+    height: 10px
+    background: rgba($white, .8)
+    // border: 1px solid $white
+    border-radius: 50%
+    margin: 3px
+
+.video-teaser--content
+  position: absolute
+  width: 100%
+  bottom: 0
+  padding: 20px
+  box-sizing: border-box
+
+  .small-teaser--headline
+    color: $white
+    font-size: 1.2rem
+
+.video-teaser--button
+  background: transparent
+  border: 2px solid $white
+  border-radius: 3px
+  font-family: $sans
+  font-size: .8rem
+  color: $white
