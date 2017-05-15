@@ -49,6 +49,11 @@ module.exports = {
       filename: 'portfolio.html',
       template: Path.resolve(__dirname, 'src/portfolio.ejs'),
     }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      filename: 'imprint.html',
+      template: Path.resolve(__dirname, 'src/imprint.ejs'),
+    }),
     new CopyWebpackPlugin([
       { from: 'src/static', to: 'static' }
     ])

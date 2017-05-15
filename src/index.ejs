@@ -29,21 +29,21 @@
 
   <section class="section section--projects">
     <div class="small-teaser-wrapper content">
-      <div class="small-teaser">
+      <a href="/portfolio" class="small-teaser">
         <div class="small-teaser--image box-shadow--large" style="background-image:url('static/images/teaser-1.jpg')"></div>
         <div class="small-teaser--headline">How Europe's population is growing</div>
-        <div class="small-teaser--description">An interactive map of Europe that show where its population is growing - and where it is declining.</div>
-      </div>
-      <div class="small-teaser">
+        <p class="small-teaser--description">An interactive map of Europe that show where its population is growing - and where it is declining.</p>
+      </a>
+      <a href="/portfolio" class="small-teaser">
         <div class="small-teaser--image box-shadow--large" style="background-image:url('static/images/teaser-2.jpg')"></div>
         <div class="small-teaser--headline">Berlin Noisemap</div>
-        <div class="small-teaser--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est sunt aspernatur delectus natus eaque odit optio?</div>
-      </div>
-      <div class="small-teaser">
+        <p class="small-teaser--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est sunt aspernatur delectus natus eaque odit optio?</p>
+      </a>
+      <a href="/portfolio" class="small-teaser">
         <div class="small-teaser--image box-shadow--large" style="background-image:url('static/images/teaser-3.jpg')"></div>
         <div class="small-teaser--headline">Berlin Noisemap</div>
-        <div class="small-teaser--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est sunt aspernatur delectus natus eaque odit optio? Ipsa, officiis excepturi tempore ratione illo voluptas</div>
-      </div>
+        <p class="small-teaser--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est sunt aspernatur delectus natus eaque odit optio? Ipsa, officiis excepturi tempore ratione illo voluptas</p>
+      </a>
     </div>
   </section>
 
@@ -74,12 +74,12 @@
       <form name="webkid-contact" class="contact-form" netlify-honeypot="bot-field" netlify>
 
         <div class="input-wrapper">
-          <label class="label" for="email">Email</label>
+          <label class="label text" for="email">Email</label>
           <input class="input" type="text" name="email" placeholder="your email..." />
         </div>
 
         <div class="input-wrapper">
-          <label class="label" for="email">Message</label>
+          <label class="label text" for="email">Message</label>
           <textarea class="input textarea" name="message" placeholder="your message..."></textarea>
         </div>
 
@@ -101,7 +101,7 @@
           <div class="blog-teaser__content">
             <div class="blog-date"><%=htmlWebpackPlugin.options.blogposts[i].date%></div>
             <div class="blog-headline"><%=htmlWebpackPlugin.options.blogposts[i].title%></div>
-            <div class="blog-introtext"><%=htmlWebpackPlugin.options.blogposts[i].text%>...</div>
+            <p class="blog-introtext"><%=htmlWebpackPlugin.options.blogposts[i].text%>...</p>
           </div>
         </a>
       <% } %>
