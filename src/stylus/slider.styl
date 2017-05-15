@@ -39,10 +39,12 @@
   bottom: 0
   padding: 20px
   box-sizing: border-box
+  z-index: 10
 
   .small-teaser--headline
     color: $white
     font-size: 1.2rem
+    max-width: 400px
 
 .video-teaser--button
   background: transparent
@@ -51,3 +53,33 @@
   font-family: $sans
   font-size: .8rem
   color: $white
+  padding: .2em .8em
+  text-decoration: none
+
+.slider-gradient
+  position: absolute
+  height: 100px
+  background: linear-gradient(180deg, transparent, $black);
+  width: 100%
+  z-index: 5
+  bottom: 0
+
+@media screen and (min-width: 768px)
+  .video-teaser--content
+    bottom: 15px
+
+    .small-teaser--headline
+      font-size: 1.5rem
+
+  .slider-controls
+    display: flex
+  
+  .video-teaser--button
+    font-size: 1rem
+  
+  .slider-gradient
+    height: 150px
+
+@media screen and (min-width: 1024px)
+  .video-teaser--content .small-teaser--headline
+    font-size: 2rem
