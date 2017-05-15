@@ -1,26 +1,45 @@
+// single highlighted project
 .section__projects--highlight
   background: linear-gradient(to bottom, $primary0 0%, $primary25 100%)
   color: $white
 
 .project--higlighted
-  display: flex
-  flex-wrap: wrap
-  justify-content: space-between
+  padding: 2.5rem 0
+
+.image--wrapper
+  display: block
+  max-width: 500px
 
 .project__image--highlighted
   width: 100%
-  max-width: 500px
+  height: auto
 
 .project__info
-  flex: 1
-  padding: 1em
-
+  max-width: 500px
   font-weight: 700
   h3
     text-transform: uppercase
 
+@media screen and (min-width: 768px)
+  .project--higlighted
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
 
-.project-wrapper
+  .image--wrapper
+    flex: 1
+
+  .project__info
+    flex: 1
+    padding: 0 2rem
+
+@media screen and (min-width: 1024px)
+
+  .project__info
+    padding: 1rem 4rem
+
+// projetcs grid
+.projects-wrapper
   display: flex
   flex-wrap: wrap
   justify-content: space-between
@@ -28,11 +47,12 @@
 .portfolio-project
   flex-grow: 0
   width: 49%
+  margin-bottom: 30px
 
-@media screen and (min-width: 768px)
+@media screen and (min-width: 480px)
   .portfolio-project
     width: 32%
 
-@media screen and (min-width: 1024px)
+@media screen and (min-width: 768px)
   .portfolio-project
     width: 24%

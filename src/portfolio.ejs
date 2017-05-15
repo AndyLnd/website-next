@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>webkid Portfolio</title>
-  <script src="https://use.typekit.net/wji4bpj.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
-</head>
-<body>
-  <section class="section section__projects--highlight">
-    <% include src/partials/header %>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>webkid Portfolio</title>
+    <script src="https://use.typekit.net/wji4bpj.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </head>
+  <body>
+    <section class="section section__projects--highlight">
+      <% include src/partials/header %>
 
-    <div class="content">
-    <% htmlWebpackPlugin.options.projects.forEach(function(project) { %>
-      <% if(project.isHighlight) { %>
-        <% include src/partials/project_highlighted %>
-      <% } %>
-    <% }) %>
-    </div>
-  </section>
+      <div class="content">
+        <% htmlWebpackPlugin.options.projects.forEach(function(project) { %>
+          <% if(project.isHighlight) { %>
+            <% include src/partials/project_highlighted %>
+          <% } %>
+        <% }) %>
+      </div>
+    </section>
 
-  <section class="section section__projects">
-    <div class="content project-wrapper">
-    <% htmlWebpackPlugin.options.projects.forEach(function(project) { %>
-      <% if(!project.isHighlight) { %>
-        <% include src/partials/project %>
-      <% } %>
-    <% }) %>
-  </div>
-  </section>
+    <section class="section section__projects">
+      <div class="content projects-wrapper">
+        <% htmlWebpackPlugin.options.projects.forEach(function(project) { %>
+          <% if(!project.isHighlight) { %>
+            <% include src/partials/project %>
+          <% } %>
+        <% }) %>
+        </div>
+    </section>
 
-  <% include src/partials/footer %>
-
-</body>
+    <% include src/partials/footer %>
+  </body>
 </html>
