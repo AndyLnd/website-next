@@ -4,6 +4,7 @@ const Webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
+const Blogposts = require('./src/data/blogposts.json');
 const Projects = require('./src/data/projects.json');
 
 module.exports = {
@@ -31,6 +32,7 @@ module.exports = {
     new Webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       inject: true,
+      blogposts: Blogposts,
       filename: 'index.html',
       template: Path.resolve(__dirname, 'src/index.ejs'),
     }),
@@ -72,7 +74,11 @@ module.exports = {
             name: 'assets/images/[name].[ext]'
           }
         }
-      }
+      },
+      {
+        test: /\.ejs$/,
+         use: [ 'ejs-compiled-loader' ]
+      },
     ]
   }
 }
