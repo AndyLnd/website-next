@@ -3,33 +3,32 @@ const Autoprefixer = require('autoprefixer');
 const Webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const Blogposts = require('./src/data/blogposts.json');
 const Projects = require('./src/data/projects.json');
 
 module.exports = {
-  devtool: 'cheap-module-eval-source-map',
+  devtool: 'eval',
   entry: [
-    'normalize.css',
-    'mapbox-gl/dist/mapbox-gl.css',
-    Path.resolve(__dirname, 'src/stylus/index.styl'),
-    Path.resolve(__dirname, 'src/scripts/index.js')
+    Path.resolve(__dirname, 'src/scripts/index.js'),
+    Path.resolve(__dirname, 'src/stylus/index.styl')
   ],
   output: {
     path: Path.resolve(__dirname, 'build'),
     filename: 'main.js'
   },
-
   plugins: [
     new Webpack.LoaderOptionsPlugin({
+      minimize: true,
+      debug: false,
       options: {
         context: __dirname,
-        postcss: [
+        postcss: {
           Autoprefixer
-        ]
+        }
       }
     }),
-    new Webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       inject: true,
       blogposts: Blogposts,
@@ -47,24 +46,35 @@ module.exports = {
       filename: 'imprint.html',
       template: Path.resolve(__dirname, 'src/imprint.ejs'),
     }),
+    new ExtractTextPlugin({ filename: 'bundle.css' }),
     new CopyWebpackPlugin([
       { from: 'src/static', to: 'static' }
-    ])
+    ]),
+    new Webpack.optimize.UglifyJsPlugin({
+      beautify: false,
+      sourceMap: true
+    }),
   ],
   module: {
     rules: [
       {
-        test: /\.styl$/i,
-        use: ['style-loader', 'css-loader', 'stylus-loader']
+        test: /\.css$/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: 'css-loader'
+        })
       },
       {
-        test: /\.(js)$/,
+        test: /\.styl$/i,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'postcss-loader', 'stylus-loader']
+        })
+      },
+      {
+        test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
         use: ['babel-loader']
-      },
-      {
-        test: /\.css$/,
-         use: [ 'style-loader', 'css-loader' ]
       },
       {
         test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
@@ -77,8 +87,8 @@ module.exports = {
       },
       {
         test: /\.ejs$/,
-         use: [ 'ejs-compiled-loader' ]
-      },
+        use: [ 'ejs-compiled-loader' ]
+      }
     ]
   }
 }
