@@ -4,6 +4,7 @@ const Webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const Utils = require('./src/helper/utils');
 
 const Blogposts = require('./src/data/blogposts.json');
 const Projects = require('./src/data/projects.json');
@@ -37,7 +38,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: true,
-      projects: Projects,
+      projects: Utils.sortProjects(Projects),
       filename: 'portfolio.html',
       template: Path.resolve(__dirname, 'src/portfolio.ejs'),
     }),

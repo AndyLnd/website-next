@@ -9,49 +9,34 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
   <body>
-    <section class="section section__projects--highlight">
-      <% include src/partials/header %>
-
-      <div class="content">
-        <% htmlWebpackPlugin.options.projects.forEach(function(project) { %>
-          <% if(project.isHighlight) { %>
-            <% include src/partials/project_highlighted %>
+    <% htmlWebpackPlugin.options.projects.forEach(function(project, index) { %>
+      <% if(project.isHighlight) { %>
+        <section class="section section__projects--highlight">
+          <% if(index === 0) { %>
+            <% include src/partials/header %>
           <% } %>
-        <% }) %>
-      </div>
-    </section>
 
-    <section class="section section__projects">
-      <div class="content projects-wrapper">
-        <% htmlWebpackPlugin.options.projects.forEach(function(project) { %>
-          <% if(!project.isHighlight) { %>
-            <% include src/partials/project %>
-          <% } %>
-        <% }) %>
-        </div>
-    </section>
+          <div class="content">
+              <% include src/partials/project_highlighted %>
+          </div>
+        </section>
+      <% } %>
 
-    <section class="section section__projects--highlight">
+      <% if(index > 0 && htmlWebpackPlugin.options.projects[index - 1].isHighlight) { %>
+        <section class="section section__projects">
+          <div class="content projects-wrapper">
+      <% } %>
 
-      <div class="content">
-        <% htmlWebpackPlugin.options.projects.forEach(function(project) { %>
-          <% if(project.isHighlight) { %>
-            <% include src/partials/project_highlighted %>
-          <% } %>
-        <% }) %>
-      </div>
-    </section>
+      <% if(!project.isHighlight) { %>
+        <% include src/partials/project %>
+      <% } %>
 
-    <section class="section section__projects">
-      <div class="content projects-wrapper">
-        <% htmlWebpackPlugin.options.projects.forEach(function(project) { %>
-          <% if(!project.isHighlight) { %>
-            <% include src/partials/project %>
-          <% } %>
-        <% }) %>
-        </div>
-    </section>
+      <% if(index === htmlWebpackPlugin.options.projects.length - 1 || index < htmlWebpackPlugin.options.projects.length - 1 && htmlWebpackPlugin.options.projects[index + 1].isHighlight) { %>
+          </div>
+        </section>
+      <% } %>
 
+    <% }) %>
     <% include src/partials/footer %>
   </body>
 </html>
