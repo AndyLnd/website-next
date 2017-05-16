@@ -66,6 +66,14 @@ module.exports = {
       description: pageDescription,
       siteUrl: 'https://webkid.io/imprint'
     }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      filename: 'styleguide.html',
+      template: Path.resolve(__dirname, 'src/styleguide.ejs'),
+      title: pageTitle,
+      description: pageDescription,
+      siteUrl: 'https://webkid.io/styleguide'
+    }),
     new CopyWebpackPlugin([
       { from: 'src/static', to: 'static' }
     ])

@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>webkid styleguide</title>
-</head>
+  <% include src/partials/head %>
 <body>
-  
+  <section class="section section--intro">
+    <% include src/partials/header %>
+
+    <div class="headline content">
+      <h1>Webkid Styleguide</h1>
+      <h2>Example Components and Styles for webkid.io</h2>
+    </div>
+  </section>
+
+  <section class="section section--intro-overlap">
+    <div class="content box-shadow--large">
+      <div class="swipe-wrap">
+        <div class="video-teaser slide">
+          <div class="slider-gradient"></div>
+          <div class="video-teaser--content">
+            <div class="small-teaser--headline video-teaser--headline">Video Teaser Headline</div>
+            <div class="small-teaser--description text">Teaser description</div>
+
+            <a href="/portfolio" class="video-teaser--button">View portfolio</a>
+          </div>
+
+          <img src="https://placehold.it/1000x563"/>
+
+      </div>
+
+      <ul class="slider-controls"></ul>
+    </div>
+  </section>
+
+  <section class="section section--typography">
+    <div class="content">
+      <div class="divider">typography</div>
+      <h1>h1: Heading 1</h1>
+      <h2>h2: Heading 2</h2>
+      <h3>h3: Heading 3</h3>
+      <h4>h4: Heading 4</h4>
+      <h5>h5: Heading 5</h5>
+      <h6>h6: Heading 6</h5>
+      <p>Paragraph: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque vitae quia.</p>
+    </div>
+  </section>
+
+  <section class="section section--colors">
+    <div class="content">
+      <div class="divider">colors</div>
+      <div class="colors-wrapper">
+        <div class="colors--item">
+          <span class="colors--shape" style="background-color: #2F80ED;"></span>
+          <h4>primary0: #2F80ED</h4>
+        </div>
+        <div class="colors--item">
+          <span class="colors--shape" style="background-color: #6CB2FF;"></span>
+          <h4>primary25: #6CB2FF</h4>
+        </div>
+        <div class="colors--item">
+          <span class="colors--shape" style="background-color: #6CB2FF;"></span>
+          <h4>primary50: #7B94F0</h4>
+        </div>
+        <div class="colors--item">
+          <span class="colors--shape" style="background-color: #6CB2FF;"></span>
+          <h4>$primary75: #8879E3</h4>
+        </div>
+        <div class="colors--item">
+          <span class="colors--shape" style="background-color: #6CB2FF;"></span>
+          <h4>primary100: #8037C3</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <% include src/partials/footer %>
+
 </body>
 </html>
