@@ -1,7 +1,8 @@
 {
   "name": "website-next",
   "version": "1.0.0",
-  "description": "",
+  "title": "WEBKID is a group of data visualization experts who produce complex, data-driven and interactive applications.",
+  "description": "WEBKID brings your data to life. We produce interactive web experiences with the latest technology that work in every browser and on every device.",
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server --config  webpack.config.dev.js --watch --colors --no-info",

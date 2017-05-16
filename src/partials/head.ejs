@@ -1,34 +1,36 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="WEBKID brings your data to life. We produce interactive web experiences with the latest technology that work in every browser and on every device.">
+  <meta name="description" content="<%=htmlWebpackPlugin.options.description%>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title><% if(title) { %><%=title +' - '%><% }%>WEBKID is a group of data visualization experts who produce complex, data-driven and interactive applications</title>
+  <title><%=htmlWebpackPlugin.options.title%></title>
 
   <!-- Schema.org markup for Google+ -->
   <meta itemprop="name" content="WEBKID">
-  <meta itemprop="description" content="WEBKID brings your data to life. We produce interactive web experiences with the latest technology that work in every browser and on every device.">
+  <meta itemprop="description" content="<%=htmlWebpackPlugin.options.description%>">
   <meta itemprop="image" content="https://www.webkid.io/images/teaser_large.png">
 
   <!-- Twitter Card data -->
   <meta name="twitter:site" content="@webk1d">
-  <meta name="twitter:title" content="WEBKID">
-  <meta name="twitter:description" content="WEBKID brings your data to life. We produce interactive web experiences with the latest technology that work in every browser and on every device.">
+  <meta name="twitter:title" content="<%=htmlWebpackPlugin.options.title%>">
+  <meta name="twitter:description" content="<%=htmlWebpackPlugin.options.description%>">
   <meta name="twitter:creator" content="@webk1d">
   <!-- Twitter summary card with large image must be at least 280x150px -->
   <meta name="twitter:image:src" content="https://www.webkid.io/images/teaser.png">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="WEBKID" />
+  <meta property="og:title" content="<%=htmlWebpackPlugin.options.title%>" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.webkid.io/" />
   <meta property="og:image" content="https//webkid.io/images/teaser_large.png" />
-  <meta property="og:description" content="WEBKID brings your data to life. We produce interactive web experiences with the latest technology that work in every browser and on every device." />
+  <meta property="og:description" content="<%=htmlWebpackPlugin.options.description%>" />
   <meta property="og:site_name" content="WEBKID" />
 
+  <!-- Typekit -->
   <script src="https://use.typekit.net/wji4bpj.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
   <!-- Piwik -->
   <script type="text/javascript">
     var _paq = _paq || [];
