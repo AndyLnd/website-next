@@ -20,9 +20,8 @@
   </section>
 
   <section class="section section--intro-overlap">
-    <div id="slider" class="swipe content box-shadow--large">      
+    <div id="slider" class="swipe content box-shadow--large">
       <div class="swipe-wrap">
-        
         <div class="video-teaser slide">
           <div class="slider-gradient"></div>
           <div class="video-teaser--content">
@@ -130,8 +129,8 @@
       <h3>Latest Blogposts</h3>
 
       <% for(var i = 0; i < 3; i++) { %>
-        <a href="//blog.webkid.io" class="blog-teaser">
-          <div class="blog-teaser__image box-shadow--large"></div>
+        <a href="<%=htmlWebpackPlugin.options.blogposts[i].link%>" target="_blank" class="blog-teaser">
+          <div class="blog-teaser__image box-shadow--large" style="background-image: url('<%=htmlWebpackPlugin.options.blogposts[i].image %>')"></div>
           <div class="blog-teaser__content">
             <div class="blog-date"><%=htmlWebpackPlugin.options.blogposts[i].date%></div>
             <div class="blog-headline"><%=htmlWebpackPlugin.options.blogposts[i].title%></div>
