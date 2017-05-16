@@ -12,6 +12,9 @@
     position relative
     overflow hidden
 
+.slide
+  background: $white
+
 .slider-controls
   position: absolute
   bottom: 5px
@@ -63,6 +66,19 @@
   width: 100%
   z-index: 5
   bottom: 0
+
+.bg-gif, .bg-video
+  position: absolute
+  width: 100%
+  top: 0
+  left: 0
+  opacity: 0
+
+.slide.playing
+  .bg-gif, .bg-video
+    opacity: 1
+  .bg-placeholder
+    opacity: 0
 
 @media screen and (min-width: 768px)
   .video-teaser--content
