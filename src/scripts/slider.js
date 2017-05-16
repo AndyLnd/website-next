@@ -22,6 +22,11 @@ class Slider {
 
     this.init();
     this.renderSlideControls();
+
+    const slideIndex = this.slider.getPos();
+    const currentSlide = this.getSlideByIndex(slideIndex);
+
+    this.onSlideChange(slideIndex, currentSlide);
   }
 
   init() {
@@ -29,11 +34,6 @@ class Slider {
       draggable: true,
       callback: this.onSlideChange
     });
-
-    const slideIndex = this.slider.getPos();
-    const currentSlide = this.getSlideByIndex(slideIndex);
-
-    this.onSlideChange(slideIndex, currentSlide);
   }
 
   renderSlideControls() {
@@ -42,6 +42,8 @@ class Slider {
 
     for (let i = 0; i < slideCount; i++) {
       const li = document.createElement('li');
+
+      li.setAttribute('data-index', i);
       li.onclick = () => this.changeSlide(i);
 
       controlsContainer.appendChild(li);
@@ -77,6 +79,14 @@ class Slider {
 
     video.style.display = 'block';
     video.load();
+
+    const activeSlide = document.querySelector('.slider-controls li.active');
+
+    if(activeSlide) {
+      activeSlide.classList.remove('active');
+    }
+
+    document.querySelector(`.slider-controls li[data-index="${slideIndex}"]`).classList.add('active');
   }
 
   onSlideChangeGif(slideIndex, slide) {
@@ -89,6 +99,14 @@ class Slider {
     }
 
     gif.style.display = 'block';
+
+    const activeSlide = document.querySelector('.slider-controls li.active');
+
+    if(activeSlide) {
+      activeSlide.classList.remove('active');
+    }
+
+    document.querySelector(`.slider-controls li[data-index="${slideIndex}"]`).classList.add('active');
   }
 
   getSlideByIndex(slideIndex) {
