@@ -1,158 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>webkid</title>
-  <script src="https://use.typekit.net/wji4bpj.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
-</head>
-<body>
-  <section class="section section--intro">
+  <% var title= ''; %>
+  <% include src/partials/head %>
+  <body>
+    <section class="section section--intro">
 
-    <% include src/partials/header %>
+      <% include src/partials/header %>
 
-    <div class="headline content">
-      <h1>The Data Visualization Agency</h1>
-      <h2>webkid is a group of data visualization experts who produce complex, data-driven and interactive applications</h2>
-    </div>
-  </section>
-
-  <section class="section section--intro-overlap">
-    <div id="slider" class="swipe content box-shadow--large">
-      <div class="swipe-wrap">
-        <div class="video-teaser slide">
-          <div class="slider-gradient"></div>
-          <div class="video-teaser--content">
-            <div class="small-teaser--headline video-teaser--headline">0 Berlin's new skyline</div>
-            <div class="small-teaser--description text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae corrupti saepe sequi temporibus aliquam quaerat repellendus rem explicabo reprehenderit sunt voluptatum distinctio officia magni iure, harum placeat aut ea natus!</div>
-
-            <a href="/portfolio" class="video-teaser--button">View portfolio</a>
-          </div>
-
-          <img class="bg-placeholder" src="https://placehold.it/1000x563"/>
-
-          <img class="bg-gif" data-src="static/teaser/teaser-1.gif"/>
-
-          <video class="bg-video" autoplay loop muted>
-            <source data-src="static/teaser/teaser-1.mp4" type="video/mp4" />
-          </video>
-        </div>
-
-        <div class="video-teaser slide">
-          <div class="slider-gradient"></div>
-          <div class="video-teaser--content">
-            <div class="small-teaser--headline video-teaser--headline">1 Berlin's new skyline</div>
-            <div class="small-teaser--description text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae corrupti saepe sequi temporibus aliquam quaerat repellendus rem explicabo reprehenderit sunt voluptatum distinctio officia magni iure, harum placeat aut ea natus!</div>
-            <a href="/portfolio" class="video-teaser--button">View portfolio</a>
-          </div>
-
-          <img class="bg-placeholder" src="https://placehold.it/1000x563"/>
-
-          <img class="bg-gif" data-src="https://i.makeagif.com/media/6-18-2015/t4YYpw.gif"/>
-
-          <video class="bg-video" autoplay loop muted>
-            <source data-src="https://d2v9y0dukr6mq2.cloudfront.net/video/preview/AHWh2aE/after-effects-cs4-template-abstract-grid-presentation_7ysj02eb__p__PM.mp4" type="video/mp4" />
-          </video>
-        </div>
-
+      <div class="headline content">
+        <h1>The Data Visualization Agency</h1>
+        <h2>webkid is a group of data visualization experts who produce complex, data-driven and interactive applications</h2>
       </div>
+    </section>
 
-      <ul class="slider-controls"></ul>
-    </div>
-  </section>
+    <section class="section section--intro-overlap">
+      <div id="slider" class="swipe content box-shadow--large">
+        <div class="swipe-wrap">
+          <div class="video-teaser slide">
+            <div class="slider-gradient"></div>
+            <div class="video-teaser--content">
+              <div class="small-teaser--headline video-teaser--headline">0 Berlin's new skyline</div>
+              <div class="small-teaser--description text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae corrupti saepe sequi temporibus aliquam quaerat repellendus rem explicabo reprehenderit sunt voluptatum distinctio officia magni iure, harum placeat aut ea natus!</div>
 
-  <section class="section section--portfolio-link">
-    <div class="content">
-      <a href="/portfolio" class="portfolio-button">View our portfolio</a>
-    </div>
-  </section>
+              <a href="/portfolio" class="video-teaser--button">View portfolio</a>
+            </div>
 
-  <section class="section section--projects">
-    <div class="small-teaser-wrapper content">
-      <a href="/portfolio" class="small-teaser">
-        <div class="small-teaser--image box-shadow--large" style="background-image:url('static/images/teaser-1.jpg')"></div>
-        <div class="small-teaser--headline">How Europe's population is growing</div>
-        <p class="small-teaser--description">An interactive map of Europe that show where its population is growing - and where it is declining.</p>
-      </a>
-      <a href="/portfolio" class="small-teaser">
-        <div class="small-teaser--image box-shadow--large" style="background-image:url('static/images/teaser-2.jpg')"></div>
-        <div class="small-teaser--headline">Berlin Noisemap</div>
-        <p class="small-teaser--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est sunt aspernatur delectus natus eaque odit optio?</p>
-      </a>
-      <a href="/portfolio" class="small-teaser">
-        <div class="small-teaser--image box-shadow--large" style="background-image:url('static/images/teaser-3.jpg')"></div>
-        <div class="small-teaser--headline">Berlin Noisemap</div>
-        <p class="small-teaser--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est sunt aspernatur delectus natus eaque odit optio? Ipsa, officiis excepturi tempore ratione illo voluptas</p>
-      </a>
-    </div>
-  </section>
+            <img class="bg-placeholder" src="https://placehold.it/1000x563"/>
 
-  <section class="section section--clients">
-    <div class="content">
-      <div class="divider">clients</div>
-      <div class="clients">
-        <img src="static/images/bmo.svg"/>
-        <img src="static/images/nzz.svg"/>
-        <img src="static/images/b1.svg"/>
-        <img src="static/images/SRF.svg"/>
-        <img src="static/images/correctiv.svg"/>
-        <img src="static/images/hessenschau.svg"/>
-        <img src="static/images/taz.svg"/>
-        <img src="static/images/oecd.svg"/>
-        <img src="static/images/welt.svg"/>
-        <img src="static/images/wetter.svg"/>
-      </div>
-    </div>
-  </section>
+            <img class="bg-gif" data-src="static/teaser/teaser-1.gif"/>
 
-  <section class="section section--contact" id="contact">
-    <div class="content">
-      <h3>How can we help you?</h3>
-
-      <p>Besides data visualizations and maps we are also offering development of complex web apps, mobile optimizations and workshops. Just get in contact and bla blubb.</p>
-
-      <form name="webkid-contact" class="contact-form" netlify-honeypot="bot-field" netlify>
-
-        <div class="input-wrapper">
-          <label class="label text" for="email">Email</label>
-          <input class="input" type="text" name="email" placeholder="your email..." />
-        </div>
-
-        <div class="input-wrapper">
-          <label class="label text" for="email">Message</label>
-          <textarea class="input textarea" name="message" placeholder="your message..."></textarea>
-        </div>
-
-        <div class="input-wrapper">
-          <button class="button button--submit" type="submit">submit</button>
-        </div>
-
-      </form>
-    </div>
-  </section>
-
-  <section class="section section--blog">
-    <div class="content">
-      <h3>Latest Blogposts</h3>
-
-      <% for(var i = 0; i < 3; i++) { %>
-        <a href="<%=htmlWebpackPlugin.options.blogposts[i].link%>" target="_blank" class="blog-teaser">
-          <div class="blog-teaser__image box-shadow--large" style="background-image: url('<%=htmlWebpackPlugin.options.blogposts[i].image %>')"></div>
-          <div class="blog-teaser__content">
-            <div class="blog-date"><%=htmlWebpackPlugin.options.blogposts[i].date%></div>
-            <div class="blog-headline"><%=htmlWebpackPlugin.options.blogposts[i].title%></div>
-            <p class="blog-introtext"><%=htmlWebpackPlugin.options.blogposts[i].text%>...</p>
+            <video class="bg-video" autoplay loop muted>
+              <source data-src="static/teaser/teaser-1.mp4" type="video/mp4" />
+            </video>
           </div>
+
+          <div class="video-teaser slide">
+            <div class="slider-gradient"></div>
+            <div class="video-teaser--content">
+              <div class="small-teaser--headline video-teaser--headline">1 Berlin's new skyline</div>
+              <div class="small-teaser--description text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae corrupti saepe sequi temporibus aliquam quaerat repellendus rem explicabo reprehenderit sunt voluptatum distinctio officia magni iure, harum placeat aut ea natus!</div>
+              <a href="/portfolio" class="video-teaser--button">View portfolio</a>
+            </div>
+
+            <img class="bg-placeholder" src="https://placehold.it/1000x563"/>
+
+            <img class="bg-gif" data-src="https://i.makeagif.com/media/6-18-2015/t4YYpw.gif"/>
+
+            <video class="bg-video" autoplay loop muted>
+              <source data-src="https://d2v9y0dukr6mq2.cloudfront.net/video/preview/AHWh2aE/after-effects-cs4-template-abstract-grid-presentation_7ysj02eb__p__PM.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+        </div>
+
+        <ul class="slider-controls"></ul>
+      </div>
+    </section>
+
+    <section class="section section--portfolio-link">
+      <div class="content">
+        <a href="/portfolio" class="portfolio-button">View our portfolio</a>
+      </div>
+    </section>
+
+    <section class="section section--projects">
+      <div class="small-teaser-wrapper content">
+        <a href="/portfolio" class="small-teaser">
+          <div class="small-teaser--image box-shadow--large" style="background-image:url('static/images/teaser-1.jpg')"></div>
+          <div class="small-teaser--headline">How Europe's population is growing</div>
+          <p class="small-teaser--description">An interactive map of Europe that show where its population is growing - and where it is declining.</p>
         </a>
-      <% } %>
+        <a href="/portfolio" class="small-teaser">
+          <div class="small-teaser--image box-shadow--large" style="background-image:url('static/images/teaser-2.jpg')"></div>
+          <div class="small-teaser--headline">Berlin Noisemap</div>
+          <p class="small-teaser--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est sunt aspernatur delectus natus eaque odit optio?</p>
+        </a>
+        <a href="/portfolio" class="small-teaser">
+          <div class="small-teaser--image box-shadow--large" style="background-image:url('static/images/teaser-3.jpg')"></div>
+          <div class="small-teaser--headline">Berlin Noisemap</div>
+          <p class="small-teaser--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est sunt aspernatur delectus natus eaque odit optio? Ipsa, officiis excepturi tempore ratione illo voluptas</p>
+        </a>
+      </div>
+    </section>
 
-    </div>
+    <section class="section section--clients">
+      <div class="content">
+        <div class="divider">clients</div>
+        <div class="clients">
+          <img src="static/images/bmo.svg"/>
+          <img src="static/images/nzz.svg"/>
+          <img src="static/images/b1.svg"/>
+          <img src="static/images/SRF.svg"/>
+          <img src="static/images/correctiv.svg"/>
+          <img src="static/images/hessenschau.svg"/>
+          <img src="static/images/taz.svg"/>
+          <img src="static/images/oecd.svg"/>
+          <img src="static/images/welt.svg"/>
+          <img src="static/images/wetter.svg"/>
+        </div>
+      </div>
+    </section>
 
-  </section>
+    <section class="section section--contact" id="contact">
+      <div class="content">
+        <h3>How can we help you?</h3>
 
-  <% include src/partials/footer %>
+        <p>Besides data visualizations and maps we are also offering development of complex web apps, mobile optimizations and workshops. Just get in contact and bla blubb.</p>
 
-</body>
+        <form name="webkid-contact" class="contact-form" netlify-honeypot="bot-field" netlify>
+
+          <div class="input-wrapper">
+            <label class="label text" for="email">Email</label>
+            <input class="input" type="text" name="email" placeholder="your email..." />
+          </div>
+
+          <div class="input-wrapper">
+            <label class="label text" for="email">Message</label>
+            <textarea class="input textarea" name="message" placeholder="your message..."></textarea>
+          </div>
+
+          <div class="input-wrapper">
+            <button class="button button--submit" type="submit">submit</button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+    <section class="section section--blog">
+      <div class="content">
+        <h3>Latest Blogposts</h3>
+
+        <% for(var i = 0; i < 3; i++) { %>
+          <a href="<%=htmlWebpackPlugin.options.blogposts[i].link%>" target="_blank" class="blog-teaser">
+            <div class="blog-teaser__image box-shadow--large" style="background-image: url('<%=htmlWebpackPlugin.options.blogposts[i].image %>')"></div>
+            <div class="blog-teaser__content">
+              <div class="blog-date"><%=htmlWebpackPlugin.options.blogposts[i].date%></div>
+              <div class="blog-headline"><%=htmlWebpackPlugin.options.blogposts[i].title%></div>
+              <p class="blog-introtext"><%=htmlWebpackPlugin.options.blogposts[i].text%>...</p>
+            </div>
+          </a>
+        <% } %>
+
+      </div>
+
+    </section>
+
+    <% include src/partials/footer %>
+
+  </body>
 </html>
