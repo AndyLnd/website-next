@@ -75,6 +75,7 @@ class Slider {
       slide.classList.add('playing');
     };
 
+    video.style.display = 'block';
     video.load();
   }
 
@@ -86,6 +87,8 @@ class Slider {
     gif.onload = () => {
       slide.classList.add('playing');
     }
+
+    gif.style.display = 'block';
   }
 
   getSlideByIndex(slideIndex) {
