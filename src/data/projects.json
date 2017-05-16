@@ -1,112 +1,367 @@
 [
     {
-        "title": "NOISEMAP BERLIN",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Magnam, ea cumque eveniet numquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Magnam, ea cumque eveniet numquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Magnam, ea cumque eveniet numquam.",
-        "createdAt": "2015/01/01",
+        "title": "It was not always in the East - Where Germany votes for the right-wing.",
+        "description": "It's a common these that mostly in Eastern Germany people vote for right wing parties. To show the development over the last years, we created an interactive map that shows the results of elections on a highly detailed level. To give deeper insights, the visualisation differentiates right wing parties are classified as extreme right or right populist.",
+        "url": "https://interaktiv.morgenpost.de/wo-deutschland-rechts-waehlt/",
+        "createdAt": "2017/01/23",
         "image": "/static/images/teaser-2.jpg",
+        "technology": "",
+        "work": "",
+        "client": "Berliner Morgenpost",
         "isHighlight": true
     },
     {
-        "title": "Hello",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-        "createdAt": "2015/01/07",
+        "title": "Federal Election in Germany",
+        "description": "An interactive chart that shows the development of election polls in Germany over the last couple of years.",
+        "url": "https://www.nzz.ch/international/deutschland-im-wahljahr/bundestagswahl-der-aktuelle-stand-der-umfragen-im-ueberblick-union-spd-afd-linke-gruene-fdp-ld.146646",
+        "createdAt": "2017/03/21",
+        "client": "NZZ",
         "image": "/static/images/teaser-2.jpg"
     },
     {
-        "title": "Test 123",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-        "createdAt": "2016/01/01",
+        "title": "Going for Growth",
+        "description": "Based on the data of OECD's 'Going for Growth' report 2017, this interactive map shows structural reforms in different countries.",
+        "url": "http://www.compareyourcountry.org/going-for-growth",
+        "createdAt": "2017/03/17",
+        "client": "OECD",
         "image": "/static/images/teaser-2.jpg"
     },
     {
-        "title": "Test 123",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-        "createdAt": "2015/01/05",
+        "title": "The Best of 2016",
+        "description": "Detailed overview about a selection of the NZZ editors' favourite articles written in 2016 with comments.",
+        "url": "https://www.nzz.ch/jahresrueckblick-2016/das-beste-aus-2016-die-nzz-redaktion-praesentiert-ihre-favoriten-ld.132717",
+        "createdAt": "2016/12/14",
+        "client": "NZZ",
         "image": "/static/images/teaser-2.jpg"
     },
     {
-        "title": "Test 123",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-        "createdAt": "2015/05/01",
+        "title": "PISA 2015",
+        "description": "This interactive map let's the user explore the results of the PISA report 2015 by OECD and provides detailed information about the different indicators per country.",
+        "url": "http://compareyourcountry.org/pisa",
+        "createdAt": "2016/12/06",
+        "client": "OECD",
         "image": "/static/images/teaser-2.jpg"
     },
     {
-        "title": "Hello",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-        "createdAt": "2015/07/01",
+        "title": "Berlin Coalition Agreement",
+        "description": "By visually highlighting important sections and providing additional information, the agreement becomes more compehensible.",
+        "url": "https://interaktiv.morgenpost.de/koalitionsvertrag-berlin-2016/",
+        "createdAt": "2016/11/21",
+        "client": "Berliner Morgenpost",
         "image": "/static/images/teaser-2.jpg"
     },
     {
-        "title": "Test 123",
-        "description": "GLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-        "createdAt": "2015/012/01",
+        "title": "Berlin's Representatives",
+        "description": "An overview of the newly elected representatives that can be filtered by different parameters like age, district or political experience.",
+        "url": "https://interaktiv.morgenpost.de/abgeordnete-in-berlin/",
+        "createdAt": "2016/10/27",
+        "client": "Berliner Morgenpost",
         "image": "/static/images/teaser-2.jpg"
     },
     {
-        "title": "Test 123",
-        "description": "Github Hook works",
-        "createdAt": "2014/01/01",
+        "title": "Berlin Marathon",
+        "description": "Displaying all runners of the Berlin Marathon 2016, this map unfolds the detailed course of the race.",
+        "url": "http://interaktiv.morgenpost.de/berlin-marathon-2016/",
+        "createdAt": "2016/09/25",
+        "client": "Berliner Morgenpost",
         "image": "/static/images/teaser-2.jpg"
     },
     {
-        "title": "Test 123",
-        "description": "Github Hook works",
-        "createdAt": "2017/01/01",
+        "title": "Berlin Election 2016",
+        "description": "This map breaks down the results of the 2016 election in Berlin and provides detailed information on ward level.",
+        "url": "http://berlinwahlkarte2016.morgenpost.de/",
+        "createdAt": "2016/09/19",
+        "client": "Berliner Morgenpost",
         "image": "/static/images/teaser-2.jpg"
     },
     {
-        "title": "Hello",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-        "createdAt": "2015/11/01",
+        "title": "The formula for electoral victory",
+        "description": "To show the conditions that help parties to win an election, we created a decision-tree-like visualisation with the Berliner Morgenpost.",
+        "url": "http://interaktiv.morgenpost.de/wahlsieg-formel-berlin/",
+        "createdAt": "2016/09/20",
+        "client": "Berliner Morgenpost",
         "image": "/static/images/teaser-2.jpg"
     },
     {
-        "title": "Test 123",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-        "createdAt": "2015/01/23",
+        "title": "Voters transition in Berlin",
+        "description": "This interactive sankey chart gives insights into the migration of voters in Berlin during the 2016 election.",
+        "url": "http://interaktiv.morgenpost.de/waehlerwanderung-berlin-2016/",
+        "createdAt": "2016/09/18",
+        "client": "Berliner Morgenpost",
         "image": "/static/images/teaser-2.jpg"
     },
     {
-        "title": "Test 123",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-        "createdAt": "2015/07/01",
+        "title": "These candidates live furthest away from their voters",
+        "description": "Some of the candidates for the Berlin House of Representatives live far away from their election district. This project shows, who they are.",
+        "url": "http://interaktiv.morgenpost.de/waehlernaehe-berlin/",
+        "createdAt": "2016/09/08",
+        "client": "Berliner Morgenpost",
         "image": "/static/images/teaser-2.jpg"
     },
     {
-        "title": "NOISEMAP BERLIN",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Magnam, ea cumque eveniet numquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Magnam, ea cumque eveniet numquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Magnam, ea cumque eveniet numquam.",
-        "createdAt": "2015/03/01",
+        "title": "Huh!",
+        "description": "Support Iceland, the underdog of EURO16, with a 'Huh!'",
+        "url": "http://interaktiv.morgenpost.de/huh/",
+        "createdAt": "2016/06/30",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "Slow travel in Switzerland",
+        "description": "Set a starting point for your trip in Switzerland and find out how far you can travel in an hour on your bike or walking.",
+        "url": "https://www.nzz.ch/storytelling/ausflugplaner-interaktive-karte-schweiz-so-weit-kommen-sie-zu-fuss-oder-mit-dem-velo-ld.106808",
+        "createdAt": "2016/07/22",
+        "client": "NZZ",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "Your quickest way to the lake",
+        "description": "A useful map that helps Berliners to find the quickest way from any starting point in the city to the closest lake.",
+        "url": "http://interaktiv.morgenpost.de/badestellen-berlin-brandenburg/",
+        "createdAt": "2016/07/15",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },{
+        "title": "Who will win the European Championship?",
+        "description": "The NZZ Championship Oracle is a data-driven application that was created for the European Championship 2016. Based on different parameters that can be set by the user, the app creates a prediction for the possible outcome of the Championship. The algorithm for the calculation of the result can be found on github.",
+        "url": "https://www.nzz.ch/sport/euro-orakel-wer-wird-europameister-ld.17757#/",
+        "createdAt": "2016/05/19",
         "image": "/static/images/teaser-2.jpg",
+        "technology": "",
+        "work": "",
+        "client": "NZZ",
         "isHighlight": true
     },
     {
-        "title": "Test 123",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+        "title": "These are Germany's greenest cities",
+        "description": "An analysis of satellite images of Germany helped to create a ranking of the greenest cities in the country and a beautiful map.",
+        "url": "http://interaktiv.morgenpost.de/gruenste-staedte-deutschlands/",
+        "createdAt": "2016/05/10",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "How are refugee routes to Europe changing?",
+        "description": "Have a look at this timeline to see the correlations between political events and migrants' paths to Europe on a map.",
+        "url": "http://www.taz.de/fluchtrouten/",
+        "createdAt": "2016/04/11",
+        "client": "taz",
+        "image": "/static/images/teaser-2.jpg"
+    },{
+        "title": "That is how Swiss universities are linked to third parties",
+        "description": "A lot of universities in Switzerlanf maintain relationships to third party influencers. This visualisation shows all the links between universities and professors to companies. It gives an overview about the relations in each university and detailed information about each connection.",
+        "url": "http://www.srf.ch/news/interaktive-grafik-alle-interessenbindungen-auf-einen-blick",
+        "createdAt": "2016/04/02",
+        "image": "/static/images/teaser-2.jpg",
+        "technology": "",
+        "work": "",
+        "client": "SRF",
+        "isHighlight": true
+    },
+    {
+        "title": "How are refugee routes to Europe changing?",
+        "description": "Have a look at this timeline to see the correlations between political events and migrants' paths to Europe on a map.",
+        "url": "http://www.taz.de/fluchtrouten/",
+        "createdAt": "2016/04/11",
+        "client": "taz",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "Who is fighting whom in Syria?",
+        "description": "This simplufied visualization shows the complexity of the situation in Syria.",
+        "url": "http://interactive.webkid.io/who-is-fighting-whom-in-syria/",
+        "createdAt": "2016/04/06",
+        "client": "webkid",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "This is how refugees live in Berlin",
+        "description": "A VR project that shows different accomodations for refugees in Berlin.",
+        "url": "http://interaktiv.morgenpost.de/so-leben-fluechtlinge-in-berlin/",
+        "createdAt": "2016/04/04",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "Cycleway Check",
+        "description": "Inspired by the idea to establish cycleways in Berlin's main streets by referendum, this map shows where bike path's are missing.",
+        "url": "http://interaktiv.morgenpost.de/radwege-in-berlin/",
+        "createdAt": "2016/03/21",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "In the Streets of Zurich",
+        "description": "This tool let's you explore each of Zurich's 2505 streets and gives information about its name and history.",
+        "url": "http://interaktiv.morgenpost.de/radwege-in-berlin/",
+        "createdAt": "2016/03/07",
+        "client": "NZZ",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "Where do Berliners really come from?",
+        "description": "Native Berliners are a minority in Germany's capital. This map helps you to find out, where people living in Berlin really come from.",
+        "url": "http://interaktiv.morgenpost.de/berliner-zugezogenen-atlas/",
+        "createdAt": "2016/01/21",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "UN Climate Change Conference: The Factions",
+        "description": "The 195 states participating in the Paris climate change conference have different interests. This visualization shows you, what they are.",
+        "url": "https://correctiv.org/recherchen/klima/artikel/2015/11/30/klimafraktionen/",
+        "createdAt": "2015/11/30",
+        "client": "Correctiv",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "Berlin’s new Skyline - Where the city grows in height",
+        "description": "To show how fast Berlin is growing, we created an interactive 3D map of the city. It let's you explore the plans for new buildings and gives you an idea of how Berlin will change. Also, you can go on a time travel tour through town and compare the skylines of 1990, today and the future.",
+        "url": "http://interaktiv.morgenpost.de/berlins-neue-skyline/",
+        "createdAt": "2015/11/05",
+        "image": "/static/images/teaser-2.jpg",
+        "technology": "",
+        "work": "",
+        "client": "Berliner Morgenpost",
+        "isHighlight": true
+    },
+    {
+        "title": "Einheitsreise",
+        "description": "More than 25 years ago Germany was reunited. Have a look at this interactive journey, to see how united the country is today.",
+        "url": "http://einheitsreise.morgenpost.de/",
+        "createdAt": "2015/10/01",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "Noise-map Berlin - How noisy is your neighbourhood?",
+        "description": "The noise level in some parts of Berlin is designated hazardous to health. In this project we created a detailed interactive map of the city that shows where the noise level is particularly high at a glance. It also provides detailed information about the different sources of noise such as road traffic, public transportation and airplanes.",
+        "url": "http://interaktiv.morgenpost.de/laermkarte-berlin/",
+        "createdAt": "2015/09/22",
+        "image": "/static/images/teaser-2.jpg",
+        "technology": "",
+        "work": "",
+        "client": "Berliner Morgenpost",
+        "isHighlight": true
+    },
+    {
+        "title": "Where is Germany receiving refugees?",
+        "description": "A data visualiszation that shows where the refugees in Germany come from and where they're accommodated.",
+        "url": "http://interaktiv.morgenpost.de/fluechtlinge-in-deutschland/",
+        "createdAt": "2015/09/17",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "Refugees in Berlin",
+        "description": "In 2016, there were less refugees in Berlin than before the refugee crisis. This set of graphics gives you detailed insights.",
+        "url": "http://interaktiv.morgenpost.de/woher-berlins-fluechtlinge-kommen/",
+        "createdAt": "2015/09/11",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "10 out of 800,000",
+        "description": "In this project, ten of the thousands of refugees living in Berlin and Brandenburg are telling their stories.",
+        "url": "http://interaktiv.morgenpost.de/fluechtlinge-berlin/",
+        "createdAt": "2015/08/24",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "This is how long you have to pay for a freehold flat",
+        "description": "Using this tool, you can calculate the amount of time needed to pay for your appartment by setting your income and the flat size.",
+        "url": "http://interaktiv.morgenpost.de/wohnungskauf-in-deutschland/",
+        "createdAt": "2015/12/10",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "Where Europe's populatin grows and shrinks",
+        "description": "This map of Europe shows information about the population on a very detailed level and helps to compare countries based on different indicators.",
+        "url": "http://interaktiv.morgenpost.de/europakarte/#5/48.415/11.294/de",
+        "createdAt": "2015/06/29",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "Champions League 2015",
+        "description": "See the players of the two teams playing the Champions League 2015 final at a glance and rank them by various parameters.",
+        "url": "http://interaktiv.morgenpost.de/champions-league-in-berlin/",
+        "createdAt": "2015/05/29",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "D3-extended",
+        "description": "Extend the famous d3 library for data visualizations with useful jQuery-like helper functions.",
+        "url": "https://github.com/wbkd/d3-extended",
+        "createdAt": "2015/03/25",
+        "client": "webkid",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "The End of World War II in Berlin",
+        "description": "Survivors are telling how they experienced the end of WWII in Berlin.",
+        "url": "http://interaktiv.morgenpost.de/mein-kriegsende-in-berlin/",
+        "createdAt": "2015/05/05",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "Berlin 1945 and today",
+        "description": "See how Berlin has changed since the end of World War II by playing around with this intercative photo gallery.",
+        "url": "http://interaktiv.morgenpost.de/berlin-1945-2015/",
+        "createdAt": "2015/04/30",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "Flat Prices in Berlin - Where can you afford to live?",
+        "description": "This project shows a personalized Berlin map of areas you can afford to live in.",
+        "url": "http://interaktiv.morgenpost.de/wohnungspreis-karte-berlin/",
+        "createdAt": "2015/04/24",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "TTIP - The Deal",
+        "description": "An intercative analyss of the TTIP dealers makes their background more transparent.",
+        "url": "https://correctiv.org/recherchen/ttip/dealer/",
+        "createdAt": "2015/04/15",
+        "client": "Correctiv",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "Party Donations",
+        "description": "In 2013 companies have donated 24 million euros to parties. This chart shows who gave how much money to whom.",
+        "url": "https://www.welt.de/wirtschaft/article138941661/Parteispenden-Wer-von-wem-wie-viel-Geld-bekommt.html",
+        "createdAt": "2015/04/01",
+        "client": "Welt N24",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "Measles in Berlin",
+        "description": "How have measles spread in Berlin during the last outbreak? This graphic gives you an overview.",
+        "url": "https://www.morgenpost.de/berlin/article137810495/Wie-sich-die-Masern-in-Berlin-ausbreiten.html?config=interactive",
+        "createdAt": "2015/02/27",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "istderberschonfertig.de",
+        "description": "Visit the continuously updated page to stay informed about the construction progress of the Berlin airport.",
+        "url": "http://www.istderberschonfertig.de/",
+        "createdAt": "2015/03/31",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "React Starterkit",
+        "description": "A lightweight starting point for webapplications using React.",
+        "url": "https://github.com/wbkd/react-starterkit",
         "createdAt": "2015/03/01",
-        "image": "/static/images/teaser-2.jpg"
-    },
-    {
-        "title": "Hello",
-        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-        "createdAt": "2015/01/01",
-        "image": "/static/images/teaser-2.jpg"
-    },
-    {
-        "title": "Test 123",
-        "description": "GLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-        "createdAt": "2015/06/01",
-        "image": "/static/images/teaser-2.jpg"
-    },
-    {
-        "title": "Test 123",
-        "description": "Github Hook works",
-        "createdAt": "2015/01/19",
-        "image": "/static/images/teaser-2.jpg"
-    },
-    {
-        "title": "Test 123",
-        "description": "Github Hook works",
-        "createdAt": "2015/01/18",
+        "client": "webkid",
         "image": "/static/images/teaser-2.jpg"
     }
 ]
