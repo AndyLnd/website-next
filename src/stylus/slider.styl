@@ -18,7 +18,7 @@
 .slider-controls
   position: absolute
   bottom: 5px
-  display: none
+  display: flex
   list-style: none
   padding: 0
   margin: 0 auto
@@ -29,9 +29,9 @@
   right: 0
 
   li
-    width: 10px
-    height: 10px
-    background: rgba($white, .8)
+    width: 4px
+    height: 4px
+    background: rgba($grey, .5)
     // border: 1px solid $white
     border-radius: 50%
     margin: 3px
@@ -45,28 +45,42 @@
   z-index: 10
 
   .small-teaser--headline
-    color: $white
+    color: $black
     font-size: 1.2rem
     max-width: 400px
 
-.video-teaser--button
+.video-teaser--button, .portfolio-button
   background: transparent
-  border: 2px solid $white
+  border: 2px solid $black
   border-radius: 3px
   font-family: $sans
   font-size: .8rem
-  color: $white
-  padding: .2em .8em
+  color: $black
+  padding: .4em .8em
   text-decoration: none
   transition: background .3s
+  margin-top: 1rem
+  display: none
 
   &:hover
     background: rgba(255, 255, 255, .2)
 
+.video-teaser--headline
+  text-align: center
+
+.portfolio-button
+  display: block
+  margin-top: 0
+  text-align: center
+  border-color: $primary0
+  color: $primary0
+  padding: .5rem 0
+  font-size: 1rem
+
 .slider-gradient
   position: absolute
-  height: 100px
-  background: linear-gradient(180deg, transparent, $black);
+  height: 100%
+  background: linear-gradient(0, rgba(255,255,255,1) 17%, rgba(255,255,255,0) 100%);
   width: 100%
   z-index: 5
   bottom: 0
@@ -85,21 +99,27 @@
   .bg-placeholder
     opacity: 0
 
+@media screen and (min-width: 500px)
+  .section--portfolio-link
+    display: none
+
+  .video-teaser--button
+    font-size: 1rem
+    display: inline-block
+  
+  .video-teaser--headline
+    text-align: left
+  
+  .slider-controls li
+    height: 8px
+    width: 8px
+
 @media screen and (min-width: 768px)
   .video-teaser--content
     bottom: 15px
 
     .small-teaser--headline
       font-size: 1.5rem
-
-  .slider-controls
-    display: flex
-  
-  .video-teaser--button
-    font-size: 1rem
-  
-  .slider-gradient
-    height: 150px
 
 @media screen and (min-width: 1024px)
   .video-teaser--content .small-teaser--headline
