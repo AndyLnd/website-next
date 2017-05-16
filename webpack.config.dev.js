@@ -5,8 +5,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const Utils = require('./src/helper/utils');
 
-const pageTitle = require("./package.json").title;
-const pageDescription = require("./package.json").description;
+const pageTitle = require('./package.json').title;
+const pageDescription = require('./package.json').description;
 const Projects = require('./src/data/projects.json');
 const Blogposts = require('./src/data/blogposts.json');
 
@@ -46,7 +46,8 @@ module.exports = {
       blogposts: Blogposts,
       template: Path.resolve(__dirname, 'src/index.ejs'),
       title: pageTitle,
-      description: pageDescription
+      description: pageDescription,
+      siteUrl: 'https://webkid.io/'
     }),
     new HtmlWebpackPlugin({
       inject: true,
@@ -54,14 +55,16 @@ module.exports = {
       filename: 'portfolio.html',
       template: Path.resolve(__dirname, 'src/portfolio.ejs'),
       title: pageTitle,
-      description: pageDescription
+      description: pageDescription,
+      siteUrl: 'https://webkid.io/portfolio'
     }),
     new HtmlWebpackPlugin({
       inject: true,
       filename: 'imprint.html',
       template: Path.resolve(__dirname, 'src/imprint.ejs'),
       title: pageTitle,
-      description: pageDescription
+      description: pageDescription,
+      siteUrl: 'https://webkid.io/imprint'
     }),
     new CopyWebpackPlugin([
       { from: 'src/static', to: 'static' }
