@@ -363,5 +363,125 @@
         "createdAt": "2015/03/01",
         "client": "webkid",
         "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "Interactive Police-Ticker",
+        "description": "This projects shows an attempt for a concept to present police reports on a news site.",
+        "url": "https://www.morgenpost.de/berlin/article135216607/Alle-Polizeimeldungen-sortiert-nach-Wohnort.html?config=interactive",
+        "createdAt": "2015/03/01",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "Anxiety Disorders in Europe",
+        "description": "Germany ranks amongst the top states when it comes to anxiety disorders in Europe. This map helps to compare between all countries.",
+        "url": "http://www.welt.de/angst/experten/134073141/",
+        "createdAt": "2014/12/01",
+        "client": "Welt",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "That's how rents in Berlin rise",
+        "description": "Rents are increasing everywhere. This chart shows the development in the German capital since 2009.",
+        "url": "http://www.morgenpost.de/mieten-in-berlin",
+        "createdAt": "2015/02/03",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "M29 - The Bus Line of Varieties",
+        "description": "This interactive takes you on a journey through the German capital in Berlins most famous bus line.",
+        "url": "http://interaktiv.morgenpost.de/m29/",
+        "createdAt": "2015/01/13",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "#DDJ Catalogue",
+        "description": "A growing and regularly updated collection of data-driven journalism projects from Germany.",
+        "url": "http://katalog.datenjournalismus.net/#/",
+        "createdAt": "2015/02/06",
+        "client": "",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "The Unseen",
+        "description": "In this multimedia project homeless people living in Berlin are telling their stories.",
+        "url": "http://unsichtbar.morgenpost.de/",
+        "createdAt": "2014/11/24",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "Native and New Berliners",
+        "description": "A data-analysis shows in which parts of town native and new Berliners live and how the S-Bahn ring divides the city.",
+        "url": "https://www.morgenpost.de/berlin/25-jahre-mauerfall/interaktiv/article133254520/Gebuertige-Berliner-und-Zugezogene-Wer-kam-wer-ging-wer-heute-hier-wohnt.html?config=interactive",
+        "createdAt": "2014/11/24",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "The Scar of the City",
+        "description": "1989 and today - Discover what's left of the Berlin Wall in this interactive tour through the capital.",
+        "url": "http://mauerweg.morgenpost.de/",
+        "createdAt": "2014/10/01",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "Berlin Iconfont",
+        "description": "This custom iconfont makes it easy to include the shapes of Berlin districts in your project.",
+        "url": "http://interactive.webkid.io/berlin-iconfont/",
+        "createdAt": "2014/12/18",
+        "client": "webkid",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "Car Atlas",
+        "description": "The distribution of cars in Germany visualized on an interactive map.",
+        "url": "http://www.welt.de/autoatlas/",
+        "createdAt": "2014/06/22",
+        "client": "Welt",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "Crime in Berlin - How dangerous is your neighbourhood?",
+        "description": "In 2013 more than 500.000 crimes were reported in Berlin. Use this map to see where they took place.",
+        "url": "https://www.morgenpost.de/berlin/article129650925/Kriminalitaet-in-Berlin-So-gefaehrlich-ist-Ihr-Kiez.html?config=interactive",
+        "createdAt": "2014/07/22",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "Tempelhofer Feld",
+        "description": "This 3D visualization shows what the Berlin senate is planning to build on the area of the Tempelhofer Feld.",
+        "url": "http://interaktiv.morgenpost.de/tempelhofer-feld/",
+        "createdAt": "2014/05/14",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "Flight Routes Radar",
+        "description": "Discover where the paths of low altitude flights run through Berlin.",
+        "url": "http://interaktiv.morgenpost.de/abseits-der-flugrouten/",
+        "createdAt": "2014/03/10",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "Where can you afford to live in Berlin?",
+        "description": "This map of Berlin tells you how much money you have to spend on living in differnet areas of the city.",
+        "url": "http://interaktiv.morgenpost.de/mietkarte-berlin/",
+        "createdAt": "2014/02/10",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
+    },
+    {
+        "title": "Fine Dust Monitor",
+        "description": "Based on data from eleven measure in Berlin, these self-updating visualizations show the concentration of fine dust in the city.",
+        "url": "https://www.morgenpost.de/berlin/article127420411/Wo-die-Feinstaub-Belastung-in-Berlin-am-hoechsten-ist.html?config=interactive",
+        "createdAt": "2014/06/08",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/teaser-2.jpg"
     }
 ]
