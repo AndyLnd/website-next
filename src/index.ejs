@@ -64,15 +64,8 @@
 
     <section class="section section--projects">
       <div class="small-teaser-wrapper content">
-         <% htmlWebpackPlugin.options.teasers
-          .forEach(function(teaser) { %>
-            <a href="/portfolio" class="small-teaser">
-              <div class="small-teaser--image__wrapper box-shadow--large">
-                <div class="small-teaser--image image-zoom" style="background-image:url('<%= teaser.image %>')"></div>
-              </div>
-              <div class="small-teaser--headline"><%= teaser.title %></div>
-              <p class="small-teaser--description"><%= teaser.description %></p>
-            </a>
+        <% htmlWebpackPlugin.options.teasers.forEach(function(teaser) { %>
+            <% include src/partials/teaser %>
         <% }); %>
       </div>
     </section>
@@ -128,20 +121,10 @@
         <% htmlWebpackPlugin.options.blogposts
           .filter(function(blogpost, index){ return index < 3; })
           .forEach(function(blogpost) { %>
-            <a href="<%=blogpost.link%>" target="_blank" class="blog-teaser">
-              <div class="blog-teaser__image__wrapper box-shadow--large">
-                <div class="blog-teaser__image image-zoom" style="background-image: url('<%=blogpost.image %>')"></div>
-              </div>
-              <div class="blog-teaser__content">
-                <div class="blog-date"><%=blogpost.date%></div>
-                <div class="blog-headline"><%=blogpost.title%></div>
-                <p class="blog-introtext"><%=blogpost.text%>...</p>
-              </div>
-            </a>
+           <% include src/partials/blogpost %>
         <% }); %>
 
       </div>
-
     </section>
 
     <% include src/partials/footer %>

@@ -25,7 +25,6 @@ module.exports = {
     path: Path.resolve(__dirname, 'build'),
     filename: 'main.js'
   },
-
   plugins: [
     new Webpack.LoaderOptionsPlugin({
       options: {
