@@ -1,16 +1,10 @@
 const Path = require('path');
 const Autoprefixer = require('autoprefixer');
 const Webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const Utils = require('./src/helper/utils');
 
-const pageTitle = require('./package.json').title;
-const pageDescription = require('./package.json').description;
-const blogposts = require('./src/data/blogposts.json');
-const projects = require('./src/data/projects.json');
-const teasers = require('./src/data/teasers.json');
+const WepbackHelper = require('./webpack-helper');
 
 module.exports = {
   devtool: 'eval',
@@ -35,33 +29,9 @@ module.exports = {
         }
       }
     }),
-    new HtmlWebpackPlugin({
-      inject: true,
-      blogposts,
-      teasers,
-      filename: 'index.html',
-      template: Path.resolve(__dirname, 'src/index.ejs'),
-      title: pageTitle,
-      description: pageDescription,
-      siteUrl: "https://webkid.io/"
-    }),
-    new HtmlWebpackPlugin({
-      inject: true,
-      projects: Utils.sortProjects(projects),
-      filename: 'portfolio.html',
-      template: Path.resolve(__dirname, 'src/portfolio.ejs'),
-      title: pageTitle,
-      description: pageDescription,
-      siteUrl: 'https://webkid.io/portfolio'
-    }),
-    new HtmlWebpackPlugin({
-      inject: true,
-      filename: 'imprint.html',
-      template: Path.resolve(__dirname, 'src/imprint.ejs'),
-      title: pageTitle,
-      description: pageDescription,
-      siteUrl: 'https://webkid.io/imprint'
-    }),
+    WepbackHelper.getIndexHtmlPlugin(),
+    WepbackHelper.getPortfolioHtmlPlugin(),
+    WepbackHelper.getImprintHtmlPlugin(),
     new ExtractTextPlugin({ filename: 'bundle.css' }),
     new CopyWebpackPlugin([
       { from: 'src/static', to: 'static' }
@@ -72,27 +42,23 @@ module.exports = {
     }),
   ],
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: 'css-loader'
         })
-      },
-      {
+      }, {
         test: /\.styl$/i,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: ['css-loader', 'postcss-loader', 'stylus-loader']
         })
-      },
-      {
+      }, {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
         use: ['babel-loader']
-      },
-      {
+      }, {
         test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
         use: {
           loader: 'file-loader',
@@ -100,11 +66,9 @@ module.exports = {
             name: 'assets/images/[name].[ext]'
           }
         }
-      },
-      {
+      }, {
         test: /\.ejs$/,
         use: [ 'ejs-compiled-loader' ]
-      }
-    ]
+      }]
   }
 }
