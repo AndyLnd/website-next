@@ -6,6 +6,7 @@
 .swipe-wrap
   overflow hidden
   position relative
+
   & > div
     float left
     width 100%
@@ -52,7 +53,8 @@
     font-size: 1.2rem
     max-width: 400px
 
-.video-teaser--button, .portfolio-button
+.video-teaser--button
+.portfolio-button
   background: transparent
   border: 2px solid $black
   border-radius: 3px
@@ -61,12 +63,14 @@
   color: $black
   padding: .4em .8em
   text-decoration: none
-  transition: background .3s
+  transition: background .3s, color .3s, border .3s
   margin-top: 1rem
   display: none
 
   &:hover
-    background: rgba(255, 255, 255, .2)
+    background: $primary25
+    color: white
+    border: 2px solid $primary75
 
 .video-teaser--headline
   text-align: center
@@ -88,7 +92,8 @@
   z-index: 5
   bottom: 0
 
-.bg-gif, .bg-video
+.bg-gif
+.bg-video
   position: absolute
   width: 100%
   top: 0
@@ -97,8 +102,10 @@
   display: none
 
 .slide.playing
-  .bg-gif, .bg-video
+  .bg-gif
+  .bg-video
     opacity: 1
+
   .bg-placeholder
     opacity: 0
 
@@ -125,5 +132,6 @@
       font-size: 1.5rem
 
 @media screen and (min-width: 1024px)
-  .video-teaser--content .small-teaser--headline
-    font-size: 2rem
+  .video-teaser--content 
+    .small-teaser--headline
+      font-size: 2rem
