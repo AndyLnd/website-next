@@ -7,8 +7,9 @@ const Utils = require('./src/helper/utils');
 
 const pageTitle = require('./package.json').title;
 const pageDescription = require('./package.json').description;
-const Projects = require('./src/data/projects.json');
-const Blogposts = require('./src/data/blogposts.json');
+const projects = require('./src/data/projects.json');
+const blogposts = require('./src/data/blogposts.json');
+const teasers = require('./src/data/teasers.json');
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
@@ -43,7 +44,8 @@ module.exports = {
     new Webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       inject: true,
-      blogposts: Blogposts,
+      blogposts,
+      teasers,
       template: Path.resolve(__dirname, 'src/index.ejs'),
       title: pageTitle,
       description: pageDescription,
@@ -51,7 +53,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: true,
-      projects: Utils.sortProjects(Projects),
+      projects: Utils.sortProjects(projects),
       filename: 'portfolio.html',
       template: Path.resolve(__dirname, 'src/portfolio.ejs'),
       title: pageTitle,

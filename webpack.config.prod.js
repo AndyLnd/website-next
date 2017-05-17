@@ -8,8 +8,9 @@ const Utils = require('./src/helper/utils');
 
 const pageTitle = require('./package.json').title;
 const pageDescription = require('./package.json').description;
-const Blogposts = require('./src/data/blogposts.json');
-const Projects = require('./src/data/projects.json');
+const blogposts = require('./src/data/blogposts.json');
+const projects = require('./src/data/projects.json');
+const teasers = require('./src/data/teasers.json');
 
 module.exports = {
   devtool: 'eval',
@@ -36,7 +37,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: true,
-      blogposts: Blogposts,
+      blogposts,
+      teasers,
       filename: 'index.html',
       template: Path.resolve(__dirname, 'src/index.ejs'),
       title: pageTitle,
@@ -45,7 +47,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: true,
-      projects: Utils.sortProjects(Projects),
+      projects: Utils.sortProjects(projects),
       filename: 'portfolio.html',
       template: Path.resolve(__dirname, 'src/portfolio.ejs'),
       title: pageTitle,

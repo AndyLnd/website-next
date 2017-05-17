@@ -26,7 +26,7 @@
     font-weight: 300
     max-width: 650px
     margin: 0 auto
-    line-height: 1.3
+    line-height: 1.25
 
 .section--intro-overlap
   position: relative
@@ -63,16 +63,17 @@
   &:last-child
     display: none
 
-  &:hover .small-teaser--image
-    transform: translateY(3px)
+  .small-teaser--image__wrapper
+    overflow: hidden
+    min-height: 100px
 
 .small-teaser--image
-  min-height: 100px
   background-size: cover
   background-position: center
   flex-grow: 0
   transition: transform .3s
   border-radius: 4px
+  height: 100%
 
 .small-teaser--headline
   font-size: 1.2rem
@@ -98,7 +99,6 @@
     padding: 5px
     opacity: .7
 
-
 .blog-teaser
   display: flex
   margin-bottom: 4rem
@@ -106,18 +106,19 @@
   text-decoration: none
   cursor: pointer
 
-  &:hover
-    .blog-teaser__image
-      transform: translateY(3px)
-
-.blog-teaser__image
+.blog-teaser__image__wrapper
   width: 20%
   min-width: 150px
   max-width: 300px
+  border-radius: 4px
+  overflow: hidden
+
+.blog-teaser__image
   background-size: cover
   background-position: center
   transition: transform .3s
-  border-radius: 4px
+  width: 100%
+  height: 100%
 
 .blog-teaser__content
   max-width: 500px

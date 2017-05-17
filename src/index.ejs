@@ -64,21 +64,16 @@
 
     <section class="section section--projects">
       <div class="small-teaser-wrapper content">
-        <a href="/portfolio" class="small-teaser">
-          <div class="small-teaser--image box-shadow--large" style="background-image:url('static/images/teaser-1.jpg')"></div>
-          <div class="small-teaser--headline">How Europe's population is growing</div>
-          <p class="small-teaser--description">An interactive map of Europe that show where its population is growing - and where it is declining.</p>
-        </a>
-        <a href="/portfolio" class="small-teaser">
-          <div class="small-teaser--image box-shadow--large" style="background-image:url('static/images/teaser-2.jpg')"></div>
-          <div class="small-teaser--headline">Berlin Noisemap</div>
-          <p class="small-teaser--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est sunt aspernatur delectus natus eaque odit optio?</p>
-        </a>
-        <a href="/portfolio" class="small-teaser">
-          <div class="small-teaser--image box-shadow--large" style="background-image:url('static/images/teaser-3.jpg')"></div>
-          <div class="small-teaser--headline">Berlin Noisemap</div>
-          <p class="small-teaser--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est sunt aspernatur delectus natus eaque odit optio? Ipsa, officiis excepturi tempore ratione illo voluptas</p>
-        </a>
+         <% htmlWebpackPlugin.options.teasers
+          .forEach(function(teaser) { %>
+            <a href="/portfolio" class="small-teaser">
+              <div class="small-teaser--image__wrapper box-shadow--large">
+                <div class="small-teaser--image image-zoom" style="background-image:url('<%= teaser.image %>')"></div>
+              </div>
+              <div class="small-teaser--headline"><%= teaser.title %></div>
+              <p class="small-teaser--description"><%= teaser.description %></p>
+            </a>
+        <% }); %>
       </div>
     </section>
 
@@ -130,16 +125,20 @@
       <div class="content">
         <h3>Latest Blogposts</h3>
 
-        <% for(var i = 0; i < 3; i++) { %>
-          <a href="<%=htmlWebpackPlugin.options.blogposts[i].link%>" target="_blank" class="blog-teaser">
-            <div class="blog-teaser__image box-shadow--large" style="background-image: url('<%=htmlWebpackPlugin.options.blogposts[i].image %>')"></div>
-            <div class="blog-teaser__content">
-              <div class="blog-date"><%=htmlWebpackPlugin.options.blogposts[i].date%></div>
-              <div class="blog-headline"><%=htmlWebpackPlugin.options.blogposts[i].title%></div>
-              <p class="blog-introtext"><%=htmlWebpackPlugin.options.blogposts[i].text%>...</p>
-            </div>
-          </a>
-        <% } %>
+        <% htmlWebpackPlugin.options.blogposts
+          .filter(function(blogpost, index){ return index < 3; })
+          .forEach(function(blogpost) { %>
+            <a href="<%=blogpost.link%>" target="_blank" class="blog-teaser">
+              <div class="blog-teaser__image__wrapper box-shadow--large">
+                <div class="blog-teaser__image image-zoom" style="background-image: url('<%=blogpost.image %>')"></div>
+              </div>
+              <div class="blog-teaser__content">
+                <div class="blog-date"><%=blogpost.date%></div>
+                <div class="blog-headline"><%=blogpost.title%></div>
+                <p class="blog-introtext"><%=blogpost.text%>...</p>
+              </div>
+            </a>
+        <% }); %>
 
       </div>
 
