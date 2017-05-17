@@ -1,5 +1,5 @@
 import Map from './map';
 import Slider from './slider';
 
-Map.init();
-new Slider();
+new Map('map');
+new Slider('slider');

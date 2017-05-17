@@ -2,8 +2,8 @@ import Swipe from 'swipejs';
 
 class Slider {
 
-  constructor() {
-    this.container = document.getElementById('slider');
+  constructor(selector) {
+    this.container = document.getElementById(selector);
 
     if (!this.container) {
       return false;
