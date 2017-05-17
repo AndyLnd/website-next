@@ -1,5 +1,9 @@
 <div class="portfolio-project">
-  <div class="small-teaser--image project--image box-shadow--large" style="background-image:url('<%=project.image%>')"></div>
+  <a target="_blank" href="<%=project.url%>">
+    <div class="small-teaser--image__wrapper project--image box-shadow--large">
+      <div class="small-teaser--image image-zoom" style="background-image:url('<%=project.image%>')"></div>
+    </div>
+  </a>
   <div class="small-teaser--headline"><%=project.title%></div>
   <div class="small-teaser--description text"><%=project.description%></div>
 </div>
