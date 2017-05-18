@@ -1,0 +1,37 @@
+.section--footer
+  background: linear-gradient(to bottom, $primary75 0%, $primary100 100%)
+  color: $white
+  padding: 3rem 15px
+
+.footer-grid
+  display: flex
+  margin-top: 2rem
+  max-width: 500px
+  justify-content: space-between
+
+.footer-list
+  list-style: none
+  padding: 0
+  margin: 0
+  font-weight: 300
+  line-height: 1.4
+
+  li a
+    color: $white
+    font-size: 1.4rem
+    text-decoration: none
+
+    &:hover
+      border-bottom: 1px solid $white
+
+.adress
+  font-size: 1.4rem
+  margin-bottom: 1.5rem
+
+@media screen and (min-width: 768px)
+  .section--footer
+    padding-top: 4rem
+    padding-bottom: 4rem
+
+  .footer-list
+    line-height: 1.6

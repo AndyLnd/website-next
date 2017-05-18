@@ -1,11 +1,6 @@
 .section
   padding: 15px
 
-  p
-    font-family: $sans
-    font-weight: 300
-    line-height: 1.4
-
 .section--intro
   background: linear-gradient(to bottom, $primary0 0%, $primary25 100%)
   color: $white
@@ -18,129 +13,16 @@
   text-align: center
   padding: 2.5rem 0
 
-  h1
-    text-transform: uppercase
-    font-weight: 900
-
   h2
     font-weight: 300
+    line-height: 1em
     max-width: 650px
     margin: 0 auto
-    line-height: 1.25
 
 .section--intro-overlap
   position: relative
   transform: translateY(-100px)
   margin-bottom: -100px
-
-.video-teaser
-  width: 100%
-  max-width: 1000px
-  margin: 0 auto
-
-  img, video
-    width: 100%
-    height: auto
-  
-  .small-teaser--description
-    display: none
-  
-  .small-teaser--headline
-    margin-bottom: 0
-
-.section.section--projects
-  padding-top: 0
-  padding-bottom: 0
-
-.small-teaser-wrapper
-  display: flex
-  justify-content: space-between
-
-.small-teaser
-  width: 49%
-  text-decoration: none
-
-  &:last-child
-    display: none
-
-.small-teaser--image__wrapper
-  overflow: hidden
-  height: 100px
-
-.small-teaser--image
-  background-size: cover
-  background-position: center
-  transition: transform .3s
-  border-radius: 4px
-  height: 100%
-
-.small-teaser--headline
-  font-size: 1.2rem
-  font-weight: 700
-  margin: 1rem 0 .8rem 0
-  color: #333
-
-.small-teaser--description
-  color: $grey
-
-.section--clients
-  box-sizing: border-box
-
-.clients
-  display: flex
-  flex-wrap: wrap
-  justify-content: space-between
-
-  >*
-    height: 15px
-    width: auto
-    margin-bottom: 5px
-    padding: 5px
-    opacity: .7
-
-.blog-teaser
-  display: flex
-  margin-bottom: 4rem
-  color: $black
-  text-decoration: none
-  cursor: pointer
-
-.blog-teaser__image__wrapper
-  width: 25%
-  min-width: 125px
-  max-width: 300px
-  border-radius: 4px
-  overflow: hidden
-
-.blog-teaser__image
-  background-size: cover
-  background-position: center
-  transition: transform .3s
-  width: 100%
-  height: 100%
-  min-height:100px
-
-.blog-teaser__content
-  max-width: 500px
-  margin-left: 15px
-
-.blog-introtext
-  display: none
-  color: $grey
-  font-weight: 300
-  font-size: 1.1rem
-  line-height: 1.4
-  margin: .5rem 0
-
-.blog-headline
-  font-size: 1.25rem
-  font-weight: 500
-  margin-top: .2rem
-
-.blog-date
-  font-weight: 300
-  font-size: .9rem
-  color: $grey
 
 .section.section--map
   width: 100%
@@ -163,52 +45,27 @@
 .mapboxgl-ctrl .mapboxgl-ctrl-compass
   display: none
 
-.section--footer
-  background: linear-gradient(to bottom, $primary75 0%, $primary100 100%)
-  color: $white
-  padding: 3rem 15px
-
-.footer-grid
-  display: flex
-  margin-top: 2rem
-  max-width: 500px
-  justify-content: space-between
-
-.footer-list
-  list-style: none
-  padding: 0
-  margin: 0
-  font-weight: 300
-  line-height: 1.4
-  font-size: .9rem
-
-  li a
-    color: $white
-    text-decoration: none
-
-    &:hover
-      border-bottom: 1px solid $white
-
-.adress
-  margin-bottom: 1.5rem
-
 .section--portfolio-link
   padding: 10px 15px 25px 15px
 
-@media screen and (min-width: 400px)
-  .small-teaser--image__wrapper
-    height: 120px
+  .section--clients
+    box-sizing: border-box
 
-@media screen and (min-width: 512px)
-  .blog-introtext
-    display: block
+.clients
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
 
+  >*
+    height: 15px
+    width: auto
+    margin-bottom: 5px
+    padding: 5px
+    opacity: .7
+    
 @media screen and (min-width: 768px)
   .section
     padding: 30px
-
-  .blog-teaser__content
-    margin-left: 30px
 
   .section--intro
     padding-bottom: 200px
@@ -219,31 +76,6 @@
 
   .clients >*
     height: 20px
-
-  .small-teaser
-    width: 32%
-
-    &:last-child
-      display: block
-
-  .small-teaser--image__wrapper
-    height: 130px
-
-  .section--footer
-    padding-top: 4rem
-    padding-bottom: 4rem
-
-  .footer-list
-    font-size: 1rem
-    line-height: 1.6
-  
-  .video-teaser
-    .small-teaser--description
-      display: block
-    
-    .small-teaser--headline
-      margin-bottom: .7rem
-
 
 @media screen and (min-width: 1024px)
   .section--intro
@@ -257,15 +89,3 @@
     height: 27px
     padding: 8px
     margin-bottom: 8px
-
-  .blog-teaser__content
-    margin-left: 35px
-
-  .blog-headline
-    font-size: 1.5rem
-
-  .small-teaser--image__wrapper
-    height: 160px
-
-  .small-teaser--headline
-    font-size: 1.4rem
