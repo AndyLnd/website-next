@@ -4,7 +4,7 @@
         "description": "It's a common these that mostly in Eastern Germany people vote for right wing parties. To show the development over the last years, we created an interactive map that shows the results of elections on a highly detailed level. To give deeper insights, the visualisation differentiates right wing parties are classified as extreme right or right populist.",
         "url": "https://interaktiv.morgenpost.de/wo-deutschland-rechts-waehlt/",
         "createdAt": "2017/01/23",
-        "image": "/static/images/projects/right-wing-parties.png",
+        "image": "/static/images/projects/right-wing-parties/2.png",
         "technology": "",
         "work": "",
         "client": "Berliner Morgenpost",
