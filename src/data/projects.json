@@ -131,7 +131,9 @@
         "url": "https://www.nzz.ch/sport/euro-orakel-wer-wird-europameister-ld.17757#/",
         "createdAt": "2016/05/19",
         "images": [
-          "/static/images/projects/euro-orakel.jpg"
+          "/static/images/projects/euro2016/1.png",
+          "/static/images/projects/euro2016/2.png",
+          "/static/images/projects/euro2016/3.png"
         ],
         "technology": "",
         "work": "",
@@ -220,7 +222,10 @@
         "url": "http://interaktiv.morgenpost.de/berlins-neue-skyline/",
         "createdAt": "2015/11/05",
         "images": [
-          "/static/images/projects/skyline.jpg"
+          "/static/images/projects/skyline/1.png",
+          "/static/images/projects/skyline/2.png",
+          "/static/images/projects/skyline/3.png",
+          "/static/images/projects/skyline/4.png"
         ],
         "technology": "",
         "work": "",
@@ -241,7 +246,9 @@
         "url": "http://interaktiv.morgenpost.de/laermkarte-berlin/",
         "createdAt": "2015/09/22",
         "images": [
-          "/static/images/projects/noisemap.jpg"
+          "/static/images/projects/noisemap/1.png",
+          "/static/images/projects/noisemap/2.png",
+          "/static/images/projects/noisemap/3.png"
         ],
         "technology": "",
         "work": "",

@@ -2,8 +2,10 @@
 <html lang="en">
 <% include src/partials/head %>
   <body>
+    <% var highlightCount = 0; %>
     <% htmlWebpackPlugin.options.projects.forEach(function(project, index) { %>
       <% if(project.isHighlight) { %>
+        <% highlightCount ++ %>
         <section class="section section__projects--highlight">
           <% if(index === 0) { %>
             <% include src/partials/header %>

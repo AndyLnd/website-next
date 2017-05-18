@@ -83,13 +83,13 @@ class Slider {
       video.load();
     }
 
-    const activeSlide = document.querySelector('.slider-controls li.active');
+    const activeSlide = this.container.querySelector('.slider-controls li.active');
 
     if(activeSlide) {
       activeSlide.classList.remove('active');
     }
 
-    document.querySelector(`.slider-controls li[data-index="${slideIndex}"]`).classList.add('active');
+    this.container.querySelector(`.slider-controls li[data-index="${slideIndex}"]`).classList.add('active');
   }
 
   onSlideChangeGif(slideIndex, slide) {
@@ -120,4 +120,5 @@ class Slider {
 
 }
 
+window.Slider = Slider;
 export default Slider;
