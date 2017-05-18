@@ -13,6 +13,10 @@
   width: 100%
   border-radius: 4px
 
+.project__slider
+  flex: 1
+  height: 100%
+
 .project__info
   max-width: 500px
   font-weight: 700
@@ -20,6 +24,7 @@
   h3
     text-transform: uppercase
     font-weight: 900
+
 
 @media screen and (min-width: 768px)
   .project--higlighted
@@ -32,11 +37,14 @@
 
   .project__info
     flex: 1
-    padding: 0 2rem
+    padding: 0 0 0 2rem
+
+    h3
+      margin-top: 0
 
 @media screen and (min-width: 1024px)
   .project__info
-    padding: 1rem 4rem
+    padding: 0 0 0 4rem
 
 // projetcs grid
 .projects-wrapper

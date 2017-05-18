@@ -66,19 +66,22 @@ class Slider {
 
     // load + play video in slide
     const video = slide.querySelector('.bg-video');
-    const sources = video.querySelectorAll('source');
 
-    [].forEach.call(sources, source => {
-      source.setAttribute('src', source.getAttribute('data-src'));
-    });
-    
-    video.oncanplay = evt => {
-      video.play();
-      slide.classList.add('playing');
-    };
+    if (video) {
+      const sources = video.querySelectorAll('source');
 
-    video.style.display = 'block';
-    video.load();
+      [].forEach.call(sources, source => {
+        source.setAttribute('src', source.getAttribute('data-src'));
+      });
+
+      video.oncanplay = evt => {
+        video.play();
+        slide.classList.add('playing');
+      };
+
+      video.style.display = 'block';
+      video.load();
+    }
 
     const activeSlide = document.querySelector('.slider-controls li.active');
 
@@ -92,13 +95,15 @@ class Slider {
   onSlideChangeGif(slideIndex, slide) {
     const gif = slide.querySelector('.bg-gif');
 
-    gif.setAttribute('src', gif.getAttribute('data-src'));
+    if(gif){
+      gif.setAttribute('src', gif.getAttribute('data-src'));
 
-    gif.onload = () => {
-      slide.classList.add('playing');
+      gif.onload = () => {
+        slide.classList.add('playing');
+      }
+
+      gif.style.display = 'block';
     }
-
-    gif.style.display = 'block';
 
     const activeSlide = document.querySelector('.slider-controls li.active');
 

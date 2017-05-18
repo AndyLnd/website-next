@@ -4,7 +4,11 @@
         "description": "It's a common these that mostly in Eastern Germany people vote for right wing parties. To show the development over the last years, we created an interactive map that shows the results of elections on a highly detailed level. To give deeper insights, the visualisation differentiates right wing parties are classified as extreme right or right populist.",
         "url": "https://interaktiv.morgenpost.de/wo-deutschland-rechts-waehlt/",
         "createdAt": "2017/01/23",
-        "image": "/static/images/projects/right-wing-parties/2.png",
+        "images": [
+          "/static/images/projects/right-wing-parties/1.png",
+          "/static/images/projects/right-wing-parties/4.png",
+          "/static/images/projects/right-wing-parties/5.png"
+        ],
         "technology": "",
         "work": "",
         "client": "Berliner Morgenpost",
@@ -126,7 +130,9 @@
         "description": "The NZZ Championship Oracle is a data-driven application that was created for the European Championship 2016. Based on different parameters that can be set by the user, the app creates a prediction for the possible outcome of the Championship. The algorithm for the calculation of the result can be found on github.",
         "url": "https://www.nzz.ch/sport/euro-orakel-wer-wird-europameister-ld.17757#/",
         "createdAt": "2016/05/19",
-        "image": "/static/images/projects/euro-orakel.jpg",
+        "images": [
+          "/static/images/projects/euro-orakel.jpg"
+        ],
         "technology": "",
         "work": "",
         "client": "NZZ",
@@ -152,7 +158,9 @@
         "description": "A lot of universities in Switzerlanf maintain relationships to third party influencers. This visualisation shows all the links between universities and professors to companies. It gives an overview about the relations in each university and detailed information about each connection.",
         "url": "http://www.srf.ch/news/interaktive-grafik-alle-interessenbindungen-auf-einen-blick",
         "createdAt": "2016/04/02",
-        "image": "/static/images/projects/srfunis.jpg",
+        "images": [
+          "/static/images/projects/srfunis.jpg"
+        ],
         "technology": "",
         "work": "",
         "client": "SRF",
@@ -211,7 +219,9 @@
         "description": "To show how fast Berlin is growing, we created an interactive 3D map of the city. It let's you explore the plans for new buildings and gives you an idea of how Berlin will change. Also, you can go on a time travel tour through town and compare the skylines of 1990, today and the future.",
         "url": "http://interaktiv.morgenpost.de/berlins-neue-skyline/",
         "createdAt": "2015/11/05",
-        "image": "/static/images/projects/skyline.jpg",
+        "images": [
+          "/static/images/projects/skyline.jpg"
+        ],
         "technology": "",
         "work": "",
         "client": "Berliner Morgenpost",
@@ -230,7 +240,9 @@
         "description": "The noise level in some parts of Berlin is designated hazardous to health. In this project we created a detailed interactive map of the city that shows where the noise level is particularly high at a glance. It also provides detailed information about the different sources of noise such as road traffic, public transportation and airplanes.",
         "url": "http://interaktiv.morgenpost.de/laermkarte-berlin/",
         "createdAt": "2015/09/22",
-        "image": "/static/images/projects/noisemap.jpg",
+        "images": [
+          "/static/images/projects/noisemap.jpg"
+        ],
         "technology": "",
         "work": "",
         "client": "Berliner Morgenpost",
