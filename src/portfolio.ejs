@@ -5,15 +5,21 @@
     <% var highlightCount = 0; %>
     <% htmlWebpackPlugin.options.projects.forEach(function(project, index) { %>
       <% if(project.isHighlight) { %>
-        <% highlightCount ++ %>
-        <section class="section section__projects--highlight">
+        <% highlightCount = index %>
+        <section class="section section__projects--highlight <%=project.title === 'AWARDS' ? 'section--awards' : ''%>">
           <% if(index === 0) { %>
             <% include src/partials/header %>
           <% } %>
 
+          <% if(project.title === 'AWARDS') { %>
+          <div class="content">
+              <% include src/partials/awards %>
+          </div>
+          <% } else { %>
           <div class="content">
               <% include src/partials/project_highlighted %>
           </div>
+          <% } %>
         </section>
       <% } %>
 
@@ -32,9 +38,6 @@
       <% } %>
 
     <% }) %>
-
-    <% include src/partials/awards %>
-
 
     <% include src/partials/footer %>
   </body>
