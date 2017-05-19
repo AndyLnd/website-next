@@ -24,7 +24,8 @@ axios.get('https://blog.webkid.io/content.json')
         link: entry.permalink,
         date: dateFormatter(new Date(entry.date)),
         text: getExcerpt(entry.text),
-        image: `${entry.permalink}${entry.image}`
+        image: `${entry.permalink}${entry.image}`,
+        thumbnail: `${entry.permalink}${entry.thumbnail}`
       })
     });
 
