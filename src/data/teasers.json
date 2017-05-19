@@ -1,17 +1,50 @@
-[
-    {
-        "title": "It was not always in the East - Where Germany votes for the right-wing.",
-        "description": "It's a common these that mostly in Eastern Germany people vote for right wing parties. To show the development over the last years, we created an interactive map that shows the results of elections on a highly detailed level. That shows the results of elections on a highly.",
-        "image": "/static/images/teaser-1.jpg"
-    },
-    {
-        "title": "It was not always in the East - Where Germany votes for the right-wing.",
-        "description": "It's a common these that mostly in Eastern Germany people vote for right wing parties. To show the development over the last years, we created an interactive map that shows the results of elections on a highly detailed level.",
-        "image": "/static/images/teaser-2.jpg"
-    },
-    {
-        "title": "It was not always in the East - Where Germany votes for the right-wing.",
-        "description": "It's a common these that mostly in Eastern Germany people vote for right wing parties. To show the development over the last years, we created an interactive map that shows the results of elections on a highly detailed level. To give deeper insights, the visualisation differentiates right wing. ",
-        "image": "/static/images/teaser-3.jpg"
-    }
-]
+{
+    "large": [
+        {
+            "title": "Berlin’s new Skyline",
+            "description": "An interactive 3D map that shows how fast the city is growing.",
+            "image": "https://placehold.it/1000x563",
+            "gif": "static/teaser/teaser-1.gif",
+            "video": "static/teaser/skyline.mp4"
+        },
+        {
+            "title": "Who will win the European Championship?",
+            "description": "This app creates data-driven predictions for the European Football Championship.",
+            "image": "https://placehold.it/1000x563",
+            "gif": "static/teaser/teaser-1.gif",
+            "video": "static/teaser/teaser-1.mp4"
+        },
+        {
+            "title": "How Swiss universities are influenced by third parties",
+            "description": "An interactive visualization that shows all the links between universities and professors to third-party companies.",
+            "image": "https://placehold.it/1000x563",
+            "gif": "static/teaser/teaser-1.gif",
+            "video": "static/teaser/teaser-1.mp4"
+        },
+        {
+            "title": "Einheitsreise",
+            "description": "More than 25 years ago Germany was reunited. Have a look at this interactive journey, to see how united the country is today.",
+            "image": "https://placehold.it/1000x563",
+            "gif": "static/teaser/teaser-1.gif",
+            "video": "static/teaser/teaser-1.mp4"
+        }
+    ],
+
+    "small": [
+        {
+            "title": "Where Europe's population is growing",
+            "description": "This map of Europe shows information about the population on a granular level and shows growth and decline.",
+            "image": "/static/images/projects/europakarte.jpg"
+        },
+        {
+            "title": "Who is fighting whom in Syria?",
+            "description": "This simplified visualization shows the complexity of the situation in Syria.",
+            "image": "/static/images/projects/sankey-syria.jpg"
+        },
+        {
+            "title": "Federal Election Polls in Germany",
+            "description": "Interactive charts that show the development of election polls in Germany over the last couple of years.",
+            "image": "/static/images/projects/btw2017.jpg"
+        }
+    ]
+}

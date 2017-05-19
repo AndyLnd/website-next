@@ -21,7 +21,7 @@
     },
     {
         "title": "Federal Election Polls in Germany",
-        "description": "An interactive chart that shows the development of election polls in Germany over the last couple of years.",
+        "description": "Interactive charts that show the development of election polls in Germany over the last couple of years.",
         "url": "https://www.nzz.ch/international/deutschland-im-wahljahr/bundestagswahl-der-aktuelle-stand-der-umfragen-im-ueberblick-union-spd-afd-linke-gruene-fdp-ld.146646",
         "createdAt": "2017/03/21",
         "client": "NZZ",
@@ -185,7 +185,7 @@
         "client": "taz",
         "image": "/static/images/projects/refugee-routes.jpg"
     },{
-        "title": "This is how Swiss universities are linked to third parties",
+        "title": "This is how Swiss universities are influenced by third parties",
         "description": "A lot of universities in Switzerland maintain relationships to third party influencers. This visualisation shows all the links between universities and professors to companies. It gives an overview about the relations in each university and detailed information about each connection.",
         "url": "http://www.srf.ch/news/interaktive-grafik-alle-interessenbindungen-auf-einen-blick",
         "createdAt": "2016/04/02",
@@ -368,7 +368,7 @@
     },
     {
         "title": "TTIP - The Dealers",
-        "description": "An intercative analysis of the TTIP dealers makes their interests more transparent.",
+        "description": "An interactive analysis of the TTIP dealers makes their interests more transparent.",
         "url": "https://correctiv.org/recherchen/ttip/dealer/",
         "createdAt": "2015/04/15",
         "client": "Correctiv",
