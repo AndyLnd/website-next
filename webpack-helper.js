@@ -5,6 +5,7 @@ const Utils = require('./src/helper/utils');
 const title = require('./package.json').title;
 const description = require('./package.json').description;
 const projects = Utils.sortProjects(require('./src/data/projects.json'));
+const awards = require('./src/data/awards.json');
 const blogposts = require('./src/data/blogposts.json');
 const teasers = require('./src/data/teasers.json');
 
@@ -29,6 +30,7 @@ function getPortfolioHtmlPlugin() {
     title,
     description,
     projects,
+    awards
   });
 }
 

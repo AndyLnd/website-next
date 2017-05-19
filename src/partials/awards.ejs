@@ -1,0 +1,15 @@
+  <section class="section section--awards">
+    <div class="content">
+      <h3>Awards</h3>
+      
+      <div class="awards-wrapper">
+      <% htmlWebpackPlugin.options.awards.forEach(function(award, index) { %>
+        <a href="<%=award.website%>" class="award">
+          <div class="small-teaser--headline"><%=award.name%></div>
+          <div class="small-teaser--description teaser--text"><%=award.category%>, <%=award.year%></div>
+        </a>
+      <% }); %>
+      </div>
+      
+    </div>
+  </section>

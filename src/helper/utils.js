@@ -1,3 +1,5 @@
+const d3Collection = require('d3-collection');
+
 function sortProjects(file) {
   const sortedByDate = file.sort(sortByDate);
 
@@ -19,6 +21,13 @@ function sortByDate(a, b) {
     return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
 }
 
+function groupAwards(awards) {
+  return d3Collection.nest()
+    .key(d => d.year)
+    .entries(awards);
+}
+
 module.exports = {
-  sortProjects
+  sortProjects,
+  groupAwards
 }
