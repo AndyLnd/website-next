@@ -36,8 +36,16 @@
         "image": "/static/images/projects/going-for-growth.jpg"
     },
     {
+        "title": "Middle Class Atlas",
+        "description": "Have a look at the development of the middle class in Germany using this series of bar charts. ",
+        "url": "https://www.iwkoeln.de/presse/pressemitteilungen/beitrag/mittelschicht-seit-jahren-stabil-326433",
+        "createdAt": "2017/02/15",
+        "client": "Institut der deutschen Wirtschaft Köln",
+        "image": "/static/images/projects/mittelschicht.png"
+    },
+    {
         "title": "The Best of 2016",
-        "description": "Detailed overview about a selection of the NZZ editors' favourite articles written in 2016 with comments.",
+        "description": "A detailed overview about a selection of the NZZ editors' favourite articles written in 2016 with comments.",
         "url": "https://www.nzz.ch/jahresrueckblick-2016/das-beste-aus-2016-die-nzz-redaktion-praesentiert-ihre-favoriten-ld.132717",
         "createdAt": "2016/12/14",
         "client": "NZZ",
@@ -50,6 +58,14 @@
         "createdAt": "2016/12/06",
         "client": "OECD",
         "image": "/static/images/projects/pisa.jpg"
+    },
+    {
+        "title": "Hessencheck",
+        "description": "A fun way to explore the lifestyle of people from Hessen and find out how much it matches your own.",
+        "url": "http://hessenschau.de/themen/hessencheck/hessenfaktor---wie-viel-hessen-steckt-in-ihnen,hessenfaktor-100.html",
+        "createdAt": "2016/11/28",
+        "client": "Hessenschau",
+        "image": "/static/images/projects/hessenfaktor.png"
     },
     {
         "title": "Berlin Coalition Agreement",
@@ -106,6 +122,14 @@
         "createdAt": "2016/09/08",
         "client": "Berliner Morgenpost",
         "image": "/static/images/projects/waehlernaehe.jpg"
+    },
+    {
+        "title": "Wetter.com Map Relaunch ",
+        "description": "Developing a new structure for maps and relaunch of some map applications for the wetter.com website.",
+        "url": "http://www.compareyourcountry.org/going-for-growth",
+        "createdAt": "2016/06/01",
+        "client": "wetter.com",
+        "image": "/static/images/projects/wetter.png"
     },
     {
         "title": "Huh!",
@@ -202,7 +226,7 @@
     {
         "title": "In the Streets of Zurich",
         "description": "This tool let's you explore each of Zurich's 2505 streets and gives information about its name and history.",
-        "url": "http://interaktiv.morgenpost.de/radwege-in-berlin/",
+        "url": "https://www.nzz.ch/zuerich/stadt-zuerich/in-den-strassen-von-zuerich-vom-aemmerliweg-zur-zwinglistrasse-ld.5453",
         "createdAt": "2016/03/07",
         "client": "NZZ",
         "image": "/static/images/projects/zurich-streets.png"
@@ -457,7 +481,7 @@
     {
         "title": "Car Atlas",
         "description": "The distribution of cars in Germany visualized on an interactive map.",
-        "url": "http://www.welt.de/autoatlas/",
+        "url": "http://viktormucha.de/autoatlas/",
         "createdAt": "2014/06/22",
         "client": "Welt",
         "image": "/static/images/projects/autoatlas.jpg"

@@ -32,7 +32,8 @@ class Slider {
   init() {
     this.slider = new Swipe(this.container, {
       draggable: true,
-      callback: this.onSlideChange
+      callback: this.onSlideChange,
+      auto: 3000
     });
   }
 
