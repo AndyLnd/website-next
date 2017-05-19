@@ -157,11 +157,13 @@
         "image": "/static/images/projects/refugee-routes.jpg"
     },{
         "title": "That is how Swiss universities are linked to third parties",
-        "description": "A lot of universities in Switzerlanf maintain relationships to third party influencers. This visualisation shows all the links between universities and professors to companies. It gives an overview about the relations in each university and detailed information about each connection.",
+        "description": "A lot of universities in Switzerland maintain relationships to third party influencers. This visualisation shows all the links between universities and professors to companies. It gives an overview about the relations in each university and detailed information about each connection.",
         "url": "http://www.srf.ch/news/interaktive-grafik-alle-interessenbindungen-auf-einen-blick",
         "createdAt": "2016/04/02",
         "images": [
-          "/static/images/projects/srfunis.jpg"
+          "/static/images/projects/universities/1.png",
+          "/static/images/projects/universities/2.png",
+          "/static/images/projects/universities/3.png"
         ],
         "technology": "",
         "work": "",
