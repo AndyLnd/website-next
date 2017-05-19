@@ -27,7 +27,7 @@ class Map {
   }
 
   bindEvents() {
-    this.map.on('moveend', () => {
+    this.map.on('zoomend', () => {
       this.map.scrollZoom.enable();
       this.map.dragPan.enable();
     });
@@ -59,7 +59,7 @@ class Map {
           'text-anchor': 'left',
         }
       });
-    }); 
+    });
   }
 }
 
