@@ -1,7 +1,11 @@
 <div class="portfolio-project">
   <a target="_blank" href="<%=project.url%>">
     <div class="small-teaser--image__wrapper project--image box-shadow--large">
+      <% if (index > 8) { %>
+      <div class="small-teaser--image image-zoom" data-bg="<%=project.image%>"></div>
+      <% } else { %>
       <div class="small-teaser--image image-zoom" style="background-image:url('<%=project.image%>')"></div>
+      <% } %>
     </div>
   </a>
   <div class="small-teaser--headline"><%=project.title%></div>
