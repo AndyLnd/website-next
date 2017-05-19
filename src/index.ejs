@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+<% var titleCase = require('titlecase'); %>
 <html lang="en">
   <% include src/partials/head %>
   <body>
@@ -19,7 +21,7 @@
             <div class="video-teaser slide">
               <div class="slider-gradient"></div>
               <div class="video-teaser--content">
-                <div class="small-teaser--headline video-teaser--headline"><%=teaser.title%></div>
+                <div class="small-teaser--headline video-teaser--headline"><%=titleCase(teaser.title)%></div>
                 <div class="small-teaser--description teaser--text"><%=teaser.description%></div>
 
                 <a href="/portfolio" class="video-teaser--button">View portfolio</a>

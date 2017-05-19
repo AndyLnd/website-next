@@ -456,11 +456,20 @@
     },
     {
         "title": "Native and New Berliners",
-        "description": "A data-analysis shows in which parts of town native and new Berliners live and how the S-Bahn ring divides the city.",
+        "description": "Berlin is a city that is constantly growing and changing, mostly because of the people who live there. To show where Berliners really come from and how this has changed over the last years, we created a set of visualisations that give comprehensive insights and information about the capital's diverse population.",
         "url": "https://www.morgenpost.de/berlin/25-jahre-mauerfall/interaktiv/article133254520/Gebuertige-Berliner-und-Zugezogene-Wer-kam-wer-ging-wer-heute-hier-wohnt.html?config=interactive",
-        "createdAt": "2014/11/24",
+        "createdAt": "2014/11/07",
+        "images": [
+          "/static/images/projects/berliners/1.png",
+          "/static/images/projects/berliners/2.png",
+          "/static/images/projects/berliners/3.png",
+          "/static/images/projects/berliners/4.png",
+          "/static/images/projects/berliners/5.png"
+        ],
+        "technology": "",
+        "work": "",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/zugezogene-in-berlin.jpg"
+        "isHighlight": true
     },
     {
         "title": "The Scar of the City",

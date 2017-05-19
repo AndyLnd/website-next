@@ -15,7 +15,8 @@
 
   h2
     font-weight: 300
-    line-height: 1em
+    line-height: 1.2em
+    font-size: 2.8rem
     max-width: 650px
     margin: 0 auto
 
@@ -66,24 +67,20 @@
 .section.section--awards
   background: linear-gradient(to bottom, $primary50 0%, $primary75 100%)
   color: $white
-  
+
   .awards-wrapper
-    display: flex
-    flex-wrap: wrap
+    display: grid
+    grid-template-columns: 46% 46%
     justify-content: space-between
-  
+
   .award
     text-decoration: none
     color: $white
-    display: flex
-    flex-direction: column
-    width: 47%
-    flex-shrink: 0
     margin-bottom: 1em
-  
+
   .small-teaser--headline
     color: $white
-  
+
   .small-teaser--description
     color: $white
 
@@ -100,10 +97,10 @@
 
   .clients >*
     height: 20px
-  
+
   .section.section--awards
-    .award
-      width: 30%
+    .awards-wrapper
+      grid-template-columns: 31% 31% 31%
 
 @media screen and (min-width: 1024px)
   .section--intro
@@ -117,4 +114,3 @@
     height: 27px
     padding: 8px
     margin-bottom: 8px
-  

@@ -1,3 +1,4 @@
+<% var titleCase = require('titlecase'); %>
 <div class="portfolio-project">
   <a target="_blank" href="<%=project.url%>">
     <div class="small-teaser--image__wrapper project--image box-shadow--large">
@@ -8,6 +9,6 @@
       <% } %>
     </div>
   </a>
-  <div class="small-teaser--headline"><%=project.title%></div>
+  <div class="small-teaser--headline"><%= titleCase(project.title) %></div>
   <div class="small-teaser--description teaser--text"><%=project.description%></div>
 </div>

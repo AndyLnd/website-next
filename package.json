@@ -39,6 +39,7 @@
     "in-view": "^0.6.1",
     "mapbox-gl": "^0.37.0",
     "normalize.css": "^6.0.0",
-    "swipejs": "^2.2.6"
+    "swipejs": "^2.2.6",
+    "titlecase": "^1.1.2"
   }
 }

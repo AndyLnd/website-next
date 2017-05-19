@@ -50,21 +50,22 @@
 
 // projetcs grid
 .projects-wrapper
-  display: flex
-  flex-wrap: wrap
+  display: grid
+  grid-template-columns: 49% 49%
   justify-content: space-between
 
+@media screen and (min-width: 768px)
+  .projects-wrapper
+    display: grid
+    grid-template-columns: 24% 24% 24% 24%
+
+
 .portfolio-project
-  flex-grow: 0
-  width: 49%
   margin-bottom: 30px
 
 .project--image
   min-height: 0
 
 @media screen and (min-width: 768px)
-  .portfolio-project
-    width: 24%
-
   .project--image
     padding-top: 0
