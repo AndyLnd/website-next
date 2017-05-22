@@ -2,7 +2,7 @@ import Swipe from 'swipejs';
 
 class Slider {
 
-  constructor(selector) {
+  constructor(selector, autoplay) {
     this.container = document.getElementById(selector);
 
     if (!this.container) {
@@ -20,7 +20,7 @@ class Slider {
 
     this.onSlideChange = this.isMobile ? this.onSlideChangeGif : this.onSlideChangeVideo;
 
-    this.init();
+    this.init(autoplay);
     this.renderSlideControls();
 
     const slideIndex = this.slider.getPos();
@@ -29,11 +29,11 @@ class Slider {
     this.onSlideChange(slideIndex, currentSlide);
   }
 
-  init() {
+  init(autoplay) {
     this.slider = new Swipe(this.container, {
       draggable: true,
       callback: this.onSlideChange,
-      auto: 3000
+      auto: autoplay ? 3000 : false
     });
   }
 
