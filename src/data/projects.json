@@ -36,6 +36,14 @@
         "image": "/static/images/projects/going-for-growth.jpg"
     },
     {
+        "title": "Berlin Senate Check",
+        "description": "Use this graphic to find out how many of the issues from the program presented by the senate have been dealt with after 100 days.",
+        "url": "https://interaktiv.morgenpost.de/100-tage-check-berlin/",
+        "createdAt": "2017/03/17",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/projects/100-days.png"
+    },
+    {
         "title": "Middle Class Atlas",
         "description": "Have a look at the development of the middle class in Germany using this series of bar charts. ",
         "url": "https://www.iwkoeln.de/presse/pressemitteilungen/beitrag/mittelschicht-seit-jahren-stabil-326433",
@@ -50,6 +58,14 @@
         "createdAt": "2016/12/14",
         "client": "NZZ",
         "image": "/static/images/projects/nzz-overview.jpg"
+    },
+    {
+        "title": "Baby Boom in Berlin",
+        "description": "Have a look at these visualizations that show how many babys were born in which Berlin district over the years.",
+        "url": "https://interaktiv.morgenpost.de/babys-in-berlin/",
+        "createdAt": "2016/12/13",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/projects/baby-boom.png"
     },
     {
         "title": "PISA 2015",
