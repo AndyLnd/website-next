@@ -1,17 +1,19 @@
 .swipe
-  overflow hidden
-  visibility hidden
-  position relative
+  overflow: hidden
+  visibility: hidden
+  position: relative
+  border-radius: 4px
+  transform: translateZ(0)
 
 .swipe-wrap
-  overflow hidden
-  position relative
+  overflow: hidden
+  position: relative
 
   & > div
-    float left
-    width 100%
-    position relative
-    overflow hidden
+    float: left
+    width: 100%
+    position: relative
+    overflow: hidden
 
 .slide
   background: $white
@@ -92,6 +94,8 @@
   width: 100%
   z-index: 5
   bottom: 0
+  border-radius: 4px
+  overflow: hidden
 
 .bg-gif
 .bg-video
