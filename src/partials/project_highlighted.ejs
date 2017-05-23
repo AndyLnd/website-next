@@ -5,7 +5,7 @@
       <div class="swipe-wrap">
         <% project.images.forEach(function(image){ %>
           <div class="video-teaser slide">
-            <img class="slider__image" src="<%= image %>"/>
+            <div class="slider__image" style="background-image: url('<%= image %>')"> </div>
           </div>
         <% }) %>
       </div>
