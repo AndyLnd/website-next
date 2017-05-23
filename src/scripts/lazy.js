@@ -7,7 +7,12 @@ function init() {
 
 function loadBackgroundImage(el) {
   const imgSrc = el.getAttribute('data-bg');
-  el.style.backgroundImage = `url('${imgSrc}')`;
+  const bgImg = new Image();
+  bgImg.onload = () => {
+    el.style.backgroundImage = `url('${imgSrc}')`;
+    el.classList.remove('teaser--placeholder');
+  };
+  bgImg.src = imgSrc;
 }
 
 export default {

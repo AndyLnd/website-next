@@ -3,9 +3,9 @@
   <a target="_blank" href="<%=project.url%>">
     <div class="small-teaser--image__wrapper project--image box-shadow--large">
       <% if (index > 8) { %>
-      <div class="small-teaser--image image-zoom" data-bg="<%=project.image%>"></div>
+      <div class="small-teaser--image image-zoom teaser--placeholder" data-bg="<%=project.image%>"></div>
       <% } else { %>
-      <div class="small-teaser--image image-zoom" style="background-image:url('<%=project.image%>')"></div>
+      <div class="small-teaser--image image-zoom teaser--placeholder" style="background-image:url('<%=project.image%>')"></div>
       <% } %>
     </div>
   </a>
