@@ -17,6 +17,7 @@ class Slider {
     this.onSlideChangeVideo = this.onSlideChangeVideo.bind(this);
     this.onSlideChangeGif = this.onSlideChangeGif.bind(this);
     this.getSlideByIndex = this.getSlideByIndex.bind(this);
+    this.handleVideoEnded = this.handleVideoEnded.bind(this);
 
     this.onSlideChange = this.isMobile ? this.onSlideChangeGif : this.onSlideChangeVideo;
 
@@ -58,7 +59,6 @@ class Slider {
   onSlideChangeVideo(slideIndex, slide) {
     // first stop all other videos
     const playingSlides = this.container.querySelectorAll('.slide.playing');
-
     [].forEach.call(playingSlides, slide => {
       slide.classList.remove('playing');
       const activeVideo = slide.querySelector('.bg-video');
@@ -67,6 +67,11 @@ class Slider {
 
     // load + play video in slide
     const video = slide.querySelector('.bg-video');
+
+    // play next slide if video finished
+    const slides = this.container.querySelectorAll('.slide');
+    const nextIndex = (slideIndex + 1) < slides.length ? slideIndex + 1 : 0;
+    video.onended = () => this.handleVideoEnded(nextIndex);
 
     if (video) {
       const sources = video.querySelectorAll('source');
@@ -91,6 +96,10 @@ class Slider {
     }
 
     this.container.querySelector(`.slider-controls li[data-index="${slideIndex}"]`).classList.add('active');
+  }
+
+  handleVideoEnded(slideIndex) {
+    this.changeSlide(slideIndex, this.getSlideByIndex(slideIndex));
   }
 
   onSlideChangeGif(slideIndex, slide) {
