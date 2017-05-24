@@ -69,13 +69,18 @@
   color: $white
 
   .awards-wrapper
-    display: grid
-    grid-template-columns: 46% 46%
+    display: flex
+    flex-wrap: wrap
     justify-content: space-between
+
 
   .award
     text-decoration: none
     color: $white
+    display: flex
+    flex-direction: column
+    width: 47%
+    flex-shrink: 0
     margin-bottom: 1em
 
   .small-teaser--headline
@@ -99,8 +104,8 @@
     height: 20px
 
   .section.section--awards
-    .awards-wrapper
-      grid-template-columns: 31% 31% 31%
+    .award
+      width: 30%
 
 @media screen and (min-width: 1024px)
   .section--intro

@@ -3,6 +3,7 @@
 <% include src/partials/head %>
   <body>
     <% var highlightCount = 0; %>
+    <% var projectsCount = 0; %>
     <% htmlWebpackPlugin.options.projects.forEach(function(project, index) { %>
       <% if(project.isHighlight) { %>
         <% highlightCount = index %>
@@ -26,13 +27,27 @@
       <% if(index > 0 && htmlWebpackPlugin.options.projects[index - 1].isHighlight) { %>
         <section class="section section__projects">
           <div class="content projects-wrapper">
+
       <% } %>
 
-      <% if(!project.isHighlight) { %>
-        <% include src/partials/project %>
-      <% } %>
+
+        <% if(!project.isHighlight) { %>
+          <%if(projectsCount == 0) { %>
+            <div class="projects-row grid grid--gutters">
+          <% } %>
+            <div class="grid-cell">
+              <% include src/partials/project %>
+          </div>
+          <% projectsCount += 1 %>
+        <% } %>
+
+        <% if(projectsCount == 4) { %>
+          </div>
+          <% projectsCount = 0 %>
+        <% } %>
 
       <% if(index === htmlWebpackPlugin.options.projects.length - 1 || index < htmlWebpackPlugin.options.projects.length - 1 && htmlWebpackPlugin.options.projects[index + 1].isHighlight) { %>
+
           </div>
         </section>
       <% } %>

@@ -68,16 +68,25 @@
     padding: 0 0 0 4rem
 
 // projetcs grid
+
 .projects-wrapper
-  display: grid
-  grid-template-columns: 49% 49%
-  justify-content: space-between
+  .grid
+    display: flex
+    flex-wrap: wrap
+
+  .grid--gutters
+    margin: -1em 0 1em -1em
+
+
+  .grid-cell
+    width: 50%
+    box-sizing: border-box
+    padding: 1em 0 0 1em
 
 @media screen and (min-width: 768px)
   .projects-wrapper
-    display: grid
-    grid-template-columns: 24% 24% 24% 24%
-
+    .grid-cell
+      width: 25%
 
 .portfolio-project
   margin-bottom: 30px
