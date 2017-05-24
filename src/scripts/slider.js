@@ -70,10 +70,12 @@ class Slider {
 
     // play next slide if video finished
     const slides = this.container.querySelectorAll('.slide');
-    const nextIndex = (slideIndex + 1) < slides.length ? slideIndex + 1 : 0;
-    video.onended = () => this.handleVideoEnded(nextIndex);
+    
+    
 
     if (video) {
+      video.onended = () => this.handleVideoEnded();
+
       const sources = video.querySelectorAll('source');
 
       [].forEach.call(sources, source => {
@@ -98,8 +100,8 @@ class Slider {
     this.container.querySelector(`.slider-controls li[data-index="${slideIndex}"]`).classList.add('active');
   }
 
-  handleVideoEnded(slideIndex) {
-    this.changeSlide(slideIndex, this.getSlideByIndex(slideIndex));
+  handleVideoEnded() {
+    // this.slider.next();
   }
 
   onSlideChangeGif(slideIndex, slide) {
