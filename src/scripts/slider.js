@@ -101,7 +101,7 @@ class Slider {
   }
 
   handleVideoEnded() {
-    // this.slider.next();
+    this.slider.next();
   }
 
   onSlideChangeGif(slideIndex, slide) {
