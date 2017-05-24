@@ -6,16 +6,33 @@
   font: inherit
   font-size: 1.5rem
   line-height: 2.5
-  top: 0
   left: 0
   right: 0
+  bottom: 0
 
-.alert__success
-  background-color: #2FEDC2
-  transform: translateY(-100%)
+.alert__success,
+.alert__error
+  transform: translateY(100%)
   animation: slideDown 2.5s 1.0s 1 ease forwards
   display: block
 
+.alert__success
+  background-color: #2FEDC2
+
+.alert__error
+  background-color: #EB5757
+
+.alert--close-button
+  position: absolute
+  right: 10px
+  top: 9px
+  height: 1rem
+  width: 1rem
+  cursor: pointer
+  background: url('/static/images/android-close.svg')
+  background-size: cover
+  color: white
+
 @keyframes slideDown
-  0%, 100% { transform: translateY(-100%) }
-  10%, 90% { transform: translateY(0px) }
+  10% { transform: translateY(0) }
+  100% { transform: translateY(0) }

@@ -1,0 +1,18 @@
+<svg width="298" height="298" viewBox="0 0 298 298" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>android-close</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-5228 -291)">
+<g id="android-close">
+<g id="Icon 5">
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(5228 291)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 298 29.798L 268.202 0L 149 119.202L 29.798 0L 0 29.798L 119.202 149L 0 268.202L 29.798 298L 149 178.798L 268.202 298L 298 268.202L 178.798 149L 298 29.798Z"/>
+</defs>
+</svg>
