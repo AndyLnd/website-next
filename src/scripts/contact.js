@@ -5,17 +5,16 @@ function init() {
 }
 
 function addFormSubmitListener(el) {
-  // const contactForm = document.querySelector('.contact-form');
+  const contactForm = document.querySelector('.contact-form');
 
-  // if (contactForm) {
-  //   contactForm.onsubmit = (e) => {
-  //     e.preventDefault();
+  if (contactForm) {
+    contactForm.onsubmit = (e) => {
+      e.preventDefault();
 
-  //     console.log(contactForm.getAttribute('action'));
-  //     ajax().post(contactForm.getAttribute('action'), { email: e.target.email.value, message: e.target.email.message})
-  //       .then((response, error) => {console.log(response, error)})
-  //   };
-  // }
+      ajax().post(contactForm.getAttribute('action'), { email: e.target.email.value, message: e.target.message.value, 'form-name': e.target['form-name'].value })
+        .then((response, error) => {console.log(response, error)})
+    };
+  }
 }
 
 export default {
