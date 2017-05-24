@@ -11,6 +11,7 @@ function addFormSubmitListener(el) {
     contactForm.onsubmit = (e) => {
       e.preventDefault();
 
+      console.log(contactForm.getAttribute('action'));
       ajax().post(contactForm.getAttribute('action'), { email: e.target.email.value, message: e.target.email.message})
         .then((response, error) => {console.log(response, error)})
     };
