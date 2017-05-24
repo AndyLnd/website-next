@@ -269,6 +269,7 @@
         "url": "http://interaktiv.morgenpost.de/berlins-neue-skyline/",
         "createdAt": "2015/11/05",
         "images": [
+          "/static/images/projects/skyline/0.png",
           "/static/images/projects/skyline/1.png",
           "/static/images/projects/skyline/2.png",
           "/static/images/projects/skyline/3.png",
