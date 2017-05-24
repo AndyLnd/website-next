@@ -6,15 +6,15 @@
             "image": "static/teaser/skyline.jpg",
             "gif": "static/teaser/skyline.gif",
             "videomp4": "static/teaser/skyline.mp4",
-            "videowebm": "static/teaser/skyline.mp4"
+            "videowebm": "static/teaser/skyline.webm"
         },
         {
             "title": "Who will win the European Championship?",
             "description": "This app creates data-driven predictions for the European Football Championship.",
-            "image": "static/teaser/skyline.jpg",
-            "gif": "static/teaser/skyline.gif",
-            "videomp4": "static/teaser/skyline.mp4",
-            "videowebm": "static/teaser/skyline.mp4"
+            "image": "static/teaser/orakel.jpg",
+            "gif": "static/teaser/orakel.gif",
+            "videomp4": "static/teaser/orakel.mp4",
+            "videowebm": "static/teaser/orakel.webm"
         },
         {
             "title": "How Swiss universities are influenced by third parties",
@@ -22,7 +22,7 @@
             "image": "static/teaser/skyline.jpg",
             "gif": "static/teaser/skyline.gif",
             "videomp4": "static/teaser/skyline.mp4",
-            "videowebm": "static/teaser/skyline.mp4"
+            "videowebm": "static/teaser/skyline.webm"
         },
         {
             "title": "Einheitsreise",
@@ -30,7 +30,7 @@
             "image": "static/teaser/skyline.jpg",
             "gif": "static/teaser/skyline.gif",
             "videomp4": "static/teaser/skyline.mp4",
-            "videowebm": "static/teaser/skyline.mp4"
+            "videowebm": "static/teaser/skyline.webm"
         }
     ],
 

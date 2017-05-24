@@ -7,7 +7,7 @@
 
 ```
 # convert to mp4 without audio
-ffmpeg -an -i input.mp4 scale=1000:-1 -vcodec libx264 -pix_fmt yuv420p -profile:v baseline -level 3 output.mp4
+ffmpeg -an -i input.mp4 -vcodec libx264 -pix_fmt yuv420p -profile:v baseline -level 3 output.mp4
 
 # convert to webm
 ffmpeg -an -i input.mp4 -c:v libvpx -crf 10 -b:v 1M -c:a libvorbis output.webm
@@ -16,7 +16,7 @@ ffmpeg -an -i input.mp4 -c:v libvpx -crf 10 -b:v 1M -c:a libvorbis output.webm
 3. Extract first frame to use as a placeholder image
 
 ```
-fmpeg -ss 00:00:00 -i input.mp4 -vframes 1 -q:v 2 output.jpg
+ffmpeg -ss 00:00:00 -i input.mp4 -vframes 1 -q:v 2 output.jpg
 ```
 
 4. Extract frames to create a gif
