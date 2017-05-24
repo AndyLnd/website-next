@@ -8,6 +8,12 @@
   display: flex
   flex-flow: column wrap
 
+  &:first-child
+    padding-top: 3.5rem
+
+  .teaser--text
+    margin-bottom: 1.5rem
+
 .image--wrapper
   display: block
 
@@ -36,12 +42,16 @@
   h3
     text-transform: uppercase
     font-weight: 900
+    margin: 1.5rem 0
 
 @media screen and (min-width: 768px)
   .project--higlighted
     display: flex
     flex-flow: row wrap
     justify-content: space-between
+  
+    .teaser--text
+      margin: 1.5rem 0
 
   .image--wrapper
     flex: 1
@@ -51,7 +61,7 @@
     padding: 0 0 0 2rem
 
     h3
-      margin-top: 0
+      margin: 0
 
 @media screen and (min-width: 1024px)
   .project__info
