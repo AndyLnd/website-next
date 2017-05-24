@@ -1,0 +1,21 @@
+.alert
+  display: none
+  position: fixed
+  z-index: 101
+  text-align: center
+  font: inherit
+  font-size: 1.5rem
+  line-height: 2.5
+  top: 0
+  left: 0
+  right: 0
+
+.alert__success
+  background-color: #2FEDC2
+  transform: translateY(-100%)
+  animation: slideDown 2.5s 1.0s 1 ease forwards
+  display: block
+
+@keyframes slideDown
+  0%, 100% { transform: translateY(-100%) }
+  10%, 90% { transform: translateY(0px) }
