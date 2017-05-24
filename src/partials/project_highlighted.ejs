@@ -5,7 +5,11 @@
       <div class="swipe-wrap">
         <% project.images.forEach(function(image){ %>
           <div class="video-teaser slide">
-            <div class="slider__image" style="background-image: url('<%= image %>')"> </div>
+            <% if (index > 8) { %>
+              <div class="slider__image teaser--placeholder" data-bg="<%= image %>"></div>
+            <% } else { %>
+              <div class="slider__image" style="background-image: url('<%= image %>')"></div>
+            <% } %>
           </div>
         <% }) %>
       </div>
@@ -13,7 +17,11 @@
     </div>
   <% } else { %>
     <a class="image--wrapper" href="<%=project.title%>">
-      <img class="project__image--highlighted box-shadow--large" src="<%=project.images[0]%>" />
+      <% if (index > 8) { %>
+        <img class="project__image--highlighted box-shadow--large teaser--placeholder" data-bg="<%=project.images[0]%>" />
+      <% } else { %>
+        <img class="project__image--highlighted box-shadow--large" src="<%=project.images[0]%>" />
+      <% } %>
     </a>
   <% } %>
 
