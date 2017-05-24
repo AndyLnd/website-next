@@ -8,6 +8,7 @@
 
 .main-slider
   height: auto
+  min-height: 157px
 
 .swipe-wrap
   overflow: hidden
@@ -56,7 +57,7 @@
 
   .small-teaser--headline
     color: $black
-    font-size: 1.2rem
+    font-size: 1.5rem
     max-width: 400px
 
 .video-teaser--button
@@ -132,21 +133,30 @@
   .slider-controls li
     height: 8px
     width: 8px
-  
+
   .swipe:not(.main-slider)
     height: 250px
 
+  .main-slider
+    min-height: 258px
+    
 @media screen and (min-width: 768px)
   .video-teaser--content
     bottom: 15px
 
     .small-teaser--headline
       font-size: 1.5rem
-  
+
   .swipe:not(.main-slider)
     height: auto
+
+  .main-slider
+    min-height: 402px
 
 @media screen and (min-width: 1024px)
   .video-teaser--content
     .small-teaser--headline
       font-size: 2rem
+
+  .main-slider
+    min-height: 537px
