@@ -23,9 +23,17 @@ module.exports = {
       debug: false,
       options: {
         context: __dirname,
-        postcss: {
-          Autoprefixer
-        }
+        postcss: [
+          Autoprefixer({
+            browsers: [
+              '>1%',
+              'last 4 versions',
+              'Firefox ESR',
+              'not ie < 9', // React doesn't support IE8 anyway
+            ],
+            grid: true
+          })
+        ]
       }
     }),
     WepbackHelper.getIndexHtmlPlugin(),
