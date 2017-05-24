@@ -19,6 +19,7 @@
     width: 100%
     position: relative
     overflow: hidden
+    height: 100%
 
 .slide
   background: $white
@@ -93,30 +94,15 @@
 
 .slider-gradient
   position: absolute
-  height: 100%
+  height: 101%
   background-image: linear-gradient(0deg, rgba(255,255,255,1) 17%, rgba(255,255,255,0) 100%);
   width: 100%
   z-index: 5
-  bottom: 0
   border-radius: 4px
   overflow: hidden
 
-.bg-gif
-.bg-video
-  position: absolute
-  width: 100%
-  top: 0
-  left: 0
-  opacity: 0
+.video-teaser .bg-video
   display: none
-
-.slide.playing
-  .bg-gif
-  .bg-video
-    opacity: 1
-
-  .bg-placeholder
-    opacity: 0
 
 @media screen and (min-width: 500px)
   .section--portfolio-link
@@ -152,6 +138,12 @@
 
   .main-slider
     min-height: 402px
+  
+  .video-teaser .bg-video
+    display: block
+  
+  .video-teaser .bg-gif
+    display: none
 
 @media screen and (min-width: 1024px)
   .video-teaser--content

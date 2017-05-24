@@ -3,7 +3,7 @@
         {
             "title": "Berlin’s new Skyline",
             "description": "An interactive 3D map that shows how fast the city is growing.",
-            "image": "https://placehold.it/1000x563",
+            "image": "static/teaser/skyline.jpg",
             "gif": "static/teaser/skyline.gif",
             "videomp4": "static/teaser/skyline.mp4",
             "videowebm": "static/teaser/skyline.mp4"
@@ -11,24 +11,24 @@
         {
             "title": "Who will win the European Championship?",
             "description": "This app creates data-driven predictions for the European Football Championship.",
-            "image": "https://placehold.it/1000x563",
-            "gif": "static/teaser/teaser-1.gif",
+            "image": "static/teaser/skyline.jpg",
+            "gif": "static/teaser/skyline.gif",
             "videomp4": "static/teaser/skyline.mp4",
             "videowebm": "static/teaser/skyline.mp4"
         },
         {
             "title": "How Swiss universities are influenced by third parties",
             "description": "An interactive visualization that shows all the links between universities and professors to third-party companies.",
-            "image": "https://placehold.it/1000x563",
-            "gif": "static/teaser/teaser-1.gif",
+            "image": "static/teaser/skyline.jpg",
+            "gif": "static/teaser/skyline.gif",
             "videomp4": "static/teaser/skyline.mp4",
             "videowebm": "static/teaser/skyline.mp4"
         },
         {
             "title": "Einheitsreise",
             "description": "More than 25 years ago Germany was reunited. Have a look at this interactive journey, to see how united the country is today.",
-            "image": "https://placehold.it/1000x563",
-            "gif": "static/teaser/teaser-1.gif",
+            "image": "static/teaser/skyline.jpg",
+            "gif": "static/teaser/skyline.gif",
             "videomp4": "static/teaser/skyline.mp4",
             "videowebm": "static/teaser/skyline.mp4"
         }

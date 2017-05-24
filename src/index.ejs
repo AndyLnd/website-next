@@ -27,12 +27,11 @@
                 <a href="/portfolio" class="video-teaser--button">View portfolio</a>
               </div>
 
-              <img class="bg-placeholder" src="<%=teaser.image%>"/>
+              <img class="bg-gif" data-src="<%=teaser.gif%>" src="<%=teaser.image%>"/>
 
-              <img class="bg-gif" data-src="<%=teaser.gif%>"/>
-
-              <video class="bg-video" autoplay muted>
-                <source data-src="<%=teaser.video%>" type="video/mp4" />
+              <video class="bg-video" poster="<%=teaser.image%>" autoplay muted>
+                <source data-src="<%=teaser.videomp4%>" type="video/mp4" />
+                <source data-src="<%=teaser.videowebm%>" type="video/webm" />
               </video>
             </div>
           <% }); %>

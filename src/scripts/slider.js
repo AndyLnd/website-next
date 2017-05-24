@@ -59,6 +59,7 @@ class Slider {
   onSlideChangeVideo(slideIndex, slide) {
     // first stop all other videos
     const playingSlides = this.container.querySelectorAll('.slide.playing');
+    
     [].forEach.call(playingSlides, slide => {
       slide.classList.remove('playing');
       const activeVideo = slide.querySelector('.bg-video');
@@ -68,14 +69,7 @@ class Slider {
     // load + play video in slide
     const video = slide.querySelector('.bg-video');
 
-    // play next slide if video finished
-    const slides = this.container.querySelectorAll('.slide');
-
-
-
     if (video) {
-      video.onended = () => this.handleVideoEnded();
-
       const sources = video.querySelectorAll('source');
 
       [].forEach.call(sources, source => {
@@ -87,7 +81,9 @@ class Slider {
         slide.classList.add('playing');
       };
 
-      video.style.display = 'block';
+      // play next slide if video finished
+      video.onended = () => this.handleVideoEnded();
+
       video.load();
     }
 
@@ -108,13 +104,14 @@ class Slider {
     const gif = slide.querySelector('.bg-gif');
 
     if(gif){
-      gif.setAttribute('src', gif.getAttribute('data-src'));
-
-      gif.onload = () => {
+      const gifSrc = gif.getAttribute('data-src');
+      const gifLoader = new Image();
+      gifLoader.onload = () => {
+        gif.setAttribute('src', gifSrc);
         slide.classList.add('playing');
-      }
+      };
 
-      gif.style.display = 'block';
+      gifLoader.src = gifSrc;
     }
 
     const activeSlide = this.container.querySelector('.slider-controls li.active');
