@@ -70,8 +70,8 @@ class Slider {
 
     // play next slide if video finished
     const slides = this.container.querySelectorAll('.slide');
-    
-    
+
+
 
     if (video) {
       video.onended = () => this.handleVideoEnded();
@@ -117,13 +117,13 @@ class Slider {
       gif.style.display = 'block';
     }
 
-    const activeSlide = document.querySelector('.slider-controls li.active');
+    const activeSlide = this.container.querySelector('.slider-controls li.active');
 
     if(activeSlide) {
       activeSlide.classList.remove('active');
     }
 
-    document.querySelector(`.slider-controls li[data-index="${slideIndex}"]`).classList.add('active');
+    this.container.querySelector(`.slider-controls li[data-index="${slideIndex}"]`).classList.add('active');
   }
 
   getSlideByIndex(slideIndex) {
