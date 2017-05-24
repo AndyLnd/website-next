@@ -56,15 +56,22 @@ p, a
   font-family: $serif
   font-size: 1.4rem
   letter-spacing: 0.015rem
-  line-height: 1.7
+  line-height: 1.8
   text-rendering: optimizeLegibility
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
   -moz-font-feature-settings: "liga" on
 
 @media screen and (min-width: 768px)
   html, body
     font-size: 12px
+
+  .section--blogpost p,
+  .section--blogpost p a
+    font-size: 1.7rem
+
+@media screen and (min-width: 1024px)
+  .section--blogpost p,
+  .section--blogpost p a
+    font-size: 1.5rem
 
 @media screen and (min-width: 1024px)
   html, body
