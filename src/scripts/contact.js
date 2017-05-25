@@ -12,9 +12,11 @@ function addFormSubmitListener(el) {
     contactForm.onsubmit = (e) => {
       e.preventDefault();
 
-      ajax().post(contactForm.getAttribute('action'), { email: e.target.email.value, message: e.target.message.value, 'form-name': e.target['form-name'].value })
+      const hiddenFieldValue = e.target['form-name'] ? e.target['form-name'].value : 'webkid-contact';
+
+      ajax().post(contactForm.getAttribute('action'), { email: e.target.email.value, message: e.target.message.value, 'form-name': hiddenFieldValue })
         .then(onSuccess)
-        .catch(onError(responseError))
+        .catch(onError);
     };
   }
 }
@@ -26,18 +28,20 @@ function onSuccess() {
   const alertEl = document.querySelector('.alert');
   const alertElContent = document.querySelector('.alert--content');
 
-  alertEl.className += " alert__success";
-  alertElContent.innerHTML = "Thank you! We will reply as soon as possible.";
-
+  alertEl.classList.remove('alert__error');
+  alertEl.classList.add('active');
+  alertEl.classList.add('alert__success');
+  alertElContent.innerHTML = 'Thank you! We will reply as soon as possible.';
 }
 
 function onError(error) {
-  console.log(error);
   const alertEl = document.querySelector('.alert');
   const alertElContent = document.querySelector('.alert--content');
 
-  alertEl.className += " alert__error";
-  alertElContent.innerHTML = "Ups something went wrong!";
+  alertEl.classList.remove('alert__success');
+  alertEl.classList.add('active');
+  alertEl.classList.add('alert__error');
+  alertElContent.innerHTML = 'Oops, something went wrong. Please contact us at <a href="mailto:info@webkid.io">info@webkid.io</a>.';
 }
 
 function addCloseAlertListener() {
@@ -46,7 +50,7 @@ function addCloseAlertListener() {
 
   if (closeButton) {
     closeButton.onclick = () => {
-      alertEl.className = "alert";
+      alertEl.classList.remove('active');
     }
   }
 }

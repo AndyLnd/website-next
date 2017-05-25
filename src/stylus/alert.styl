@@ -1,7 +1,6 @@
 .alert
-  display: none
   position: fixed
-  z-index: 101
+  z-index: 500
   text-align: center
   font: inherit
   font-size: 1.5rem
@@ -9,11 +8,12 @@
   left: 0
   right: 0
   bottom: 0
-
-.alert__success,
-.alert__error
   transform: translateY(100%)
-  animation: slideDown 2.5s 1.0s 1 ease forwards
+  transition: transform .4s
+
+.active
+  transform: translateY(0)
+  // animation: slideDown 2.5s 1.0s 1 ease forwards
   display: block
 
 .alert__success
@@ -24,14 +24,21 @@
 
 .alert--close-button
   position: absolute
-  right: 10px
-  top: 9px
-  height: 1rem
-  width: 1rem
+  right: 15px
+  top: 0
+  bottom: 0
+  margin: auto
+  height: 1.5rem
+  width: 1.5rem
   cursor: pointer
   background: url('/static/images/android-close.svg')
   background-size: cover
-  color: white
+
+.alert--content
+  a
+    color: $white
+    font-size: 1em
+    font-weight: inherit
 
 @keyframes slideDown
   10% { transform: translateY(0) }
