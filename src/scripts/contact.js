@@ -14,7 +14,15 @@ function addFormSubmitListener(el) {
 
       const hiddenFieldValue = e.target['form-name'] ? e.target['form-name'].value : 'webkid-contact';
 
-      axios.post('/', { email: e.target.email.value, message: e.target.message.value, 'form-name': hiddenFieldValue })
+      axios.post('/', {
+        email: e.target.email.value,
+        message: e.target.message.value,
+        'form-name': hiddenFieldValue
+      }, {
+        headers: {
+          'content-type': 'application/x-www-form-urlencoded'
+        }
+      })
         .then(onSuccess)
         .catch(onError);
     };
