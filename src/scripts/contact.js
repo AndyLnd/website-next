@@ -1,4 +1,5 @@
 import axios from 'axios';
+import queryString from 'query-string';
 
 function init() {
   addFormSubmitListener();
@@ -12,19 +13,17 @@ function addFormSubmitListener(el) {
     contactForm.onsubmit = (e) => {
       e.preventDefault();
 
-      const hiddenFieldValue = e.target['form-name'] ? e.target['form-name'].value : 'webkid-contact';
-
-      axios.post('/', {
+      const query = {
         email: e.target.email.value,
         message: e.target.message.value,
-        'form-name': hiddenFieldValue
-      }, {
-        headers: {
-          'content-type': 'application/x-www-form-urlencoded'
-        }
-      })
-        .then(onSuccess)
-        .catch(onError);
+        'form-name': e.target['form-name'] ? e.target['form-name'].value : 'webkid-contact'
+      };
+
+      const formQuery = queryString.stringify(query);
+
+      axios.post(`https://wbkd-website-next.netlify.com?${formQuery}`)
+      .then(onSuccess)
+      .catch(onError);
     };
   }
 }
@@ -43,7 +42,6 @@ function onSuccess() {
 }
 
 function onError(error) {
-  console.log(error);
   const alertEl = document.querySelector('.alert');
   const alertElContent = document.querySelector('.alert--content');
 
