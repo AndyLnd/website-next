@@ -11,9 +11,8 @@ function addFormSubmitListener(el) {
   if (contactForm) {
     contactForm.onsubmit = (e) => {
       e.preventDefault();
-
+      debugger;
       const hiddenFieldValue = e.target['form-name'] ? e.target['form-name'].value : 'webkid-contact';
-      let test = contactForm.getAttribute('action');
 
       axios.post(contactForm.getAttribute('action'), { email: e.target.email.value, message: e.target.message.value, 'form-name': hiddenFieldValue })
         .then(onSuccess)
@@ -36,6 +35,7 @@ function onSuccess() {
 }
 
 function onError(error) {
+  console.log(error);
   const alertEl = document.querySelector('.alert');
   const alertElContent = document.querySelector('.alert--content');
 
