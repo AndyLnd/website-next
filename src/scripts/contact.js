@@ -1,4 +1,4 @@
-import ajax from '@fdaciuk/ajax';
+import axios from 'axios';
 
 function init() {
   addFormSubmitListener();
@@ -13,8 +13,9 @@ function addFormSubmitListener(el) {
       e.preventDefault();
 
       const hiddenFieldValue = e.target['form-name'] ? e.target['form-name'].value : 'webkid-contact';
+      let test = contactForm.getAttribute('action');
 
-      ajax().post(contactForm.getAttribute('action'), { email: e.target.email.value, message: e.target.message.value, 'form-name': hiddenFieldValue })
+      axios.post(contactForm.getAttribute('action'), { email: e.target.email.value, message: e.target.message.value, 'form-name': hiddenFieldValue })
         .then(onSuccess)
         .catch(onError);
     };
