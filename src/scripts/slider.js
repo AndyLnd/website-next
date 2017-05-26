@@ -33,7 +33,7 @@ class Slider {
   init(autoplay) {
     this.slider = new Swipe(this.container, {
       draggable: true,
-      callback: this.onSlideChange,
+      transitionEnd: this.onSlideChange,
       speed: 1000,
       auto: autoplay ? 3000 : false
     });
@@ -59,12 +59,21 @@ class Slider {
 
   onSlideChangeVideo(slideIndex, slide) {
     // first stop all other videos
-    const playingSlides = this.container.querySelectorAll('.slide.playing');
+    const playingSlides = this.container.querySelectorAll('.slide');
     
     [].forEach.call(playingSlides, slide => {
-      slide.classList.remove('playing');
       const activeVideo = slide.querySelector('.bg-video');
+      activeVideo.currentTime = 0;
+
       activeVideo.pause();
+      
+      [].forEach.call(activeVideo.querySelectorAll('source'), source => {
+        source.setAttribute('src', '');
+      });
+
+      activeVideo.load();
+
+      slide.classList.remove('active');
     });
 
     // load + play video in slide
@@ -79,7 +88,7 @@ class Slider {
 
       video.oncanplay = evt => {
         video.play();
-        slide.classList.add('playing');
+        slide.classList.add('active');
       };
 
       // play next slide if video finished
