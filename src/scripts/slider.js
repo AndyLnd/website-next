@@ -68,12 +68,10 @@ class Slider {
       activeVideo.pause();
       
       [].forEach.call(activeVideo.querySelectorAll('source'), source => {
-        source.setAttribute('src', '');
+        source.removeAttribute('src');
       });
 
       activeVideo.load();
-
-      slide.classList.remove('active');
     });
 
     // load + play video in slide
@@ -88,7 +86,6 @@ class Slider {
 
       video.oncanplay = evt => {
         video.play();
-        slide.classList.add('active');
       };
 
       // play next slide if video finished
@@ -118,7 +115,6 @@ class Slider {
       const gifLoader = new Image();
       gifLoader.onload = () => {
         gif.setAttribute('src', gifSrc);
-        slide.classList.add('playing');
       };
 
       gifLoader.src = gifSrc;
