@@ -58,26 +58,27 @@ class Slider {
   }
 
   onSlideChangeVideo(slideIndex, slide) {
-    // first stop all other videos
-    const playingSlides = this.container.querySelectorAll('.slide');
-    
-    [].forEach.call(playingSlides, slide => {
-      const activeVideo = slide.querySelector('.bg-video');
-      activeVideo.currentTime = 0;
 
-      activeVideo.pause();
-      
-      [].forEach.call(activeVideo.querySelectorAll('source'), source => {
-        source.removeAttribute('src');
-      });
-
-      activeVideo.load();
-    });
-
-    // load + play video in slide
     const video = slide.querySelector('.bg-video');
 
     if (video) {
+      // first stop all other videos
+      const playingSlides = this.container.querySelectorAll('.slide');
+
+      [].forEach.call(playingSlides, slide => {
+        const activeVideo = slide.querySelector('.bg-video');
+        activeVideo.currentTime = 0;
+
+        activeVideo.pause();
+
+        [].forEach.call(activeVideo.querySelectorAll('source'), source => {
+          source.removeAttribute('src');
+        });
+
+        activeVideo.load();
+      });
+
+      // load + play video in slide
       const sources = video.querySelectorAll('source');
 
       [].forEach.call(sources, source => {
