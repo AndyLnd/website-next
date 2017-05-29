@@ -1,9 +1,10 @@
 <h3>Awards</h3>
 <div class="awards-wrapper">
 <% htmlWebpackPlugin.options.awards.forEach(function(award, index) { %>
-  <a href="<%=award.website%>" class="award">
+    <a href="<%=award.website%>" class="award <%= index > 5 ? 'award--hidden hide' : '' %> ">
     <div class="small-teaser--headline"><%=award.name%></div>
     <div class="small-teaser--description teaser--text"><%=award.category%>, <%=award.year%></div>
   </a>
 <% }); %>
 </div>
+<button class="button awards__button">show more</button>

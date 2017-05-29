@@ -1,5 +1,6 @@
 import Map from './map';
 import Lazy from './lazy';
+import Awards from './awards';
 import Contact from './contact';
 import ImageSlider from './image-slider';
 import VideoSlider from './video-slider';
@@ -14,4 +15,5 @@ if (document.getElementById('slider')) {
 }
 
 Lazy.init();
+Awards.init();
 Contact.init();
