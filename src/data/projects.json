@@ -2,7 +2,8 @@
     {
         "title": "AWARDS",
         "isHighlight": true,
-        "createdAt": "1970/01/01"
+        "createdAt": "1970/01/01",
+        "position": 4
     },
     {
         "title": "This is where Germany votes for the right-wing",
@@ -17,7 +18,8 @@
         "technology": "",
         "work": "",
         "client": "Berliner Morgenpost",
-        "isHighlight": true
+        "isHighlight": true,
+        "position": 1
     },
     {
         "title": "Federal Election Polls in Germany",
@@ -183,7 +185,8 @@
         "technology": "",
         "work": "",
         "client": "NZZ",
-        "isHighlight": true
+        "isHighlight": true,
+        "position": 2
     },
     {
         "title": "These are Germany's greenest cities",
@@ -213,7 +216,8 @@
         "technology": "",
         "work": "",
         "client": "SRF",
-        "isHighlight": true
+        "isHighlight": true,
+        "position": 3
     },
     {
         "title": "Who is fighting whom in Syria?",
@@ -278,7 +282,8 @@
         "technology": "",
         "work": "",
         "client": "Berliner Morgenpost",
-        "isHighlight": true
+        "isHighlight": true,
+        "position": 5
     },
     {
         "title": "Einheitsreise",
@@ -301,7 +306,8 @@
         "technology": "",
         "work": "",
         "client": "Berliner Morgenpost",
-        "isHighlight": true
+        "isHighlight": true,
+        "position": 6
     },
     {
         "title": "Where refugees are accomodated in Germany",
@@ -486,7 +492,8 @@
         "technology": "",
         "work": "",
         "client": "Berliner Morgenpost",
-        "isHighlight": true
+        "isHighlight": true,
+        "position": 7
     },
     {
         "title": "The Scar of the City",
