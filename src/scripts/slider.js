@@ -58,7 +58,6 @@ class Slider {
   }
 
   onSlideChangeVideo(slideIndex, slide) {
-
     const video = slide.querySelector('.bg-video');
 
     if (video) {
@@ -92,7 +91,7 @@ class Slider {
       // play next slide if video finished
       video.onended = () => this.handleVideoEnded();
 
-      video.load();
+      // video.load();
     }
 
     const activeSlide = this.container.querySelector('.slider-controls li.active');
@@ -133,8 +132,6 @@ class Slider {
   getSlideByIndex(slideIndex) {
     return this.container.querySelector(`.slide[data-index="${slideIndex}"]`);
   }
-
 }
 
-window.Slider = Slider;
 export default Slider;
