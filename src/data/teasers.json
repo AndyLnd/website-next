@@ -19,18 +19,18 @@
         {
             "title": "How Swiss universities are influenced by third parties",
             "description": "An interactive visualization that shows all the links between universities and professors to third-party companies.",
-            "image": "static/teaser/skyline.jpg",
-            "gif": "static/teaser/skyline.gif",
-            "videomp4": "static/teaser/skyline.mp4",
-            "videowebm": "static/teaser/skyline.webm"
+            "image": "static/teaser/unis.jpg",
+            "gif": "static/teaser/unis.gif",
+            "videomp4": "static/teaser/unis.mp4",
+            "videowebm": "static/teaser/unis.webm"
         },
         {
             "title": "Einheitsreise",
             "description": "More than 25 years ago Germany was reunited. Have a look at this interactive journey, to see how united the country is today.",
-            "image": "static/teaser/skyline.jpg",
-            "gif": "static/teaser/skyline.gif",
-            "videomp4": "static/teaser/skyline.mp4",
-            "videowebm": "static/teaser/skyline.webm"
+            "image": "static/teaser/einheit.jpg",
+            "gif": "static/teaser/einheit.gif",
+            "videomp4": "static/teaser/einheit.mp4",
+            "videowebm": "static/teaser/einheit.webm"
         }
     ],
 

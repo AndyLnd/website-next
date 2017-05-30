@@ -9,7 +9,7 @@ class VideoSlider {
       return false;
     }
 
-    this.isMobile = window.innerWidth < 768;
+    this.isMobile = window.innerWidth <= 768 || typeof window.orientation !== 'undefined';
 
     this.init = this.init.bind(this);
     this.renderSlideControls = this.renderSlideControls.bind(this);
