@@ -7,6 +7,7 @@ function addSowButtonListener() {
 
     if (button) {
       button.onclick = (e) => {
+        console.log("yo");
         e.preventDefault();
 
         button.classList.toggle('.active');
@@ -14,7 +15,7 @@ function addSowButtonListener() {
         const awards = document.querySelectorAll('.award--hidden');
         const buttonActive = button.classList.contains('.active');
 
-        awards.forEach((award) => {
+        [].forEach.call(awards, award => {
           buttonActive ? award.classList.remove('hide') : award.classList.add('hide');
         })
 
