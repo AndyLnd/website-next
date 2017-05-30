@@ -27,10 +27,10 @@ class VideoSlider {
 
   init() {
     this.slider = new Swipe(this.container, {
-      draggable: false,
+      draggable: this.isMobile,
       transitionEnd: this.onSlideChange,
       speed: 1000,
-      auto: false
+      auto: this.isMobile ? 7000 : false
     });
 
     this.initVideos();
@@ -72,7 +72,27 @@ class VideoSlider {
     }
   }
 
+  changeSlide(index) {
+    this.slider.slide(index, 600);
+  }
+
   onSlideChange(index, el) {
+    if(this.isMobile) {
+      this.loadGif(el);
+    } else {
+      this.loadVideo(el);
+    }
+
+    const activeSlide = this.container.querySelector('.slider-controls li.active');
+
+    if(activeSlide) {
+      activeSlide.classList.remove('active');
+    }
+
+    this.container.querySelector(`.slider-controls li[data-index="${index}"]`).classList.add('active');
+  }
+
+  loadVideo(el) {
     this.unloadAllVideos();
 
     const sources = el.querySelectorAll('source[data-src]');
@@ -83,6 +103,18 @@ class VideoSlider {
     });
 
     videoEl.load();
+  }
+
+  loadGif(el) {
+    const gif = el.querySelector('.bg-image');
+
+    const gifSrc = gif.getAttribute('data-src');
+    const gifLoader = new Image();
+    gifLoader.onload = () => {
+      gif.setAttribute('src', gifSrc);
+    };
+
+    gifLoader.src = gifSrc;
   }
 
   unloadAllVideos() {

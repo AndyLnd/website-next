@@ -27,9 +27,7 @@
       <% if(index > 0 && htmlWebpackPlugin.options.projects[index - 1].isHighlight) { %>
         <section class="section section__projects">
           <div class="content projects-wrapper">
-
       <% } %>
-
 
         <% if(!project.isHighlight) { %>
           <%if(projectsCount == 0) { %>
@@ -47,7 +45,6 @@
         <% } %>
 
       <% if(index === htmlWebpackPlugin.options.projects.length - 1 || index < htmlWebpackPlugin.options.projects.length - 1 && htmlWebpackPlugin.options.projects[index + 1].isHighlight) { %>
-
           </div>
         </section>
       <% } %>

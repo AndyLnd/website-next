@@ -18,7 +18,7 @@ function addSowButtonListener() {
           buttonActive ? award.classList.remove('hide') : award.classList.add('hide');
         })
 
-        button.innerHTML = buttonActive ? "hide" : "show more";
+        button.innerHTML = buttonActive ? 'show less' : 'show more';
     }
   }
 }
