@@ -21,7 +21,7 @@ function addFormSubmitListener(el) {
 
       const formQuery = queryString.stringify(query);
 
-      axios.post(`https://wbkd-website-next.netlify.com?${formQuery}`)
+      axios.post(`https://www.webkid.io?${formQuery}`)
       .then(onSuccess)
       .catch(onError);
     };
