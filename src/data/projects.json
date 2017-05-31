@@ -11,9 +11,9 @@
         "url": "https://interaktiv.morgenpost.de/wo-deutschland-rechts-waehlt/",
         "createdAt": "2017/01/23",
         "images": [
-          "/static/images/projects/right-wing-parties/1.png",
-          "/static/images/projects/right-wing-parties/4.png",
-          "/static/images/projects/right-wing-parties/5.png"
+          "/static/images/thumbnails/right-wing-parties/1.jpg",
+          "/static/images/thumbnails/right-wing-parties/4.jpg",
+          "/static/images/thumbnails/right-wing-parties/5.jpg"
         ],
         "technology": "",
         "work": "",
@@ -27,7 +27,7 @@
         "url": "https://www.nzz.ch/international/deutschland-im-wahljahr/bundestagswahl-der-aktuelle-stand-der-umfragen-im-ueberblick-union-spd-afd-linke-gruene-fdp-ld.146646",
         "createdAt": "2017/03/21",
         "client": "NZZ",
-        "image": "/static/images/projects/btw2017.jpg"
+        "image": "/static/images/thumbnails/btw2017.jpg"
     },
     {
         "title": "Going for Growth",
@@ -35,7 +35,7 @@
         "url": "http://www.compareyourcountry.org/going-for-growth",
         "createdAt": "2017/03/17",
         "client": "OECD",
-        "image": "/static/images/projects/going-for-growth.jpg"
+        "image": "/static/images/thumbnails/going-for-growth.jpg"
     },
     {
         "title": "Berlin Senate Check",
@@ -43,7 +43,7 @@
         "url": "https://interaktiv.morgenpost.de/100-tage-check-berlin/",
         "createdAt": "2017/03/17",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/100-days.png"
+        "image": "/static/images/thumbnails/100-days.jpg"
     },
     {
         "title": "Middle Class Atlas",
@@ -51,7 +51,7 @@
         "url": "https://www.iwkoeln.de/presse/pressemitteilungen/beitrag/mittelschicht-seit-jahren-stabil-326433",
         "createdAt": "2017/02/15",
         "client": "Institut der deutschen Wirtschaft Köln",
-        "image": "/static/images/projects/mittelschicht.png"
+        "image": "/static/images/thumbnails/mittelschicht.jpg"
     },
     {
         "title": "Interactive end-of-year Review",
@@ -59,7 +59,7 @@
         "url": "https://www.nzz.ch/jahresrueckblick-2016/das-beste-aus-2016-die-nzz-redaktion-praesentiert-ihre-favoriten-ld.132717",
         "createdAt": "2016/12/14",
         "client": "NZZ",
-        "image": "/static/images/projects/nzz-overview.jpg"
+        "image": "/static/images/thumbnails/nzz-overview.jpg"
     },
     {
         "title": "Baby Boom in Berlin",
@@ -67,7 +67,7 @@
         "url": "https://interaktiv.morgenpost.de/babys-in-berlin/",
         "createdAt": "2016/12/13",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/baby-boom.png"
+        "image": "/static/images/thumbnails/baby-boom.jpg"
     },
     {
         "title": "PISA 2015",
@@ -75,7 +75,7 @@
         "url": "http://compareyourcountry.org/pisa",
         "createdAt": "2016/12/06",
         "client": "OECD",
-        "image": "/static/images/projects/pisa.jpg"
+        "image": "/static/images/thumbnails/pisa.jpg"
     },
     {
         "title": "Hessencheck",
@@ -83,7 +83,7 @@
         "url": "http://hessenschau.de/themen/hessencheck/hessenfaktor---wie-viel-hessen-steckt-in-ihnen,hessenfaktor-100.html",
         "createdAt": "2016/11/28",
         "client": "Hessenschau",
-        "image": "/static/images/projects/hessenfaktor.png"
+        "image": "/static/images/thumbnails/hessenfaktor.jpg"
     },
     {
         "title": "Coalition Agreement",
@@ -91,7 +91,7 @@
         "url": "https://interaktiv.morgenpost.de/koalitionsvertrag-berlin-2016/",
         "createdAt": "2016/11/21",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/koaver.jpg"
+        "image": "/static/images/thumbnails/koaver.jpg"
     },
     {
         "title": "Berlin's Representatives",
@@ -99,7 +99,7 @@
         "url": "https://interaktiv.morgenpost.de/abgeordnete-in-berlin/",
         "createdAt": "2016/10/27",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/abgeordnete.jpg"
+        "image": "/static/images/thumbnails/abgeordnete.jpg"
     },
     {
         "title": "Berlin Marathon",
@@ -107,7 +107,7 @@
         "url": "http://interaktiv.morgenpost.de/berlin-marathon-2016/",
         "createdAt": "2016/09/25",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/marathon-2016.jpg"
+        "image": "/static/images/thumbnails/marathon-2016.jpg"
     },
     {
         "title": "Berlin Election Map 2016",
@@ -115,7 +115,7 @@
         "url": "http://berlinwahlkarte2016.morgenpost.de/",
         "createdAt": "2016/09/19",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/wahlkarte2016.jpg"
+        "image": "/static/images/thumbnails/wahlkarte2016.jpg"
     },
     {
         "title": "The formula for electoral victory",
@@ -123,7 +123,7 @@
         "url": "http://interaktiv.morgenpost.de/wahlsieg-formel-berlin/",
         "createdAt": "2016/09/20",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/winner-formula.jpg"
+        "image": "/static/images/thumbnails/winner-formula.jpg"
     },
     {
         "title": "Voters transition in Berlin",
@@ -131,7 +131,7 @@
         "url": "http://interaktiv.morgenpost.de/waehlerwanderung-berlin-2016/",
         "createdAt": "2016/09/18",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/waehlerwanderung.jpg"
+        "image": "/static/images/thumbnails/waehlerwanderung.jpg"
     },
     {
         "title": "These candidates live furthest away from their voters",
@@ -139,7 +139,7 @@
         "url": "http://interaktiv.morgenpost.de/waehlernaehe-berlin/",
         "createdAt": "2016/09/08",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/waehlernaehe.jpg"
+        "image": "/static/images/thumbnails/waehlernaehe.jpg"
     },
     {
         "title": "Wetter.com Map Relaunch ",
@@ -147,7 +147,7 @@
         "url": "http://www.compareyourcountry.org/going-for-growth",
         "createdAt": "2016/06/01",
         "client": "wetter.com",
-        "image": "/static/images/projects/wetter.png"
+        "image": "/static/images/thumbnails/wetter.jpg"
     },
     {
         "title": "Huh!",
@@ -155,7 +155,7 @@
         "url": "http://interaktiv.morgenpost.de/huh/",
         "createdAt": "2016/06/30",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/huh.jpg"
+        "image": "/static/images/thumbnails/huh.jpg"
     },
     {
         "title": "Slow travel in Switzerland",
@@ -163,7 +163,7 @@
         "url": "https://www.nzz.ch/storytelling/ausflugplaner-interaktive-karte-schweiz-so-weit-kommen-sie-zu-fuss-oder-mit-dem-velo-ld.106808",
         "createdAt": "2016/07/22",
         "client": "NZZ",
-        "image": "/static/images/projects/reisezeiten.jpg"
+        "image": "/static/images/thumbnails/reisezeiten.jpg"
     },
     {
         "title": "Your quickest way to the lake",
@@ -171,16 +171,16 @@
         "url": "http://interaktiv.morgenpost.de/badestellen-berlin-brandenburg/",
         "createdAt": "2016/07/15",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/badestellen.jpg"
+        "image": "/static/images/thumbnails/badestellen.jpg"
     },{
         "title": "Who will win the European Championship?",
         "description": "The NZZ Oracle is a data-driven application that was created for the European Championship 2016. Based on different parameters that can be set by the user, the app creates a prediction for the possible outcome of the tournament. The algorithm for the calculation of the result can be found on github.",
         "url": "https://www.nzz.ch/sport/euro-orakel-wer-wird-europameister-ld.17757#/",
         "createdAt": "2016/05/19",
         "images": [
-          "/static/images/projects/euro2016/1.png",
-          "/static/images/projects/euro2016/2.png",
-          "/static/images/projects/euro2016/3.png"
+          "/static/images/thumbnails/euro2016/1.jpg",
+          "/static/images/thumbnails/euro2016/2.jpg",
+          "/static/images/thumbnails/euro2016/3.jpg"
         ],
         "technology": "",
         "work": "",
@@ -194,7 +194,7 @@
         "url": "http://interaktiv.morgenpost.de/gruenste-staedte-deutschlands/",
         "createdAt": "2016/05/10",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/greencities.jpg"
+        "image": "/static/images/thumbnails/greencities.jpg"
     },
     {
         "title": "How are refugee routes to Europe changing?",
@@ -202,16 +202,16 @@
         "url": "http://www.taz.de/fluchtrouten/",
         "createdAt": "2016/04/11",
         "client": "taz",
-        "image": "/static/images/projects/refugee-routes.jpg"
+        "image": "/static/images/thumbnails/refugee-routes.jpg"
     },{
         "title": "This is how Swiss universities are influenced by third parties",
         "description": "A lot of universities in Switzerland maintain relationships to third party influencers. This visualisation shows all the links between universities and professors to companies. It gives an overview about the relations in each university and detailed information about each connection.",
         "url": "http://www.srf.ch/news/interaktive-grafik-alle-interessenbindungen-auf-einen-blick",
         "createdAt": "2016/04/02",
         "images": [
-          "/static/images/projects/universities/1.png",
-          "/static/images/projects/universities/2.png",
-          "/static/images/projects/universities/3.png"
+          "/static/images/thumbnails/universities/1.jpg",
+          "/static/images/thumbnails/universities/2.jpg",
+          "/static/images/thumbnails/universities/3.jpg"
         ],
         "technology": "",
         "work": "",
@@ -225,7 +225,7 @@
         "url": "http://interactive.webkid.io/who-is-fighting-whom-in-syria/",
         "createdAt": "2016/04/06",
         "client": "webkid",
-        "image": "/static/images/projects/sankey-syria.jpg"
+        "image": "/static/images/thumbnails/sankey-syria.jpg"
     },
     {
         "title": "This is how refugees live in Berlin",
@@ -233,7 +233,7 @@
         "url": "http://interaktiv.morgenpost.de/so-leben-fluechtlinge-in-berlin/",
         "createdAt": "2016/04/04",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/360.jpg"
+        "image": "/static/images/thumbnails/360.jpg"
     },
     {
         "title": "Cycleway Check",
@@ -241,7 +241,7 @@
         "url": "http://interaktiv.morgenpost.de/radwege-in-berlin/",
         "createdAt": "2016/03/21",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/radwege.jpg"
+        "image": "/static/images/thumbnails/radwege.jpg"
     },
     {
         "title": "In the Streets of Zurich",
@@ -249,7 +249,7 @@
         "url": "https://www.nzz.ch/zuerich/stadt-zuerich/in-den-strassen-von-zuerich-vom-aemmerliweg-zur-zwinglistrasse-ld.5453",
         "createdAt": "2016/03/07",
         "client": "NZZ",
-        "image": "/static/images/projects/zurich-streets.png"
+        "image": "/static/images/thumbnails/zurich-streets.jpg"
     },
     {
         "title": "Where do Berliners really come from?",
@@ -257,7 +257,7 @@
         "url": "http://interaktiv.morgenpost.de/berliner-zugezogenen-atlas/",
         "createdAt": "2016/01/21",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/zugezogenen-atlas.png"
+        "image": "/static/images/thumbnails/zugezogenen-atlas.jpg"
     },
     {
         "title": "UN Climate Change Conference: The Factions",
@@ -265,7 +265,7 @@
         "url": "https://correctiv.org/recherchen/klima/artikel/2015/11/30/klimafraktionen/",
         "createdAt": "2015/11/30",
         "client": "Correctiv",
-        "image": "/static/images/projects/klimafraktionen.jpg"
+        "image": "/static/images/thumbnails/klimafraktionen.jpg"
     },
     {
         "title": "Berlin’s new Skyline - Where the city grows in height",
@@ -273,11 +273,11 @@
         "url": "http://interaktiv.morgenpost.de/berlins-neue-skyline/",
         "createdAt": "2015/11/05",
         "images": [
-          "/static/images/projects/skyline/0.png",
-          "/static/images/projects/skyline/1.png",
-          "/static/images/projects/skyline/2.png",
-          "/static/images/projects/skyline/3.png",
-          "/static/images/projects/skyline/4.png"
+          "/static/images/thumbnails/skyline/0.jpg",
+          "/static/images/thumbnails/skyline/1.jpg",
+          "/static/images/thumbnails/skyline/2.jpg",
+          "/static/images/thumbnails/skyline/3.jpg",
+          "/static/images/thumbnails/skyline/4.jpg"
         ],
         "technology": "",
         "work": "",
@@ -291,7 +291,7 @@
         "url": "http://einheitsreise.morgenpost.de/",
         "createdAt": "2015/10/01",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/einheitsreise.jpg"
+        "image": "/static/images/thumbnails/einheitsreise.jpg"
     },
     {
         "title": "How noisy is your neighbourhood?",
@@ -299,9 +299,9 @@
         "url": "http://interaktiv.morgenpost.de/laermkarte-berlin/",
         "createdAt": "2015/09/22",
         "images": [
-          "/static/images/projects/noisemap/1.png",
-          "/static/images/projects/noisemap/2.png",
-          "/static/images/projects/noisemap/3.png"
+          "/static/images/thumbnails/noisemap/1.jpg",
+          "/static/images/thumbnails/noisemap/2.jpg",
+          "/static/images/thumbnails/noisemap/3.jpg"
         ],
         "technology": "",
         "work": "",
@@ -315,7 +315,7 @@
         "url": "http://interaktiv.morgenpost.de/fluechtlinge-in-deutschland/",
         "createdAt": "2015/09/17",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/fluechtlinge-deutschland.jpg"
+        "image": "/static/images/thumbnails/fluechtlinge-deutschland.jpg"
     },
     {
         "title": "Refugees in Berlin",
@@ -323,7 +323,7 @@
         "url": "http://interaktiv.morgenpost.de/woher-berlins-fluechtlinge-kommen/",
         "createdAt": "2015/09/11",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/berlin-refugees.jpg"
+        "image": "/static/images/thumbnails/berlin-refugees.jpg"
     },
     {
         "title": "10 out of 800,000",
@@ -331,7 +331,7 @@
         "url": "http://interaktiv.morgenpost.de/fluechtlinge-berlin/",
         "createdAt": "2015/08/24",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/eighthundredthousand.jpg"
+        "image": "/static/images/thumbnails/eighthundredthousand.jpg"
     },
     {
         "title": "This is how long you have to pay for a freehold flat",
@@ -339,7 +339,7 @@
         "url": "http://interaktiv.morgenpost.de/wohnungskauf-in-deutschland/",
         "createdAt": "2015/12/10",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/flat-prices-ger.jpg"
+        "image": "/static/images/thumbnails/flat-prices-ger.jpg"
     },
     {
         "title": "Where Europe's population is growing",
@@ -347,7 +347,7 @@
         "url": "http://interaktiv.morgenpost.de/europakarte/#5/48.415/11.294/de",
         "createdAt": "2015/06/29",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/europakarte.jpg"
+        "image": "/static/images/thumbnails/europakarte.jpg"
     },
     {
         "title": "Champions League 2015",
@@ -355,7 +355,7 @@
         "url": "http://interaktiv.morgenpost.de/champions-league-in-berlin/",
         "createdAt": "2015/05/29",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/champions-league.jpg"
+        "image": "/static/images/thumbnails/champions-league.jpg"
     },
     {
         "title": "D3-extended",
@@ -363,7 +363,7 @@
         "url": "https://github.com/wbkd/d3-extended",
         "createdAt": "2015/03/25",
         "client": "webkid",
-        "image": "/static/images/projects/d3-extended.jpg"
+        "image": "/static/images/thumbnails/d3-extended.jpg"
     },
     {
         "title": "The End of World War II in Berlin",
@@ -371,7 +371,7 @@
         "url": "http://interaktiv.morgenpost.de/mein-kriegsende-in-berlin/",
         "createdAt": "2015/05/05",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/kriegsende.jpg"
+        "image": "/static/images/thumbnails/kriegsende.jpg"
     },
     {
         "title": "Berlin 1945 and today",
@@ -379,7 +379,7 @@
         "url": "http://interaktiv.morgenpost.de/berlin-1945-2015/",
         "createdAt": "2015/04/30",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/1945-2015.jpg"
+        "image": "/static/images/thumbnails/1945-2015.jpg"
     },
     {
         "title": "Flat Prices in Berlin - Where can you afford to live?",
@@ -387,7 +387,7 @@
         "url": "http://interaktiv.morgenpost.de/wohnungspreis-karte-berlin/",
         "createdAt": "2015/04/24",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/wohnungspreise.jpg"
+        "image": "/static/images/thumbnails/wohnungspreise.jpg"
     },
     {
         "title": "TTIP - The Dealers",
@@ -395,7 +395,7 @@
         "url": "https://correctiv.org/recherchen/ttip/dealer/",
         "createdAt": "2015/04/15",
         "client": "Correctiv",
-        "image": "/static/images/projects/correctiv-ttip.jpg"
+        "image": "/static/images/thumbnails/correctiv-ttip.jpg"
     },
     {
         "title": "Party Donations",
@@ -403,7 +403,7 @@
         "url": "https://www.welt.de/wirtschaft/article138941661/Parteispenden-Wer-von-wem-wie-viel-Geld-bekommt.html",
         "createdAt": "2015/04/01",
         "client": "Welt N24",
-        "image": "/static/images/projects/welt-parteispenden.jpg"
+        "image": "/static/images/thumbnails/welt-parteispenden.jpg"
     },
     {
         "title": "Measles in Berlin",
@@ -411,7 +411,7 @@
         "url": "https://www.morgenpost.de/berlin/article137810495/Wie-sich-die-Masern-in-Berlin-ausbreiten.html?config=interactive",
         "createdAt": "2015/02/27",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/masern.jpg"
+        "image": "/static/images/thumbnails/masern.jpg"
     },
     {
         "title": "Construction Progress of the BER",
@@ -419,7 +419,7 @@
         "url": "http://www.istderberschonfertig.de/",
         "createdAt": "2015/03/31",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/berfertig.jpg"
+        "image": "/static/images/thumbnails/berfertig.jpg"
     },
     {
         "title": "React Starterkit",
@@ -427,7 +427,7 @@
         "url": "https://github.com/wbkd/react-starterkit",
         "createdAt": "2015/03/01",
         "client": "webkid",
-        "image": "/static/images/projects/react-starterkit.jpg"
+        "image": "/static/images/thumbnails/react-starterkit.jpg"
     },
     {
         "title": "Interactive Police-Ticker",
@@ -435,7 +435,7 @@
         "url": "https://www.morgenpost.de/berlin/article135216607/Alle-Polizeimeldungen-sortiert-nach-Wohnort.html?config=interactive",
         "createdAt": "2015/03/01",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/polizeiticker.jpg"
+        "image": "/static/images/thumbnails/polizeiticker.jpg"
     },
     {
         "title": "Anxiety Disorders in Europe",
@@ -443,7 +443,7 @@
         "url": "http://www.welt.de/angst/experten/134073141/",
         "createdAt": "2014/12/01",
         "client": "Welt",
-        "image": "/static/images/projects/angst.jpg"
+        "image": "/static/images/thumbnails/angst.jpg"
     },
     {
         "title": "That's how rents in Berlin rise",
@@ -451,7 +451,7 @@
         "url": "http://www.morgenpost.de/mieten-in-berlin",
         "createdAt": "2015/02/03",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/bmo-mieten.jpg"
+        "image": "/static/images/thumbnails/bmo-mieten.jpg"
     },
     {
         "title": "M29 - The Bus Line of Varieties",
@@ -459,7 +459,7 @@
         "url": "http://interaktiv.morgenpost.de/m29/",
         "createdAt": "2015/01/13",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/m29.jpg"
+        "image": "/static/images/thumbnails/m29.jpg"
     },
     {
         "title": "#DDJ Catalogue",
@@ -467,7 +467,7 @@
         "url": "http://katalog.datenjournalismus.net/#/",
         "createdAt": "2015/02/06",
         "client": "",
-        "image": "/static/images/projects/katalog.jpg"
+        "image": "/static/images/thumbnails/katalog.jpg"
     },
     {
         "title": "The Unseen",
@@ -475,7 +475,7 @@
         "url": "http://unsichtbar.morgenpost.de/",
         "createdAt": "2014/11/24",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/unsichtbar.jpg"
+        "image": "/static/images/thumbnails/unsichtbar.jpg"
     },
     {
         "title": "Native and New Berliners",
@@ -483,11 +483,11 @@
         "url": "https://www.morgenpost.de/berlin/25-jahre-mauerfall/interaktiv/article133254520/Gebuertige-Berliner-und-Zugezogene-Wer-kam-wer-ging-wer-heute-hier-wohnt.html?config=interactive",
         "createdAt": "2014/11/07",
         "images": [
-          "/static/images/projects/berliners/1.png",
-          "/static/images/projects/berliners/2.png",
-          "/static/images/projects/berliners/3.png",
-          "/static/images/projects/berliners/4.png",
-          "/static/images/projects/berliners/5.png"
+          "/static/images/thumbnails/berliners/1.jpg",
+          "/static/images/thumbnails/berliners/2.jpg",
+          "/static/images/thumbnails/berliners/3.jpg",
+          "/static/images/thumbnails/berliners/4.jpg",
+          "/static/images/thumbnails/berliners/5.jpg"
         ],
         "technology": "",
         "work": "",
@@ -501,7 +501,7 @@
         "url": "http://mauerweg.morgenpost.de/",
         "createdAt": "2014/10/01",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/mauerweg.jpg"
+        "image": "/static/images/thumbnails/mauerweg.jpg"
     },
     {
         "title": "Berlin Iconfont",
@@ -509,7 +509,7 @@
         "url": "http://interactive.webkid.io/berlin-iconfont/",
         "createdAt": "2014/12/18",
         "client": "webkid",
-        "image": "/static/images/projects/berlin-iconfont.jpg"
+        "image": "/static/images/thumbnails/berlin-iconfont.jpg"
     },
     {
         "title": "Car Atlas",
@@ -517,7 +517,7 @@
         "url": "http://viktormucha.de/autoatlas/",
         "createdAt": "2014/06/22",
         "client": "Welt",
-        "image": "/static/images/projects/autoatlas.jpg"
+        "image": "/static/images/thumbnails/autoatlas.jpg"
     },
     {
         "title": "Crime in Berlin - How dangerous is your neighbourhood?",
@@ -525,7 +525,7 @@
         "url": "https://www.morgenpost.de/berlin/article129650925/Kriminalitaet-in-Berlin-So-gefaehrlich-ist-Ihr-Kiez.html?config=interactive",
         "createdAt": "2014/07/22",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/kriminalitaet.jpg"
+        "image": "/static/images/thumbnails/kriminalitaet.jpg"
     },
     {
         "title": "Tempelhofer Feld 3D",
@@ -533,7 +533,7 @@
         "url": "http://interaktiv.morgenpost.de/tempelhofer-feld/",
         "createdAt": "2014/05/14",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/tempelhof.jpg"
+        "image": "/static/images/thumbnails/tempelhof.jpg"
     },
     {
         "title": "Flight Routes Radar",
@@ -541,7 +541,7 @@
         "url": "http://interaktiv.morgenpost.de/abseits-der-flugrouten/",
         "createdAt": "2014/03/10",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/flugrouten.jpg"
+        "image": "/static/images/thumbnails/flugrouten.jpg"
     },
     {
         "title": "Where can you afford to live in Berlin?",
@@ -549,7 +549,7 @@
         "url": "http://interaktiv.morgenpost.de/mietkarte-berlin/",
         "createdAt": "2014/02/10",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/mietkarte.jpg"
+        "image": "/static/images/thumbnails/mietkarte.jpg"
     },
     {
         "title": "Fine Dust Monitor",
@@ -557,6 +557,6 @@
         "url": "https://www.morgenpost.de/berlin/article127420411/Wo-die-Feinstaub-Belastung-in-Berlin-am-hoechsten-ist.html?config=interactive",
         "createdAt": "2014/06/08",
         "client": "Berliner Morgenpost",
-        "image": "/static/images/projects/feinstaub.jpg"
+        "image": "/static/images/thumbnails/feinstaub.jpg"
     }
 ]

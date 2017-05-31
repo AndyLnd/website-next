@@ -7,7 +7,7 @@
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server --config  webpack.config.dev.js --watch --colors --no-info",
     "build": "npm run blogposts && NODE_ENV=production webpack --config  webpack.config.prod.js",
-    "blogposts": "node get-blogposts.js",
+    "blogposts": "node ./scripts/get-blogposts.js",
     "deploy": "npm run build && netlify deploy"
   },
   "author": "",

@@ -30,7 +30,7 @@ class VideoSlider {
       draggable: this.isMobile,
       transitionEnd: this.onSlideChange,
       speed: 1000,
-      auto: this.isMobile ? 7000 : false
+      auto: false
     });
 
     this.initVideos();

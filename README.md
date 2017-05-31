@@ -1,5 +1,14 @@
 # webkid website
 
+## Create smaller client svgs
+
+```
+svgo -f src/static/images -o src/static/images
+```
+
+## Create smaller teaser images
+
+
 ## How to create the teaser images and videos?
 
 1. Produce a teaser video (with QuickTime + iMovie for example)

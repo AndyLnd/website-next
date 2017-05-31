@@ -3,7 +3,7 @@ const d3TimeFormat = require('d3-time-format');
 const fs = require('fs');
 const path = require('path');
 
-const output = path.resolve(__dirname, 'src', 'data', 'blogposts.json');
+const output = path.resolve(__dirname, '..', 'src', 'data', 'blogposts.json');
 
 const dateFormatter = d3TimeFormat.timeFormat('%d %B %Y');
 
