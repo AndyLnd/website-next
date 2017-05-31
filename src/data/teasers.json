@@ -38,17 +38,17 @@
         {
             "title": "Where Europe's population is growing",
             "description": "This map of Europe shows information about the population on a granular level and shows growth and decline.",
-            "image": "/static/images/projects/right-wing-parties/1.png"
+            "image": "/static/images/thumbnails/europakarte.jpg"
         },
         {
             "title": "Who is fighting whom in Syria?",
             "description": "This simplified visualization shows the complexity of the situation in Syria.",
-            "image": "/static/images/projects/syria.png"
+            "image": "/static/images/thumbnails/syria.jpg"
         },
         {
             "title": "Federal Election Polls in Germany",
             "description": "Interactive charts that show the development of election polls in Germany over the last couple of years.",
-            "image": "/static/images/projects/btw2017.jpg"
+            "image": "/static/images/thumbnails/btw2017.jpg"
         }
     ]
 }

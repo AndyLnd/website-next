@@ -2,7 +2,7 @@
   "name": "website-next",
   "version": "1.0.0",
   "title": "WEBKID Data Visualization Studio",
-  "description": "Hi, we are webkid! A team of experts who build hand-crafted and beautiful interactive applications for the web.",
+  "description": "Hi, we are webkid! A Berlin-based team of experts who build hand-crafted and beautiful interactive applications for the web.",
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server --config  webpack.config.dev.js --watch --colors --no-info",
