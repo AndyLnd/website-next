@@ -41,7 +41,8 @@ module.exports = {
     WepbackHelper.getImprintHtmlPlugin(),
     new ExtractTextPlugin({ filename: 'bundle.css' }),
     new CopyWebpackPlugin([
-      { from: 'src/static', to: 'static' }
+      { from: 'src/static', to: 'static' },
+      { from: '_redirects' }
     ]),
     new Webpack.optimize.UglifyJsPlugin({
       beautify: false,
