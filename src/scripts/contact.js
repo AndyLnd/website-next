@@ -2,9 +2,44 @@ import axios from 'axios';
 import queryString from 'query-string';
 
 function init() {
+  setTimeout(addFormMarkUp(), 400);
+  //addEmailInputListener();
+}
+
+function addFormMarkUp() {
+  const formContainer = document.querySelector('.form__container');
+
+  const formMarkup = `
+    <form name="webkid-contact" class="contact-form" netlify-honeypot="bot-field" netlify>
+      <div class="input-wrapper">
+        <label class="label" for="email">Email</label>
+        <input class="input" type="email" name="email" placeholder="your email..." required tabindex="1"/>
+      </div>
+
+      <div class="input-wrapper">
+        <label class="label" for="email">Message</label>
+        <textarea class="input textarea" name="message" placeholder="your message..." required tabindex="2"></textarea>
+      </div>
+
+      <div class="hidden">
+        <label>Bot field: <input name="bot-field"></label>
+      </div>
+
+      <div class="input-wrapper captcha-wrapper">
+        <label class="label" for="captcha">I'm no 🤖 !</label>
+        <span class="captcha--question"></span>
+        <input class="input" type="number" name="captcha" required tabindex="3" />
+      </div>
+
+      <div class="input-wrapper">
+        <button class="button button--submit" type="submit" tabindex="4">submit</button>
+      </div>
+  </form>`
+
+  formContainer.insertAdjacentHTML('beforeend', formMarkup);
+
   addFormSubmitListener();
   addCloseAlertListener();
-  //addEmailInputListener();
 }
 
 function addEmailInputListener() {
