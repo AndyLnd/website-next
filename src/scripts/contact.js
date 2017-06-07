@@ -4,7 +4,7 @@ import queryString from 'query-string';
 function init() {
   addFormSubmitListener();
   addCloseAlertListener();
-  addEmailInputListener();
+  //addEmailInputListener();
 }
 
 function addEmailInputListener() {
