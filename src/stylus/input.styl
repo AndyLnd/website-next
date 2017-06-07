@@ -58,3 +58,35 @@ textarea::placeholder
 @media screen and (min-width: 1024px)
   .input[type="text"], .input[type="email"], textarea.input
     font-size: 1.1rem
+
+
+// captcha
+.captcha-wrapper
+  visibility: hidden
+  height: 0
+
+  .label
+    display: inline-block
+    margin-right: 10px
+
+.captcha--active
+  visibility: visible
+  height: auto
+
+.captcha--question
+  font-size: 1.6rem
+  margin-right: 6px
+
+.input[type="number"]
+  background: white
+  color: $white
+  font-family: $sans
+  font-size: 1.2rem
+  border: none
+  padding: .8rem
+  outline: none
+  resize: none
+
+  box-sizing: border-box
+  color: $primary25
+  border-radius: 4px

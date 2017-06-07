@@ -4,14 +4,35 @@ import queryString from 'query-string';
 function init() {
   addFormSubmitListener();
   addCloseAlertListener();
+  addEmailInputListener();
+}
+
+function addEmailInputListener() {
+  const emailInputEl = document.querySelector('input[name=email]');
+
+  emailInputEl.onblur = (e) => {
+    const captchaWrapper = document.querySelector('.captcha-wrapper');
+    if (emailInputEl.value !== "") {
+      captchaWrapper.classList.add('captcha--active');
+    }
+  }
 }
 
 function addFormSubmitListener(el) {
   const contactForm = document.querySelector('.contact-form');
+  const captchaResult = buildCaptcha();
 
   if (contactForm) {
     contactForm.onsubmit = (e) => {
       e.preventDefault();
+
+      if (isNotHuman(captchaResult)) {
+        onError();
+        const captchaInputEl = document.querySelector('input[name=captcha]');
+        captchaInputEl.style.color = '#eb5757';
+
+        return false;
+      }
 
       const query = {
         email: e.target.email.value,
@@ -62,6 +83,23 @@ function addCloseAlertListener() {
   }
 }
 
+// create two randoms and return sum of them for comparing with user input
+function buildCaptcha() {
+  const captchaEl = document.querySelector('.captcha--question');
+
+  const x = Math.floor(Math.random() * 11);
+  const y = Math.floor(Math.random() * 11);
+  captchaEl.innerHTML = x + ' + ' + y + ' =';
+
+  return x + y;
+}
+
+function isNotHuman(expectedResult) {
+  const captchaInputEl = document.querySelector('input[name=captcha]');
+  const captchInputVal = parseInt(captchaInputEl.value, 10);
+
+  return captchInputVal !== expectedResult;
+}
 
 export default {
   init
