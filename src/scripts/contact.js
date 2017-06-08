@@ -26,7 +26,7 @@ function addFormMarkUp() {
       </div>
 
       <div class="input-wrapper captcha-wrapper">
-        <label class="label" for="captcha">I'm no 🤖 !</label>
+        <label class="label" for="captcha">I'm no <img src="static/images/robot.png"/> !</label>
         <span class="captcha--question"></span>
         <input class="input" type="number" name="captcha" required tabindex="3" />
       </div>
@@ -122,11 +122,22 @@ function addCloseAlertListener() {
 function buildCaptcha() {
   const captchaEl = document.querySelector('.captcha--question');
 
+  const operators = [{
+        sign: "+",
+        method: (a, b) => a + b
+    },{
+        sign: "-",
+        method: (a, b) => a - b
+    }];
+
+  // get random operator and vals
+  const selectedOperator = Math.floor(Math.random() * operators.length);
   const x = Math.floor(Math.random() * 11);
   const y = Math.floor(Math.random() * 11);
-  captchaEl.innerHTML = x + ' + ' + y + ' =';
 
-  return x + y;
+  // build string for label
+  captchaEl.innerHTML = x + ` ${operators[selectedOperator].sign} ` + y + ' =';
+  return operators[selectedOperator].method(x, y);
 }
 
 function isNotHuman(expectedResult) {
