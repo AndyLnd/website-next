@@ -14,6 +14,9 @@ if (document.getElementById('slider')) {
   new VideoSlider('slider');
 }
 
+if (document.getElementById('contact')) {
+  Contact.init();
+  Awards.init();
+}
+
 Lazy.init();
-Awards.init();
-Contact.init();
