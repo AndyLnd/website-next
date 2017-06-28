@@ -70,6 +70,13 @@ class VideoSlider {
 
       controlsContainer.appendChild(li);
     }
+
+    console.log("samdkasmdam", this.container.querySelector('#prev'));
+    const prevButton = this.container.querySelector('#prev');
+    const nextButton = this.container.querySelector('#next');
+
+    prevButton.onclick = () => this.slider.prev();
+    nextButton.onclick = () =>this.slider.next();
   }
 
   changeSlide(index) {
