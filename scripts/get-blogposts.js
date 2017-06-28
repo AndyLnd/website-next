@@ -11,7 +11,7 @@ const result = [];
 
 const getExcerpt = (text) => {
   if (text !== '') {
-    return text.substr(0, 125) + '…';
+    return text.split(' ').splice(0,25).join(' ') + '…';
   }
   return '…';
 }
