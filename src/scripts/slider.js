@@ -51,6 +51,12 @@ class Slider {
 
       controlsContainer.appendChild(li);
     }
+
+    const prevButton = this.container.querySelector('#prev');
+    const nextButton = this.container.querySelector('#next');
+
+    prevButton.onclick = () => this.slider.prev();
+    nextButton.onclick = () =>this.slider.next();
   }
 
   changeSlide(slideIndex) {
