@@ -1,5 +1,17 @@
 [
   {
+    "name": "Grimme Online Award",
+    "category": "Special",
+    "year": 2017,
+    "website": "http://www.grimme-online-award.de/2017/preistraeger/p/d/resi-app-1/"
+  },
+  {
+    "name": "Data Journalism Awards",
+    "category": "Best team portfolio",
+    "year": 2017,
+    "website": "https://www.datajournalismawards.org/"
+  },
+  {
     "name": "Deutscher Lokaljournalistenpreis",
     "category": "Datajournalism",
     "year": 2016,
