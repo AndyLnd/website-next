@@ -33,7 +33,7 @@ class VideoSlider {
       auto: false
     });
 
-    window.addEventListener('load', () => {
+    window.addEventListener('DOMContentLoaded', () => {
       this.initVideos();
     }, false);
   }
