@@ -1,9 +1,19 @@
 [
     {
-        "title": "AWARDS",
+        "title": "Where german parties can rely on their voters",
+        "description": "The evaluation of all german general elections since 1990 shows the communities in which the parties have always achieved their strongest results - and the factors that make up these strongholds.",
+        "url": "https://interaktiv.morgenpost.de/parteien-hochburgen-deutschland/",
+        "createdAt": "2017/06/12",
+        "images": [
+          "/static/images/thumbnails/hochburgen/hochburg_1.png",
+          "/static/images/thumbnails/hochburgen/hochburg_2.png",
+          "/static/images/thumbnails/hochburgen/hochburg_3.png"
+        ],
+        "technology": "",
+        "work": "",
+        "client": "Berliner Morgenpost",
         "isHighlight": true,
-        "createdAt": "1970/01/01",
-        "position": 4
+        "position": 1
     },
     {
         "title": "This is where Germany votes for the right-wing",
@@ -19,7 +29,7 @@
         "work": "",
         "client": "Berliner Morgenpost",
         "isHighlight": true,
-        "position": 1
+        "position": 2
     },
     {
         "title": "Federal Election Polls in Germany",
@@ -186,7 +196,7 @@
         "work": "",
         "client": "NZZ",
         "isHighlight": true,
-        "position": 2
+        "position": 3
     },
     {
         "title": "These are Germany's greenest cities",
@@ -217,7 +227,7 @@
         "work": "",
         "client": "SRF",
         "isHighlight": true,
-        "position": 3
+        "position": 5
     },
     {
         "title": "Who is fighting whom in Syria?",
@@ -283,7 +293,7 @@
         "work": "",
         "client": "Berliner Morgenpost",
         "isHighlight": true,
-        "position": 5
+        "position": 6
     },
     {
         "title": "Einheitsreise",
@@ -307,7 +317,7 @@
         "work": "",
         "client": "Berliner Morgenpost",
         "isHighlight": true,
-        "position": 6
+        "position": 7
     },
     {
         "title": "Where refugees are accomodated in Germany",
@@ -493,7 +503,7 @@
         "work": "",
         "client": "Berliner Morgenpost",
         "isHighlight": true,
-        "position": 7
+        "position": 8
     },
     {
         "title": "The Scar of the City",
@@ -558,5 +568,11 @@
         "createdAt": "2014/06/08",
         "client": "Berliner Morgenpost",
         "image": "/static/images/thumbnails/feinstaub.jpg"
+    },
+    {
+        "title": "AWARDS",
+        "isHighlight": true,
+        "createdAt": "1970/01/01",
+        "position": 4
     }
 ]
