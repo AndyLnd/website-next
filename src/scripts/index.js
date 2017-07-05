@@ -10,13 +10,13 @@ if (document.getElementById('map')) {
   new Map('map');
 }
 
-if (document.getElementById('slider')) {
-  new VideoSlider('slider');
-}
-
 if (document.getElementById('contact')) {
   Contact.init();
 }
 
 Lazy.init();
 Awards.init();
+
+if (document.getElementById('slider')) {
+  new VideoSlider('slider');
+}

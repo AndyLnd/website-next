@@ -33,7 +33,9 @@ class VideoSlider {
       auto: false
     });
 
-    this.initVideos();
+    window.addEventListener('load', () => {
+      this.initVideos();
+    }, false);
   }
 
   initVideos() {
