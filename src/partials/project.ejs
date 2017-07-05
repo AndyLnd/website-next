@@ -1,14 +1,16 @@
 <% var titleCase = require('titlecase'); %>
-<div class="portfolio-project">
-  <a target="_blank" href="<%=project.url%>">
-    <div class="small-teaser--image__wrapper project--image box-shadow--large">
-      <% if (index > 8) { %>
-      <div class="small-teaser--image image-zoom teaser--placeholder" data-bg="<%=project.image%>"></div>
-      <% } else { %>
-      <div class="small-teaser--image image-zoom" style="background-image:url('<%=project.image%>')"></div>
-      <% } %>
-    </div>
-  </a>
-  <div class="small-teaser--headline"><%= titleCase(project.title) %></div>
-  <div class="small-teaser--description teaser--text"><%=project.description%></div>
-</div>
+<% if(project.title) { %>
+  <div class="portfolio-project">
+    <a target="_blank" href="<%=project.url%>">
+      <div class="small-teaser--image__wrapper project--image box-shadow--large">
+        <% if (index > 8) { %>
+        <div class="small-teaser--image image-zoom teaser--placeholder" data-bg="<%=project.image%>"></div>
+        <% } else { %>
+        <div class="small-teaser--image image-zoom" style="background-image:url('<%=project.image%>')"></div>
+        <% } %>
+      </div>
+    </a>
+    <div class="small-teaser--headline"><%= titleCase(project.title) %></div>
+    <div class="small-teaser--description teaser--text"><%=project.description%></div>
+  </div>
+<% } %>

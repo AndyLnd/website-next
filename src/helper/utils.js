@@ -17,7 +17,7 @@ function sortProjects(file) {
   highlightProjects.sort(sortByPosition).forEach((proj, i) => {
     allProjects.push(proj);
     for(let j = 0; j < gridSize; j++){
-      allProjects.push(projects[(i * gridSize) + j]);
+      allProjects.push(projects[(i * gridSize) + j] || {});
     }
   })
   //add last projects to array
