@@ -18,7 +18,7 @@ const getExcerpt = (text) => {
 
 axios.get('https://blog.webkid.io/content.json')
   .then(function (response) {
-    response.data.posts.forEach(entry => {
+    response.data.forEach(entry => {
       result.push({
         title: entry.title,
         link: entry.permalink,
