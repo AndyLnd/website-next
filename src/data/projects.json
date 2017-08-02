@@ -32,6 +32,54 @@
         "position": 2
     },
     {
+        "title": "Draw Switzerland",
+        "description": "How good are you at drawing Switzerland?",
+        "url": "https://www.nzz.ch/storytelling/1-august-wie-gut-koennen-sie-die-schweiz-aus-dem-gedaechtnis-zeichnen-ld.1306768",
+        "createdAt": "2017/07/31",
+        "client": "NZZ",
+        "image": "/static/images/thumbnails/swissdraw.jpg"
+    },
+    {
+        "title": "Lines Of Berlin",
+        "description": "Poster with 2250 line charts of our 'Berlin At Your Line' project.",
+        "url": "https://blog.webkid.io/visualization-of-data-along-public-transportation-lines-in-berlin/",
+        "createdAt": "2017/07/26",
+        "client": "webkid",
+        "image": "/static/images/thumbnails/linesofberlin.jpg"
+    },
+    {
+        "title": "Drone Flights",
+        "description": "Visualization and analysis of drone flights of the Swiss Armed Forces.",
+        "url": "https://www.srf.ch/news/grenzwaechter-der-luefte-2",
+        "createdAt": "2017/07/20",
+        "client": "SRF",
+        "image": "/static/images/thumbnails/srfdrones.jpg"
+    },
+    {
+        "title": "Berlin At Your Line",
+        "description": "Plotting data against public transportation stops.",
+        "url": "https://interaktiv.morgenpost.de/berlin-an-deiner-linie/",
+        "createdAt": "2017/07/17",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/thumbnails/berlines.jpg"
+    },
+    {
+        "title": "Larsen C",
+        "description": "Interactive comparison of Larsen C iceberg with your location.",
+        "url": "https://interaktiv.morgenpost.de/eisberg-groessenvergleich/",
+        "createdAt": "2017/07/13",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/thumbnails/larsenc.jpg"
+    },
+    {
+        "title": "Google Search & News Research",
+        "description": "Browser plugin for detecting Google's personalization and filter algorithms.",
+        "url": "https://datenspende.algorithmwatch.org/",
+        "createdAt": "2017/07/06",
+        "client": "AlgorithmWatch",
+        "image": "/static/images/thumbnails/datenspende.jpg"
+    },
+    {
         "title": "Federal Election Polls in Germany",
         "description": "Interactive charts that show the development of election polls in Germany over the last couple of years.",
         "url": "https://www.nzz.ch/international/deutschland-im-wahljahr/bundestagswahl-der-aktuelle-stand-der-umfragen-im-ueberblick-union-spd-afd-linke-gruene-fdp-ld.146646",
