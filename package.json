@@ -8,7 +8,8 @@
     "start": "NODE_ENV=development webpack-dev-server --config  webpack.config.dev.js --watch --colors --no-info",
     "build": "npm run blogposts && NODE_ENV=production webpack --config  webpack.config.prod.js",
     "blogposts": "node ./scripts/get-blogposts.js",
-    "deploy": "npm run build && netlify deploy"
+    "deploy": "npm run build && netlify deploy",
+    "optimg": "./scripts/optimize-images.sh"
   },
   "author": "",
   "license": "ISC",
