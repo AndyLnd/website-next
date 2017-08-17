@@ -6,11 +6,6 @@
 svgo -f src/static/images -o src/static/images
 ```
 
-## Create smaller teaser images
-```
-npm run optimg
-```
-
 
 ## How to create the teaser images and videos?
 
