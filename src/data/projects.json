@@ -1,5 +1,13 @@
 [
     {
+        "title": "Federal Election 2017 - The candidates",
+        "description": "Get an overview of all candidates of the 2017 federal election in Germany.",
+        "url": "https://interaktiv.morgenpost.de/kandidaten-bundestagswahl-2017/",
+        "createdAt": "2017/08/24",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/thumbnails/candidates17.jpg"
+      },
+    {
         "title": "The future of retirement pensions",
         "description": "Find out about the future development of pensions.",
         "url": "https://www.iwkoeln.de/studien/iw-reports/beitrag/susanna-kochskaemper-auswirkung-einer-laengeren-lebensarbeitszeit-auf-die-rentenversicherung-357238",
