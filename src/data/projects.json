@@ -14,7 +14,7 @@
         "createdAt": "2017/08/24",
         "client": "Berliner Morgenpost",
         "image": "/static/images/thumbnails/candidates17.jpg"
-      },
+    },
     {
         "title": "The future of retirement pensions",
         "description": "Find out about the future development of pensions.",
@@ -22,7 +22,15 @@
         "createdAt": "2017/08/01",
         "client": "Institut der deutschen Wirtschaft Köln",
         "image": "/static/images/thumbnails/rente.jpg"
-      },
+    },
+    {
+        "title": "Coffee in numbers",
+        "description": "This set of infographics will help you to find out where your coffee is produced and where it is exported.",
+        "url": "http://kaffee.brandeins.de/",
+        "createdAt": "2017/07/05",
+        "client": "brand eins Wissen",
+        "image": "/static/images/thumbnails/b1kaffee_klar.png"
+    },
     {
         "title": "Resi",
         "description": "A news messenger that brings the important news of the day to your smartphone.",
