@@ -1,5 +1,13 @@
 [
     {
+        "title": "Rents in Germany",
+        "description": "See the development of flat rents in German metropolises.",
+        "url": "https://interaktiv.morgenpost.de/mieten-grossstaedte-deutschland/",
+        "createdAt": "2017/08/07",
+        "client": "Berliner Morgenpost",
+        "image": "/static/images/thumbnails/renten-deutschland.jpg"
+      },
+    {
         "title": "Federal Election 2017 - The candidates",
         "description": "Get an overview of all candidates of the 2017 federal election in Germany.",
         "url": "https://interaktiv.morgenpost.de/kandidaten-bundestagswahl-2017/",
