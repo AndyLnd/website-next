@@ -25,6 +25,10 @@
 .small-teaser
   width: 49%
   text-decoration: none
+  &:hover
+    .small-teaser--image
+      transform: scale(1.1)
+ 
 
   &:last-child
     display: none
@@ -65,11 +69,14 @@
   color: $black
   text-decoration: none
   cursor: pointer
+  &:hover
+    .blog-teaser__image
+      transform: scale(1.1)
 
-.blog-teaser__image__wrapper
-  width: 25%
-  min-width: 125px
-  max-width: 300px
+  &__image__wrapper
+    width: 25%
+    min-width: 125px
+    max-width: 300px
 
 .blog-teaser__image
   background-size: cover
